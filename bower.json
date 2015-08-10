@@ -1,0 +1,22 @@
+{
+  "name": "interior",
+  "version": "0.0.1",
+  "authors": [
+    "aliaraaab <muhammadali.alaydrus@icloud.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "naked-css": "~1.0.2",
+    "jquery": "~2.1.4",
+    "jacket-awesome": "~1.0.1",
+    "owl-carousel": "~1.3.2",
+    "animate.css": "~3.4.0"
+  }
+}
