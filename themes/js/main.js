@@ -4,6 +4,10 @@ $(function() {
 		$(this).toggleClass("clicked").siblings(".subMenu").slideToggle(128);
 	});
 
+	$(".toggleDown").click(function(){
+		$(this).toggleClass("toggleDrawer").parent().siblings(".toggleMenu").slideToggle(128);
+	});
+
 	$(".heroBanner").owlCarousel({
 		itemsCustom : [
 			[0, 1],
