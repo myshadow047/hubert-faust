@@ -22,10 +22,10 @@
                         </a>
                         <ul class="subMenu">
                             <li>
-                                <a href="#">Category A</a>
+                                <a href="category.php">Category A</a>
                             </li>
                             <li>
-                                <a href="#">Category B</a>
+                                <a href="category.php">Category B</a>
                             </li>
                         </ul>
                     </li>
@@ -45,13 +45,13 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="category.php" class="row">
                         <span>Category A</span>
                         <i class="xn xn-angle-right"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="category.php" class="row">
                         <span>Category B</span>
                         <i class="xn xn-angle-right"></i>
                     </a>

@@ -7,7 +7,7 @@
     
     <?php include('part-header.php') ?>
     
-    <section class="content">
+    <section class="content home">
         <article class="heroBanner">
             <div class="bannerSlide">
                 <a href="#" style="background: url('themes/img/banner1.jpg') center no-repeat; background-size: cover;"></a>
