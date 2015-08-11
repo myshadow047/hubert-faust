@@ -1,14 +1,14 @@
 .nav-menu { background: rgba(255, 255, 255, 0.9); height: auto; border-bottom: 0; }
 .nav-menu .pull-left { padding: 10px 0; float: none; text-align: center; position: relative; }
 .nav-menu .pull-left h1 { float: none; display: inline-block; }
-.nav-menu .pull-right { padding: 21px 0; display: none; }
+.nav-menu .pull-right { padding: 16px 0; display: none; }
 .nav-menu .pull-right ul.topbar ul { background: rgba(255, 255, 255, 0.9); }
 .nav-menu .pull-right ul.topbar>li { margin-right: 30px; }
 .nav-menu .pull-right ul.topbar li a { color: #000; font-size: 1.1em; cursor: pointer; }
-.nav-menu .pull-right ul.topbar .subMenu { width: auto; margin: 0; top:101%; }
+.nav-menu .pull-right ul.topbar .subMenu { width: auto; margin: 0; top:100%; }
 .nav-menu .pull-right ul.topbar .subMenu li { margin: 0; float: none; }
 .nav-menu .brand a.mobile { background: url(../img/logo2.png) center no-repeat; background-size: contain; display: inline-block; text-indent: -6666em; width: 75px; height: 30px; }
-.nav-menu .brand a.desktop { background: url(../img/logo.png) center no-repeat; background-size: contain; text-indent: -6666em; width: 115px; height: 70px; display: none; }
+.nav-menu .brand a.desktop { background: url(../img/logo.png) center no-repeat; background-size: contain; text-indent: -6666em; width: 99px; height: 60px; display: none; }
 .nav-menu .topbar .down i { margin-left: 5px; }
 
 .nav-menu .pull-right ul.topbar ul li a { line-height: 130%; padding: 8px 30px 8px 30px; color: #000; }
@@ -19,24 +19,43 @@
 .productView,
 .socialMedia { margin-top: 2px; position: relative; }
 .productView .thumbArea { padding: 0; }
-.productView .thumbView { position: relative; margin-bottom: 2px; background: #ddd; }
+.productView .thumbView { position: relative; margin-bottom: 2px; }
 .productView .thumbView .image a { display: block; height: 200px; }
 
-.overlay { display: block; margin-top: 10px; }
+.overlay { display: block; background: rgba(0, 0, 0, 0.6); position: absolute; bottom: 0; right: 0; left: 0; }
 
-.productView .thumbView .desc  { display: block; text-align: center; padding-bottom: 10px; }
-.productView .thumbView .desc span { margin: 0; color: #444; line-height: 130%; display: block; }
-.productView .thumbView .desc .category { font-size: 0.8em;  letter-spacing: 0.5pt; font-weight: 600; text-transform: uppercase; }
-.productView .thumbView .desc .name { font-size: 1.2em; font-weight: 600; letter-spacing: 0.5pt; }
+.productView .thumbView .desc  { display: block; text-align: center; padding: 10px 0; }
+.productView .thumbView .desc span { margin: 0; color: #fff; line-height: 130%; display: block; padding: 0 20px; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+.productView .thumbView .desc .category { font-size: 0.6em; letter-spacing: 0.5pt; font-weight: 600; text-transform: uppercase; margin-bottom: 3px; }
+.productView .thumbView .desc .category i { margin-right: 8px; }
+.productView .thumbView .desc .name { font-size: 1em; font-weight: 600; letter-spacing: 0.5pt; }
 
-.socialMedia { margin-top: 0; }
-.socialMedia .socialArea { text-align: center; }
-.socialMedia .socialArea .social.facebook a { background: #3A5898; }
-.socialMedia .socialArea .social.twitter a { background: #01ACED; }
-.socialMedia .socialArea .social.pinterest a { background: #E60000; }
-.socialMedia .socialArea .social.instagram a { background: #3A5898; }
-.socialMedia .socialArea .social i { margin-right: 10px; }
-.socialMedia .socialArea .social a { color: #fff; display: block; font-size: 1.5em; padding: 10px 0; border-radius: 5px; }
+.overlay.promo { background: rgba(255, 255, 255, 0.7); }
+.productView .thumbView .overlay.promo span { color: #058DFF; }
+.productView .thumbView .overlay.promo .category { border-color: #058DFF; }
+
+.label { padding: 20px 0; }
+.label.end { min-height: 20px; }
+.label h4 { text-align: center; margin: 0; margin-bottom: 5px; line-height: 120%; }
+.label hr { margin: 0 auto; width: 30px; text-align: center; border-color: #000; }
+
+.socialMedia { margin-bottom: 40px; }
+.socialMedia .thumbArea:first-child .socialArea { padding: 0 1px 0 2px; }
+.socialMedia .thumbArea:last-child .socialArea { padding: 0 2px 0 1px; }
+.socialMedia .socialArea { text-align: center; padding: 0 1px; }
+.socialMedia .socialArea .social { color: #fff; display: block; font-size: 2em; vertical-align: middle; line-height: 50px; }
+.socialMedia .socialArea .social.facebook { background: #3A5898; }
+.socialMedia .socialArea .social.twitter { background: #01ACED; }
+.socialMedia .socialArea .social.pinterest { background: #E60000; }
+.socialMedia .socialArea .social.instagram { background: #3A5898; }
+
+
+.footer { background: #ddd; padding: 20px 0; }
+.footer .social { margin: 0 auto; }
+.footer .social a { font-size: 2.5em; color: #aaa; }
+.footer .copyright { margin: 0; color: #666; text-align: center; line-height: 120%; font-size: 0.8em; display: block; vertical-align: middle; }
+.footer .logo { background: url(../img/logo2.png) center no-repeat; background-size: contain; display: inline-block; width: 63px; height: 25px; margin-bottom: 10px; }
+.footer .copyright span { display: block; }
 
 
 .owl-theme .owl-controls { text-align: center; }
@@ -78,8 +97,10 @@
 .toggleDown { position: absolute; top: 50%; margin-top: -18px; right: 10px; padding: 10px 0 10px 10px; }
 .toggleMenu { border-top: 1px solid #000; border-bottom: 1px solid #000; display: none; }
 .toggleMenu ul { margin: 0; padding: 0; list-style: none; }
-.toggleMenu ul li a { display: block; padding: 7px 10px; border-bottom: 1px solid #000; font-size: 1.1em; color: #000; }
+.toggleMenu ul li a { display: block; padding: 12px 20px; border-bottom: 1px solid #000; font-size: 1.1em; color: #000; line-height: 120% }
 .toggleMenu ul li:last-child a { border-bottom: 0; }
+.toggleMenu ul li span { float: left; }
+.toggleMenu ul li i { float: right; }
 
 
 /*MENU TOGGLE*/
@@ -126,7 +147,8 @@
 	.heroBanner .bannerSlide a { height: 650px; }
 	.owl-buttons { display: block; } 
 
-	.overlay { position: absolute; background: rgba(0, 0, 0, 0.5); top: 0; left: 0; right: 0; bottom: 0; margin: 0; }
+	.overlay { top: 0; background: rgba(0, 0, 0, 0.5); }
+	.overlay.promo { border: 14px solid #058DFF; }
 	.productView .thumbArea { padding: 0 1px; }
 	.productView .thumbView { background: transparent; }
 	.productView .thumbView .image a { 
@@ -153,9 +175,16 @@
 		-o-filter: grayscale(0); 
 		filter: grayscale(0);
 	}
-	.productView .thumbView .desc  { position: absolute; top: 50%; left: 0; right: 0; margin-top: -20px; padding: 0; }
-	.productView .thumbView .desc span { color: #fff; }
-	.productView .thumbView .desc .name { font-size: 1.6em; }
+	.productView .thumbView .desc  { position: absolute; top: 50%; left: 0; right: 0; margin-top: -32px; padding: 0; }
+	.productView .thumbView .desc .category { font-size: 0.8em; display: inline-block; max-width: 100%; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #fff; }
+	.productView .thumbView .desc .name { font-size: 1.6em; white-space: normal; line-height: 120%; }
+	
+	.footer nav,
+	.footer nav:last-child { padding: 20px 0; }
+	.footer .social { float: right; }
+	.footer .logo { margin-right: 20px; vertical-align: middle; margin-bottom: 0; width: 65px; height: 26px; }
+	.footer .copyright { text-align: left; font-size: 1em; }
+	.footer .copyright span { display: inline-block; vertical-align: middle; }
 }
 
 
