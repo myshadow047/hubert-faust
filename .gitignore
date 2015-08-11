@@ -5,3 +5,6 @@
 */cache/!index.html
 */cache/!.htaccess
 .DS_Store
+
+application/default/logs
+application/default/cache
