@@ -1,0 +1,627 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"app_bas",
+				"app_base_model〔class〕"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"dev",
+				"dev-master"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"issuer",
+				"issuer_type"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"get",
+				"getItem"
+			],
+			[
+				"search",
+				"searchUrl"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"sp",
+				"split"
+			],
+			[
+				"pr",
+				"price"
+			],
+			[
+				"price",
+				"prices"
+			],
+			[
+				"ite",
+				"itemId"
+			],
+			[
+				"sho",
+				"showItemDetail"
+			],
+			[
+				"bac",
+				"backItem"
+			],
+			[
+				"fil",
+				"filter"
+			],
+			[
+				"gra",
+				"graph"
+			],
+			[
+				"grap",
+				"graph"
+			],
+			[
+				"mat",
+				"match_intv"
+			],
+			[
+				"gr",
+				"graphs"
+			],
+			[
+				"filter",
+				"filterFrom"
+			],
+			[
+				"time",
+				"timestamp"
+			],
+			[
+				"math",
+				"match_floor_id"
+			],
+			[
+				"grp",
+				"graph"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "ins",
+		"selected_items":
+		[
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/apriantopramana/Sites/putra/hubert-faust"
+	],
+	"file_history":
+	[
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/controllers/cli.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/.gitignore",
+		"/Users/apriantopramana/Sites/xinix/web_a/arch/controllers/app_crud_controller.php",
+		"/Users/apriantopramana/Sites/xinix/web_a/application/default/views/site/index.php",
+		"/Users/apriantopramana/Sites/xinix/web_a/arch/views/layouts/main.php",
+		"/Users/apriantopramana/Sites/xinix/web_a/application/default/config/development/app.php",
+		"/Users/apriantopramana/Sites/master/xnotes/config/config.php",
+		"/Users/apriantopramana/Sites/master/xnotes/templates/meeting.php",
+		"/Users/apriantopramana/Sites/master/xnotes/xnotes.sublime-project",
+		"/Users/apriantopramana/Sites/master/xnotes/bower.json",
+		"/Users/apriantopramana/Sites/master/xnotes/.bowerrc",
+		"/Users/apriantopramana/Sites/master/xSolve/vendor/xinix-technology/bono/templates/layout.php",
+		"/Users/apriantopramana/Sites/master/xSolve/config/config.php",
+		"/Users/apriantopramana/Sites/master/xnotes/www/theme/css/default.css",
+		"/Users/apriantopramana/Sites/master/xnotes/vendor/xinix-technology/bono/templates/layout.php",
+		"/Users/apriantopramana/Sites/master/xnotes/templates/layout.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/src/MCoin/Provider/LoginProvider.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/src/MCoin/Report/ReportExport.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/config/collections/Settlement.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/config/collections/Transaction.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/www/css/mcoin.css",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/src/MCoin/Provider/CLIProvider.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/src/MCoin/Provider/SettlementProvider.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/vendor/reekoheek/bono-auth/src/ROH/BonoAuth/Driver/NormAuth.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/src/MCoin/Controller/ActivationKeyController.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/config/collections/Issuer.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/src/MCoin/Controller/ApiController.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/src/MCoin/Controller/BillingController.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/src/MCoin/Controller/ProductCatalogController.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/vendor/xinix-technology/norm/src/Norm/Observer/Historical.php",
+		"/Users/apriantopramana/Sites/project/mcoin/core-acquirer/src/MCoin/Controller/AppController.php",
+		"/Users/apriantopramana/Downloads/settlement.sql",
+		"/Users/apriantopramana/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/apriantopramana/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/apriantopramana/Sites/ta/config/collections/User.php",
+		"/Users/apriantopramana/Sites/ta/templates/shared/search.php",
+		"/Users/apriantopramana/Sites/ta/templates/layout.php",
+		"/Users/apriantopramana/Sites/ta/vendor/xinix-technology/bono/templates/layout.php",
+		"/Users/apriantopramana/Sites/ta/composer.json",
+		"/Users/apriantopramana/Sites/ta/config/config.php",
+		"/Applications/XAMPP/etc/php.ini",
+		"/Users/apriantopramana/Sites/ta/index.php",
+		"/Users/apriantopramana/Sites/CodeIgniter-3.0.0/application/controllers/Test.php",
+		"/Users/apriantopramana/Sites/CodeIgniter-3.0.0/application/libraries/MY_Composer.php",
+		"/Users/apriantopramana/Sites/CodeIgniter-3.0.0/application/config/autoload.php",
+		"/Users/apriantopramana/Sites/CodeIgniter-3.0.0/index.php",
+		"/Users/apriantopramana/Sites/CodeIgniter-3.0.0/application/config/config.php",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/js/view/shop.js",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/css/snob.css",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/index.html",
+		"/Users/apriantopramana/Sites/CodeIgniter-3.0.0/application/controllers/Welcome.php",
+		"/Users/apriantopramana/Sites/CodeIgniter-3.0.0/application/controllers/index.html",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/platforms/ios/build/emulator/Snobswap.app/www/js/app/routes.js",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/js/view/filter.js",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/js/app/config.js",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/js/model/models.js",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/js/app/routes.js",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/js/view/brand.js",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/js/api/items.js",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/js/api/user.js",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/js/app/app.js",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/js/view/login.js",
+		"/Users/apriantopramana/Sites/project/mobile/snobswap/www/js/view/signup.js",
+		"/Users/apriantopramana/.bash_profile",
+		"/Users/apriantopramana/Sites/project/web-hive/js/api/graph.js",
+		"/Users/apriantopramana/Sites/project/web-hive/js/view/filters.js",
+		"/Users/apriantopramana/Sites/project/web-hive/index.html",
+		"/Users/apriantopramana/Sites/project/web-hive/js/helper/graphs.js",
+		"/Users/apriantopramana/Sites/project/web-hive/js/view/graphs.js",
+		"/Users/apriantopramana/.profile",
+		"/Users/apriantopramana/Sites/project/web-hive/js/api/report.js",
+		"/Users/apriantopramana/Sites/project/web-hive/dist/doc/api.md",
+		"/Users/apriantopramana/Sites/project/web-hive/js/api/unit.js",
+		"/Users/apriantopramana/Sites/project/web-hive/js/app/routes.js",
+		"/Users/apriantopramana/Sites/project/web-hive/vendor/highcharts/highcharts-more.src.js",
+		"/Users/apriantopramana/Sites/xinix/codefest-countdown/index.html",
+		"/Users/apriantopramana/Sites/xinix/codefest-countdown/js/jquery-1.11.3.min.js",
+		"/Applications/XAMPP/xamppfiles/etc/httpd.conf"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ganesha",
+			"reekoheek",
+			"_check_dir_for_normalize_file_header",
+			"normalize_file_header",
+			"_normalize_php",
+			"normalize_file_header",
+			"_check_dir_for_normalize_file_header",
+			"_normalize_php",
+			"hello@xinix.co.id",
+			"mahasiswa",
+			"xinix",
+			"<a href=\"#\">",
+			"</strong>",
+			"<strong>",
+			".nav-menu .pull-left h1 a {",
+			"h5",
+			"Bono",
+			"h1",
+			",\"",
+			"getSearch",
+			"extra2",
+			"extra1",
+			"type",
+			"$issuer",
+			"addInquiry",
+			"$trx",
+			"addTransaction",
+			"Transaction",
+			"NormArray::",
+			"NormArray",
+			"error",
+			"openssl",
+			".listview .list-group a i.xn",
+			".xin-drawer .xin-list li a",
+			"xin-drawer",
+			"shop",
+			"flaging",
+			"localStorage.setItem('flaging', true);",
+			"localStorage.setItem('flaging', false);",
+			"setParam(",
+			"console.log",
+			"m(",
+			"view.param.",
+			"loadNextItems",
+			"searchUrl",
+			"getItem",
+			"app.sessionStorage('filter'",
+			"searchAPI",
+			"ALL",
+			"Collections.colors",
+			"filter",
+			"detailItem",
+			"searchWhileTyping",
+			"__cat",
+			"categories",
+			"filter",
+			"categoriesWomen",
+			"space",
+			"getbefore",
+			"filters",
+			"console.log(",
+			"xLabel",
+			"/data",
+			"view",
+			"filterFrom",
+			"match_unit_id",
+			"showGroupsFilter",
+			"apply",
+			"showGroupsFilter",
+			"filterFromPicker",
+			"this.filter",
+			"filter",
+			"apply",
+			"match_event",
+			"true",
+			"false",
+			"filter",
+			"\"or\"",
+			"\"OR\"",
+			"OR",
+			"cName",
+			"filter.type",
+			"group_ids",
+			"filtercount++; ",
+			"report",
+			"filter.",
+			"drawGraph",
+			"Putra",
+			"apply",
+			"filtersToolbar",
+			"apply",
+			".important",
+			"important",
+			"apply",
+			"drawGraph",
+			"TODO: Graphs Filter",
+			"graphFilter",
+			"filter",
+			"drawGraph"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "hubert-faust.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"layout.",
+				"arch/views/layouts/main.php"
+			],
+			[
+				"sty",
+				"www/theme/css/style.css"
+			],
+			[
+				"layou",
+				"vendor/xinix-technology/bono/templates/layout.php"
+			],
+			[
+				"def",
+				"www/theme/css/default.css"
+			],
+			[
+				"layout",
+				"vendor/xinix-technology/bono/templates/layout.php"
+			],
+			[
+				"login",
+				"src/MCoin/Provider/LoginProvider.php"
+			],
+			[
+				"repo",
+				"src/MCoin/Report/ReportExport.php"
+			],
+			[
+				"mcoin.css",
+				"www/css/mcoin.css"
+			],
+			[
+				"normau",
+				"vendor/reekoheek/bono-auth/src/ROH/BonoAuth/Driver/NormAuth.php"
+			],
+			[
+				"activa",
+				"src/MCoin/Controller/ActivationKeyController.php"
+			],
+			[
+				"issuer",
+				"config/collections/Issuer.php"
+			],
+			[
+				"apicontr",
+				"src/MCoin/Controller/ApiController.php"
+			],
+			[
+				"apicon",
+				"src/MCoin/Controller/ApiController.php"
+			],
+			[
+				"contro",
+				"src/MCoin/Controller/AppController.php"
+			],
+			[
+				"shop",
+				"www/js/view/shop.js"
+			],
+			[
+				"index.",
+				"www/index.html"
+			],
+			[
+				"snob.css",
+				"www/css/snob.css"
+			],
+			[
+				"inde",
+				"www/index.html"
+			],
+			[
+				"app.js",
+				"www/js/app/app.js"
+			],
+			[
+				"rout",
+				"www/js/app/routes.js"
+			],
+			[
+				"filter",
+				"www/js/view/filter.js"
+			],
+			[
+				"shop.js",
+				"www/js/view/shop.js"
+			],
+			[
+				"index",
+				"www/index.html"
+			],
+			[
+				"snob",
+				"www/css/snob.css"
+			],
+			[
+				"models.js",
+				"www/js/model/models.js"
+			],
+			[
+				"confi",
+				"www/js/app/config.js"
+			],
+			[
+				"route",
+				"www/js/app/routes.js"
+			],
+			[
+				"brand",
+				"www/js/view/brand.js"
+			],
+			[
+				"rou",
+				"www/js/app/routes.js"
+			],
+			[
+				"config.js",
+				"www/js/app/config.js"
+			],
+			[
+				"item",
+				"www/js/api/items.js"
+			],
+			[
+				"login.js",
+				"www/js/view/login.js"
+			],
+			[
+				"grap",
+				"js/helper/graphs.js"
+			],
+			[
+				"api",
+				"dist/doc/api.md"
+			],
+			[
+				"api.md",
+				"dist/doc/api.md"
+			],
+			[
+				"index.html",
+				"index.html"
+			],
+			[
+				"report",
+				"js/api/report.js"
+			],
+			[
+				"unit",
+				"js/api/unit.js"
+			],
+			[
+				"graph",
+				"js/view/graphs.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Sites/xinix/arch-php/arch-php.sublime-workspace"
+			],
+			[
+				"xso",
+				"~/Sites/master/xSolve/xSolve.sublime-project"
+			],
+			[
+				"bt",
+				"~/Sites/project/bt-jams/bt-jams.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 240.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

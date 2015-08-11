@@ -12,6 +12,9 @@ class web extends app_crud_controller {
     }
 
     function index() {
+        $where = array('status' => 1);
+        $banners = $this->db->get_where('banner', $where)->result_array();
 
+        $this->_data['banners'] = $banners;
     }
 }
