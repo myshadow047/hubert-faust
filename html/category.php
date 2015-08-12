@@ -15,121 +15,121 @@
         <article class="thumbnails row">
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
                 <div class="thumb">
-                    <a href="#">
+                    <a href="detail.php">
                         <div class="image" style="background: url('themes/img/banner3.jpg') center no-repeat; background-size: cover;"></div>
                     </a>
-                    <div class="desc animated fadeIn">
-                        <a href="#">Product Name 1</a>
+                    <div class="desc animated zoomIn">
+                        <a href="detail.php">Product Name 1</a>
                     </div>
                 </div>
             </div>
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
                 <div class="thumb">
-                    <a href="#">
+                    <a href="detail.php">
                         <div class="image" style="background: url('themes/img/banner2.jpg') center no-repeat; background-size: cover;"></div>
                     </a>
-                    <div class="desc animated fadeIn">
-                        <a href="#">Product Name 2</a>
+                    <div class="desc animated zoomIn">
+                        <a href="detail.php">Product Name 2</a>
                     </div>
                 </div>
             </div>
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
                 <div class="thumb">
-                    <a href="#">
+                    <a href="detail.php">
                         <div class="image" style="background: url('themes/img/banner4.jpg') center no-repeat; background-size: cover;"></div>
                     </a>
-                    <div class="desc animated fadeIn">
-                        <a href="#">Product Name 3</a>
+                    <div class="desc animated zoomIn">
+                        <a href="detail.php">Product Name 3</a>
                     </div>
                 </div>
             </div>
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
                 <div class="thumb">
-                    <a href="#">
+                    <a href="detail.php">
                         <div class="image" style="background: url('themes/img/banner1.jpg') center no-repeat; background-size: cover;"></div>
                     </a>
-                    <div class="desc animated fadeIn">
-                        <a href="#">Product Name 4</a>
+                    <div class="desc animated zoomIn">
+                        <a href="detail.php">Product Name 4</a>
                     </div>
                 </div>
             </div>
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
                 <div class="thumb">
-                    <a href="#">
+                    <a href="detail.php">
                         <div class="image" style="background: url('themes/img/banner3.jpg') center no-repeat; background-size: cover;"></div>
                     </a>
-                    <div class="desc animated fadeIn">
-                        <a href="#">Product Name 1</a>
+                    <div class="desc animated zoomIn">
+                        <a href="detail.php">Product Name 1</a>
                     </div>
                 </div>
             </div>
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
                 <div class="thumb">
-                    <a href="#">
+                    <a href="detail.php">
                         <div class="image" style="background: url('themes/img/banner2.jpg') center no-repeat; background-size: cover;"></div>
                     </a>
-                    <div class="desc animated fadeIn">
-                        <a href="#">Product Name 2</a>
+                    <div class="desc animated zoomIn">
+                        <a href="detail.php">Product Name 2</a>
                     </div>
                 </div>
             </div>
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
                 <div class="thumb">
-                    <a href="#">
+                    <a href="detail.php">
                         <div class="image" style="background: url('themes/img/banner4.jpg') center no-repeat; background-size: cover;"></div>
                     </a>
-                    <div class="desc animated fadeIn">
-                        <a href="#">Product Name 3</a>
+                    <div class="desc animated zoomIn">
+                        <a href="detail.php">Product Name 3</a>
                     </div>
                 </div>
             </div>
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
                 <div class="thumb">
-                    <a href="#">
+                    <a href="detail.php">
                         <div class="image" style="background: url('themes/img/banner1.jpg') center no-repeat; background-size: cover;"></div>
                     </a>
-                    <div class="desc animated fadeIn">
-                        <a href="#">Product Name 4</a>
+                    <div class="desc animated zoomIn">
+                        <a href="detail.php">Product Name 4</a>
                     </div>
                 </div>
             </div>
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
                 <div class="thumb">
-                    <a href="#">
+                    <a href="detail.php">
                         <div class="image" style="background: url('themes/img/banner3.jpg') center no-repeat; background-size: cover;"></div>
                     </a>
-                    <div class="desc animated fadeIn">
-                        <a href="#">Product Name 1</a>
+                    <div class="desc animated zoomIn">
+                        <a href="detail.php">Product Name 1</a>
                     </div>
                 </div>
             </div>
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
                 <div class="thumb">
-                    <a href="#">
+                    <a href="detail.php">
                         <div class="image" style="background: url('themes/img/banner2.jpg') center no-repeat; background-size: cover;"></div>
                     </a>
-                    <div class="desc animated fadeIn">
-                        <a href="#">Product Name 2</a>
+                    <div class="desc animated zoomIn">
+                        <a href="detail.php">Product Name 2</a>
                     </div>
                 </div>
             </div>
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
                 <div class="thumb">
-                    <a href="#">
+                    <a href="detail.php">
                         <div class="image" style="background: url('themes/img/banner4.jpg') center no-repeat; background-size: cover;"></div>
                     </a>
-                    <div class="desc animated fadeIn">
-                        <a href="#">Product Name 3</a>
+                    <div class="desc animated zoomIn">
+                        <a href="detail.php">Product Name 3</a>
                     </div>
                 </div>
             </div>
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
                 <div class="thumb">
-                    <a href="#">
+                    <a href="detail.php">
                         <div class="image" style="background: url('themes/img/banner1.jpg') center no-repeat; background-size: cover;"></div>
                     </a>
-                    <div class="desc animated fadeIn">
-                        <a href="#">Product Name 4</a>
+                    <div class="desc animated zoomIn">
+                        <a href="detail.php">Product Name 4</a>
                     </div>
                 </div>
             </div>

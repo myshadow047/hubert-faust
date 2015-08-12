@@ -1,4 +1,4 @@
-	<nav class="nav-menu">
+	<nav class="nav-menu animated slideInDown">
         <div class="container">
             <div class="pull-left">
                 <h1 class="brand">

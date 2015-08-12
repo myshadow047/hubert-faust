@@ -26,7 +26,7 @@
                         <div class="image">
                             <a href="#" style="background: url('themes/img/banner3.jpg') center no-repeat; background-size: cover;"></a>
                         </div>
-                        <a href="#" class="animated fadeIn overlay promo">
+                        <a href="#" class="animated zoomIn overlay promo">
                             <div class="desc">
                                 <span class="category"><i class="xn xn-star-o"></i>Promo!</span>
                                 <span class="name">Promo Product Product 1</span>
@@ -39,7 +39,7 @@
                         <div class="image">
                             <a href="#" style="background: url('themes/img/banner2.jpg') center no-repeat; background-size: cover;"></a>
                         </div>
-                        <a href="#" class="animated fadeIn overlay">
+                        <a href="#" class="animated zoomIn overlay">
                             <div class="desc">
                                 <span class="category">Category 1</span>
                                 <span class="name">Name Product 1</span>
@@ -52,7 +52,7 @@
                         <div class="image">
                             <a href="#" style="background: url('themes/img/banner1.jpg') center no-repeat; background-size: cover;"></a>
                         </div>
-                        <a href="#" class="animated fadeIn overlay">
+                        <a href="#" class="animated zoomIn overlay">
                             <div class="desc">
                                 <span class="category">Category 2</span>
                                 <span class="name">Name Product 2</span>
@@ -65,7 +65,7 @@
                         <div class="image">
                             <a href="#" style="background: url('themes/img/banner4.jpg') center no-repeat; background-size: cover;"></a>
                         </div>
-                        <a href="#" class="animated fadeIn overlay">
+                        <a href="#" class="animated zoomIn overlay">
                             <div class="desc">
                                 <span class="category">Category 3</span>
                                 <span class="name">Name Product 3</span>

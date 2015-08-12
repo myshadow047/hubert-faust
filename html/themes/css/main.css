@@ -1,4 +1,6 @@
-p { color: #484848; }
+p { color: #707070; font-size: 1.1em; }
+hr { border-color: #000; }
+
 .nav-menu { background: rgba(255, 255, 255, 0.9); height: auto; border-bottom: 0; border-bottom: 1px solid #000; }
 .nav-menu .pull-left { padding: 10px 0; float: none; text-align: center; position: relative; }
 .nav-menu .pull-left h1 { float: none; display: inline-block; }
@@ -39,7 +41,7 @@ p { color: #484848; }
 
 .label { padding: 20px 0; position: relative; text-align: center; }
 .label h4 { text-align: center; margin: 0; line-height: 120%; display: inline-block; background: #fff; position: relative; z-index: 2; padding: 0 10px; text-transform: uppercase; font-size: 1em; }
-.label hr { border-color: #000; position: absolute; top: 50%; left: 0; right: 0; width: 200px; margin: 0 auto; }
+.label hr { position: absolute; top: 50%; left: 0; right: 0; width: 30%; margin: 0 auto; }
 
 .thumbnails { padding: 1px; }
 .thumbnails .thumbArea { padding: 1px; }
@@ -51,8 +53,46 @@ p { color: #484848; }
 
 .pagingArea { padding: 20px 0; }
 .pagingArea ul.pagination { margin: 0 auto; }
-.pagingArea ul.pagination li a { line-height: 30px; padding: 0 10px; font-size: 1.2em; }
+.pagingArea ul.pagination li a { line-height: 30px; padding: 0 10px; font-size: 1.2em; border-radius: 0; }
 .pagingArea ul.pagination li.active a { background: #000; }
+
+
+.detail .imageDetail .image { display: inline-block; height: 500px; width: 100%; }
+.detail hr { width: 30px; display: inline-block; margin: 20px 0 }
+.detail .detailDesc h3 { line-height: 120%; font-size: 1.5em; border-bottom: 1px solid #000; padding-bottom: 10px; text-transform: uppercase; margin-bottom: 30px; }
+.detail .detailDesc h6 { margin: 0 0 6px; text-transform: uppercase; font-size: 0.9em; font-weight: 600; }
+.detail .detailDesc ul { margin: 0; }
+.detail .detailDesc ul p { margin: 0; }
+.detail .share li { margin-right: 2px; }
+.detail .share li:last-child { margin-right: 0; }
+.detail .share a { width: 100px; display: block; text-align: center; line-height: 100%; padding: 12px 0; font-size: 1.4em; }
+
+
+.request, 
+.detail { margin-bottom: 50px; }
+.inputArea ::-webkit-input-placeholder { color: rgba(48, 48, 48, 0.6); }
+.inputArea :-moz-placeholder { color: rgba(48, 48, 48, 0.6); }
+.inputArea ::-moz-placeholder { color: rgba(48, 48, 48, 0.6); }
+.inputArea :-ms-input-placeholder { color: rgba(48, 48, 48, 0.6); }
+.inputArea .input { margin: 10px 0; }
+.inputArea .input input,
+.inputArea .input textarea { border: 1px solid #000; border-radius: 0; color: #303030; padding: 10px; font-weight: 400; }
+
+.uploadArea ul { margin: 0 auto; }
+.uploadArea ul li { display: table; line-height: 0; }
+.uploadArea .imageArea { width: 230px; height: 230px; display: inline-block; border: 1px solid #000; position: relative; }
+.uploadArea .imageArea .image { display: block; height: 100%; }
+.uploadArea .imageArea .image.empty { display: none!important; }
+.uploadArea .imageArea .bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(255, 255, 255, 0.6); }
+.uploadArea .imageArea .buttonUpload { font-size: 10em; line-height: 228px; font-weight: 300; text-align: center; display: block; color: #000; }
+.uploadArea .more .imageArea .bg { background: #000; }
+.uploadArea .more .imageArea .buttonUpload { color: #fff; }
+
+.submitArea { text-align: center; margin-top: 40px; }
+a.button,
+input[type="submit"] { border: 0; border-radius: 0; background: #000; color: #fff; text-transform: uppercase; margin: 0; font-size: 1.5em; padding: 20px 40px; line-height: 100%; }
+a.button:hover,
+input[type="submit"]:hover { background: #666; }
 
 .footer { border-top: 1px solid #000; padding: 20px 0; }
 .footer .copyLogo { margin-bottom: 20px; }
@@ -165,11 +205,9 @@ p { color: #484848; }
 
 	.heroBanner .bannerSlide { height: 650px; }
 	.heroBanner .bannerSlide a { height: 650px; }
-	.owl-buttons { display: block; } 
 
 	.overlay { top: 0; }
 	.overlay.promo { border: 14px solid #058DFF; }
-	/*.productView .thumbArea { padding: 1px; }*/
 	.productView .thumbView { background: transparent; }
 	.productView .thumbView .image a,
 	.thumbnails .thumbArea .image { 
@@ -202,8 +240,8 @@ p { color: #484848; }
 	.productView .thumbView .desc .name { font-size: 1.6em; white-space: normal; line-height: 120%; }
 		
 	.label,
-	.pagingArea { padding: 20px 0; }
-	.label h4 { font-size: 1.2em; }
+	.pagingArea { padding: 40px 0; }
+	.label h4 { font-size: 1.8em; }
 	.label hr { width: 300; }
 	
 	.thumbnails .thumbArea .image { height: 300px; }
