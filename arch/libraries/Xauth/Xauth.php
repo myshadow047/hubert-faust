@@ -1,24 +1,5 @@
 <?php
 
-/**
- * Xauth.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2012/09/17 10:08:35
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2012/09/17 10:08:35   jafar <jafar@xinix.co.id>
- *
- *
- */
-
 class xauth extends CI_Driver_Library {
 
     protected $valid_drivers    = array(

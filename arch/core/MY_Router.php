@@ -1,35 +1,11 @@
 <?php
 
-/**
- * MY_Router.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   jafar <jafar@xinix.co.id>
- *
- *
- */
-
-/**
- * Description of MY_Router
- *
- * @author jafar
- */
 class MY_Router extends CI_Router {
 
     var $is_module = false;
     var $module_name;
     var $base_dir = APPPATH;
-    
+
     function fetch_base_dir() {
         return $this->base_dir;
     }
@@ -51,7 +27,7 @@ class MY_Router extends CI_Router {
         if (file_exists(APPPATH . 'controllers/' . $segments[0] . '.php')) {
             return $segments;
         }
-        
+
         // Is the controller in a sub-folder?
         if (is_dir(APPPATH . 'controllers/' . $segments[0])) {
             // Set the directory and remove it from the segment array

@@ -1,31 +1,11 @@
-<?php 
-
-
-/**
- * Xauth_ldap.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2011 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (yyyy/mm/dd hh:mm:ss) (author)
- * 2011/11/21 00:00:00   jafar <jafar@xinix.co.id>
- *
- *
- */
+<?php
 
 require_once (ARCHPATH.'/libraries/Xauth/base_xauth.php');
 
 class xauth_ldap extends base_xauth {
 
 	function try_login($login, $password) {
-        // check password to ldap        
+        // check password to ldap
         $user = $this->ci->_model('user')->get_by_username($login);
 
         if (empty($user)) {
@@ -46,7 +26,7 @@ class xauth_ldap extends base_xauth {
         return $user;
     }
 
-    function try_logout() {        
+    function try_logout() {
     }
 
     function login_page($continue = '') {

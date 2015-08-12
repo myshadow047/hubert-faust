@@ -1,25 +1,5 @@
 <?php
 
-
-/**
- * Xauth_central.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2011 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2012/09/11 22:03:05
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (yyyy/mm/dd hh:mm:ss) (author)
- * 2012/09/11 22:03:15   jafar <jafar@xinix.co.id>
- *
- *
- */
-
 require_once (ARCHPATH.'/libraries/Xauth/base_xauth.php');
 
 class xauth_central extends base_xauth {

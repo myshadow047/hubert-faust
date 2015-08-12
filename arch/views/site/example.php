@@ -1,24 +1,5 @@
 <?php
 
-/**
- * index.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2011 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   jafar <jafar@xinix.co.id>
- *
- *
- */
-
 ?>
 
 <h1>This is a test page for Arch Theme</h1>
@@ -29,7 +10,7 @@
 
 <div id="layouting-example">
     <h1>Layouting Example</h1>
-    
+
     <p>This examples on how to use .layout-flexible. It's a div but act like a table.</p>
     <div class="layout-flexible">
         <div class="fifths">.fifths</div>
@@ -89,7 +70,7 @@
 
 <div id="typography-example">
     <h1>Typography Examples</h1>
-    
+
     <div class="layout-flexible">
         <div class="thirds">
             <p>This examples on how to use heading</p>
@@ -127,10 +108,10 @@
 </div>
 
 <hr />
-    
+
 <div id="precode-example">
     <h1>Pre Code Examples</h1>
-    
+
     <div class="layout-flexible">
         <div class="half">
             <code class="prettyprint">
@@ -186,7 +167,7 @@
 
 <div id="table-example">
     <h1>Tabular Examples</h1>
-    
+
     <h3>Most common table: table.grid</h3>
     <table class="grid table table-hover table-striped table-condensed">
         <tr>
@@ -214,7 +195,7 @@
             <td class="auto">3<sup>rd</sup> Content on 3<sup>rd</sup> row</td>
         </tr>
     </table>
-    
+
     <h3>Second table style: table.grid.zebra</h3>
     <table class="grid zebra">
         <tr>
@@ -242,7 +223,7 @@
             <td class="auto">3<sup>rd</sup> Content on 3<sup>rd</sup> row</td>
         </tr>
     </table>
-    
+
     <h3>Second table style: table.grid.stripe</h3>
     <table class="grid stripe">
         <tr>
@@ -276,7 +257,7 @@
 <?php if (!$USER['is_login']): ?>
 <hr />
 
-<a href="<?php echo site_url('user/login') ?>">Click here to login</a> or 
+<a href="<?php echo site_url('user/login') ?>">Click here to login</a> or
 <a href="<?php echo site_url('user/login/facebook') ?>">here to facebook login</a> or
 <a href="<?php echo site_url('user/login/twitter') ?>">here to twitter login</a>
 <?php endif ?>

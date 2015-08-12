@@ -1,24 +1,4 @@
-<?php 
-
-
-/**
- * Xauth_twitter.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2011 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (yyyy/mm/dd hh:mm:ss) (author)
- * 2011/11/21 00:00:00   jafar <jafar@xinix.co.id>
- *
- *
- */
+<?php
 
 require_once (ARCHPATH.'/libraries/Xauth/base_xauth.php');
 
@@ -63,7 +43,7 @@ class Xauth_twitter extends base_xauth {
             'sso_twitter' => $remote_user->id,
             'username' => 'twitter_'.$remote_user->id,
         );
-        
+
         $name = explode(' ', $remote_user->name);
         if (empty($name)) {
             $name = explode(' ', $remote_user->screen_name);

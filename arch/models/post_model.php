@@ -1,24 +1,5 @@
 <?php
 
-/**
- * post_model.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   jafar <jafar@xinix.co.id>
- *
- *
- */
-
 class Post_model extends App_Base_Model {
 
     function listing($filter = null, $sort = null, $limit = null, $offset = null, &$count = 0) {
@@ -56,7 +37,7 @@ class Post_model extends App_Base_Model {
     }
 
     function find($filter = null, $sort = null, $limit = null, $offset = null, &$count = 0) {
-        
+
         $filter_arr = array();
 
         if (!empty($filter['tag'])) {
@@ -86,7 +67,7 @@ class Post_model extends App_Base_Model {
 
         return $result;
     }
-    
+
     function find_by_tag($tag) {
         $sql = 'SELECT p.* FROM tag_post tp
             JOIN tag t ON tp.tag_id = t.id

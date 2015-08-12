@@ -1,24 +1,5 @@
 <?php
 
-/**
- * district.php
- *
- * @package     arch-php
- * @author      xinixman <xinixman@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   xinixman <xinixman@xinix.co.id>
- *
- *
- */
-
 class district extends app_crud_controller {
 
     function __construct() {
@@ -51,7 +32,7 @@ class district extends app_crud_controller {
             ),
         );
     }
-    
+
     function _get_name($value) {
         $result= $this->db->query("SELECT * FROM city WHERE id=?",$value)->row_array();
         return @$result['name'];
@@ -64,12 +45,12 @@ class district extends app_crud_controller {
         $config['formats'] = array('row_detail', 'callback__get_name');
         return $config;
     }
-    
+
     function _save($id = null) {
         parent::_save($id);
 
         $citys = $this->_model()->query('SELECT * FROM city')->result_array();
-        
+
         $this->_data['city_options']= array(''=> l('(Please select)'));
         foreach ($citys as $ci) {
             $this->_data['city_options'][$ci['id']] = $ci['name'];

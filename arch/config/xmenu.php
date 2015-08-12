@@ -1,28 +1,9 @@
 <?php
 
-/**
- * xmenu.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   jafar <jafar@xinix.co.id>
- *
- *
- */
-
 $config = array();
 // $config['xmenu_source'] = 'model:menu:find_admin_panel';
 
-$config['xmenu_source']                           = 'inline';	
+$config['xmenu_source']                           = 'inline';
 
 $config['xmenu_items'][0]['title']                = 'Home';
 $config['xmenu_items'][0]['uri']                  = '/';

@@ -1,30 +1,11 @@
 <?php
 
-/**
- * unit_controller.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   jafar <jafar@xinix.co.id>
- *
- *
- */
-
 class unit_controller extends CI_Controller {
 
     function __construct() {
         parent::__construct();
         $this->load->library('unit_test');
-        
+
         $this->load->helper('x');
     }
 
@@ -61,7 +42,7 @@ class unit_controller extends CI_Controller {
                 echo '</fieldset>';
             }
         }
-        
+
     }
 
 }
