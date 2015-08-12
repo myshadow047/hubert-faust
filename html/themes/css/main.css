@@ -1,3 +1,4 @@
+p { color: #484848; }
 .nav-menu { background: rgba(255, 255, 255, 0.9); height: auto; border-bottom: 0; border-bottom: 1px solid #000; }
 .nav-menu .pull-left { padding: 10px 0; float: none; text-align: center; position: relative; }
 .nav-menu .pull-left h1 { float: none; display: inline-block; }

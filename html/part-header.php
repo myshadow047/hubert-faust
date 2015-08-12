@@ -15,7 +15,7 @@
             </div>
             <div class="pull-right">
                 <ul class="flat topbar">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.php">Home</a></li>
                     <li>
                         <a class="down">Products
                             <i class="xn xn-angle-down"></i>
@@ -29,10 +29,10 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Promo</a></li>
-                    <li><a href="#">Special Order</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="promo.php">Promo</a></li>
+                    <li><a href="special-order.php">Special Order</a></li>
+                    <li><a href="contact.php">Contact Us</a></li>
                 </ul>
             </div>
         </div>
