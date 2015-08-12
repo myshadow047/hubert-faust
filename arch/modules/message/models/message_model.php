@@ -1,31 +1,12 @@
 <?php
 
-/**
- * message_model.php
- *
- * @package     arch-php
- * @author      xinixman <xinixman@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   xinixman <xinixman@xinix.co.id>
- *
- *
- */
-
 class message_model extends App_Base_Model {
 
 	function user_messages(){
 		$CI =  &get_instance();
 		$user = $CI->auth->get_user();
 		$sql = "
-			SELECT m.*, TRIM(CONCAT(u.first_name, ' ', u.last_name)) sender, mr.status user_data_status 
+			SELECT m.*, TRIM(CONCAT(u.first_name, ' ', u.last_name)) sender, mr.status user_data_status
 			FROM message m
 			JOIN message_recipient mr ON m.id = mr.message_id
 			JOIN user u ON m.user_id = u.id

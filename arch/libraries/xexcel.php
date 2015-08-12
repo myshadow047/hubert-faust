@@ -1,25 +1,6 @@
 <?php
 
 /**
- * xexcel.php
- *
- * @package     arch-php
- * @author      Oliver <Oliver@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   Oliver <Oliver@xinix.co.id>
- *
- *
- */
-
-/**
  * Generating excel documents on-the-fly from PHP5
  *
  * Uses the excel XML-specification to generate a native

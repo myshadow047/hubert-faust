@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>Hubert &amp; Faust</title>
+
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('vendor/naked-css/css/naked.min.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('vendor/lato/css/lato.min.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('vendor/jacket-awesome/dist/css/jacket-awesome.min.css') ?>">
@@ -31,14 +32,14 @@
             </div>
             <div class="pull-right">
                 <ul class="flat topbar">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="<?php echo base_url() ?>">Home</a></li>
                     <li>
                         <a class="down">Products
                             <i class="xn xn-angle-down"></i>
                         </a>
                         <ul class="subMenu">
                             <li>
-                                <a href="<?php echo base_url('') ?>">All Product</a>
+                                <a href="#">All Product</a>
                             </li>
                             <li>
                                 <a href="#">Category A</a>
@@ -102,9 +103,11 @@
             </ul>
         </div>
     </nav>
+
     <section class="content">
         <?php echo $this->load->view($CI->_view, $CI->_data, true) ?>
     </section>
+
     <section class="footer">
         <div class="container">
             <div class="row">
@@ -121,6 +124,5 @@
     <script type="text/javascript" src="<?php echo base_url('vendor/jquery/dist/jquery.min.js') ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('vendor/owl-carousel/owl-carousel/owl.carousel.min.js') ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('themes/desktop/js/main.js') ?>"></script>
-
 </body>
 </html>

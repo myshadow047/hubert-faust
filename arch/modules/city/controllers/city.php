@@ -1,31 +1,7 @@
 <?php
 
-/**
- * city.php
- *
- * @package     arch-php
- * @author      chalid <chalid@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   chalid <chalid@xinix.co.id>
- *
- *
- */
-
-/**
- * Description of port
- *
- * @author chalid
- */
 class city extends app_crud_controller {
-    
+
      function __construct() {
         parent::__construct();
 
@@ -48,7 +24,7 @@ class city extends app_crud_controller {
             ),
         );
     }
-    
+
     function _get_name($value) {
         $result= $this->db->query("SELECT * FROM province WHERE id=?",$value)->row_array();
         return @$result['name'];
@@ -61,16 +37,16 @@ class city extends app_crud_controller {
         $config['formats'] = array('row_detail', 'callback__get_name');
         return $config;
     }
-    
+
     function _save($id = null) {
         parent::_save($id);
 
         $provinces = $this->_model()->query('SELECT * FROM province')->result_array();
-        
+
         $this->_data['province_options']= array(''=> l('(Please select)'));
         foreach ($provinces as $pro) {
             $this->_data['province_options'][$pro['id']] = $pro['name'];
         }
     }
-    
+
 }

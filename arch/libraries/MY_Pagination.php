@@ -1,30 +1,5 @@
 <?php
 
-/**
- * MY_Pagination.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2011 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   jafar <jafar@xinix.co.id>
- *
- *
- */
-
-/**
- * Description of MY_Pagination
- *
- * @author jafar
- */
-
 class MY_Pagination extends CI_Pagination {
 
     var $per_pages = array(10);
@@ -54,7 +29,7 @@ class MY_Pagination extends CI_Pagination {
             $this->base_url = site_url($CI->_get_uri('listing'));
             $this->uri_segment = $listing_pos + 1;
         }
-        
+
         parent::initialize($params);
     }
 
@@ -83,8 +58,8 @@ class MY_Pagination extends CI_Pagination {
             $links = "
                 <div class=\"pagination\">
                     <span style=\"margin-left:5px\" class=\"pull-right\"> of ".(ceil($this->total_rows / $this->per_page))."</span>
-                    <div class=\"pull-right\">" . $links . "</div> 
-                    <span style=\"margin-right: 5px\" class=\"pull-right\">Page</span> 
+                    <div class=\"pull-right\">" . $links . "</div>
+                    <span style=\"margin-right: 5px\" class=\"pull-right\">Page</span>
                 </div>";
         }
         return $links;

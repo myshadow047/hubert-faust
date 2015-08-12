@@ -1,23 +1,5 @@
 <?php
 
-/**
- * workflow_controller.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2011 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (yyyy/mm/dd hh:mm:ss) (author)
- * 2011/11/21 00:00:00   jafar <jafar@xinix.co.id>
- *
- *
- */
 class workflow_controller extends app_crud_controller {
 
     var $payment_enabled = -1;
@@ -55,7 +37,7 @@ class workflow_controller extends app_crud_controller {
             ";
             $param = array($this->_action['id'], $id);
             $modules = $this->db->query($sql, $param)->result_array();
-            
+
             if (!empty($modules)) {
                 add_error(l('Modules have not been finished yet'));
             } else {
@@ -69,7 +51,7 @@ class workflow_controller extends app_crud_controller {
         }
 
         $user = $this->auth->get_user();
-        
+
         $sql = "
             SELECT da.*, a.name, a.action
             FROM disposition_action da
@@ -82,7 +64,7 @@ class workflow_controller extends app_crud_controller {
 
         $param = array($this->_action['id'], $id);
         $this->_data['modules'] = $this->db->query($sql, $param)->result_array();
-        
+
         $config = array(
             'fields' => array('name', 'status'),
             'names' => array('Action'),
@@ -113,7 +95,7 @@ class workflow_controller extends app_crud_controller {
 
         if ($this->module_enabled) {
             if ($this->pre_data_enabled) {
-                redirect($this->_name.'/pre_data/'.$id);    
+                redirect($this->_name.'/pre_data/'.$id);
             } else {
                 redirect($this->_name.'/modules/'.$id);
             }
@@ -212,11 +194,11 @@ class workflow_controller extends app_crud_controller {
             }
         } elseif ($index == 0) {
             if ($this->module_enabled) {
-                $back = 'modules';   
+                $back = 'modules';
             } elseif ($this->pre_data_enabled) {
-                $back = 'pre_data';   
+                $back = 'pre_data';
             }
-        } 
+        }
         if (empty($back)) {
             if ($index < 0) {
                 $index = count($this->workflow['pages']);
@@ -328,13 +310,13 @@ class workflow_controller extends app_crud_controller {
                     ', $id)->row_array();
                 $user = $this->auth->get_user();
                 $action = $this->db->where('action', get_class($this))->get('action')->row_array();
-                
+
                 $to = $data['from'];
 
                 if (!empty($_POST['use_payment'])) {
                     foreach($_POST['payment_type'] as $k => $payment_type) {
                         $price_item = $this->db->where('id', $_POST['payment_item'][$k])->get('price_list_item')->row_array();
-                     
+
                         $row = array(
                             'organization_id' => $data['organization_id'],
                             'inbox_id' => $data['inbox_id'],
@@ -369,20 +351,20 @@ class workflow_controller extends app_crud_controller {
 
                    $out_id = $this->_model('outbox')->save($data_outbox);
                 }
-            
+
                 // $data = $this->get_additional_data($id, $_POST);
-                
+
                 $data = array();
                 $data['status'] = 3;
                 $data['outbox_id'] = $out_id;
                 $this->_model()->save($data, $id);
-                
+
                 $disp_action = $this->db->where(array(
                     'disposition_id' => $rowdata['disposition_id'],
                     'action_id' => $action['id'],
                     'ref' => $id,
                 ))->get('disposition_action')->row_array();
-                
+
                 $data = array('status' => 4);
                 $this->_model('disposition')->before_save($data, $rowdata['disposition_id']);
                 $this->db->where('id', $disp_action['id'])->update('disposition_action', $data);
@@ -399,7 +381,7 @@ class workflow_controller extends app_crud_controller {
                 $this->db->trans_complete();
                 redirect($this->_get_referer());
             }
-            
+
         }
 
         $this->load->helper('format');
@@ -415,8 +397,8 @@ class workflow_controller extends app_crud_controller {
         $div_id = $user['division_id'];
 
         $sql = '
-            SELECT * 
-            FROM mail_code 
+            SELECT *
+            FROM mail_code
             WHERE organization_id = ?
             AND division_id = ?
             ORDER BY name ASC
@@ -437,7 +419,7 @@ class workflow_controller extends app_crud_controller {
 
     function _state_action($id) {
         if ($_POST) {
-            
+
             if ($this->_validate()) {
                 unset($_POST['_action']);
                 $_POST['status'] = 2;
@@ -523,7 +505,7 @@ class workflow_controller extends app_crud_controller {
         }
 
         $module_page = ($this->module_enabled) ? '<li'.(($this->uri->rsegments[2] == 'modules') ? ' class="active"' : '').'><a href="'.site_url($this->uri->rsegments[1].'/modules/'.$this->uri->rsegments[3]).'">'.l('Modules').'</a></li>' : '';
-        
+
         $summary_page = '<li'.(($this->uri->rsegments[2] == 'summary') ? ' class="active"' : '').'><a href="'.site_url($this->uri->rsegments[1].'/summary/'.$this->uri->rsegments[3]).'">'.l('Summary').'</a></li>';
 
         return '<ul class="breadcrumb">

@@ -1,24 +1,4 @@
-<?php 
-
-
-/**
- * Xauth_oauth.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2011 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2012/09/18 11:49:19
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (yyyy/mm/dd hh:mm:ss) (author)
- * 2012/09/18 11:49:19   jafar <jafar@xinix.co.id>
- *
- *
- */
+<?php
 
 require_once (ARCHPATH.'/libraries/Xauth/base_xauth.php');
 
@@ -30,10 +10,10 @@ class xauth_oauth extends base_xauth {
 		$ci->load->add_package_path(ARCHMODPATH . 'oauth');
 		$ci->load->library('oauth_resource_server');
 	}
-	
+
 
 	function try_login($login, $password) {
-		
+
 	}
 
 	function is_login() {
@@ -41,7 +21,7 @@ class xauth_oauth extends base_xauth {
 		if (empty($user_id)) {
 			return false;
 		} else {
-			$user = $this->ci->_model('user')->get_login(array('id' => $user_id));	
+			$user = $this->ci->_model('user')->get_login(array('id' => $user_id));
 			if (!empty($user)) {
 				$user['login_mode'] = 'oauth';
 	        	$this->set_user($user, false);
@@ -51,7 +31,7 @@ class xauth_oauth extends base_xauth {
 	}
 
 	function try_logout() {
-		
+
 	}
 
 	function privilege($uri, $user_id = '') {
@@ -66,6 +46,6 @@ class xauth_oauth extends base_xauth {
 	}
 
 	function login_page($continue = '') {
-		
+
 	}
 }

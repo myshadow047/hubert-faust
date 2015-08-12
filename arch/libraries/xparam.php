@@ -1,24 +1,5 @@
 <?php
 
-/**
- * Xparam.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   jafar <jafar@xinix.co.id>
- *
- *
- */
-
 class Xparam {
 
     var $tables = array('sysparam');
@@ -52,7 +33,7 @@ class Xparam {
 		$data = $CI->cache->context_get($cache_key);
 		if ($data) {
 			$this->data[$sgroup] = $data;
-			
+
 			if ($skey == '') {
 				return $data;
 			} else {

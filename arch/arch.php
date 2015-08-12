@@ -1,25 +1,5 @@
 <?php
 
-/**
- *
- * arch.php
- *
- * @package     arch-php
- * @author      Jafar Shadiq <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2013 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2013-01-17 04:06:42
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2013-01-17 04:06:42   Jafar Shadiq <jafar@xinix.co.id>
- *
- *
- */
-
 require_once __DIR__.'/common.php';
 
 class ARCH {

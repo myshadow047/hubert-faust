@@ -1,24 +1,5 @@
 <?php
 
-/**
- * ftp_lang.php
- *
- * @package     arch-php
- * @author      xinixman <xinixman@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   xinixman <xinixman@xinix.co.id>
- *
- *
- */
-
 $lang['ftp_no_connection']			= "Tidak dapat menentukan ID koneksi yang sah. Pastikan anda terhubung sebelum melakukan operasi terhadap berkas.";
 $lang['ftp_unable_to_connect']		= "Tidak dapat terhubung ke server FTP menggunakan nama inang yang tersedia.";
 $lang['ftp_unable_to_login']		= "Tidak dapat login ke server FTP. Silahkan cek nama pengguna dan kata sandinya.";

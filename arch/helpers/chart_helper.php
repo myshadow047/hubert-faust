@@ -1,23 +1,4 @@
-<?php 
-
-/**
- * chart_helper.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2012/09/20 23:01:01
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (yyyy/mm/dd hh:mm:ss) (author)
- * 2012/09/20 23:01:01   jafar <jafar@xinix.co.id>
- *
- *
- */
+<?php
 
 if (!function_exists('chart_load')) {
     function chart_load() {
@@ -36,7 +17,7 @@ if (!function_exists('chart_load')) {
 if (!function_exists('chart_hbar')) {
 
     function chart_hbar($data, $options = array()) {
-        
+
         static $loaded = 0;
         static $default_options = array(
             'height' => 250,

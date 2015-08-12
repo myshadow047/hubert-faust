@@ -1,33 +1,8 @@
 <?php
 
-/**
- * MY_Input.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2011 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   jafar <jafar@xinix.co.id>
- *
- *
- */
-
-/**
- * Description of MY_Input
- *
- * @author jafar
- */
-
 class MY_Input extends CI_Input {
 	var $is_ajax = '-';
-    
+
     public function __construct() {
         parent::__construct();
         $this->is_ajax_request();
@@ -42,7 +17,7 @@ class MY_Input extends CI_Input {
         }
         return $this->is_ajax;
     }
-    
+
     function location() {
         return '';
     }
@@ -53,20 +28,20 @@ class MY_Input extends CI_Input {
 
             $url = $this->server('HTTP_REFERER');
             $segments = explode(base_url(), $url);
-            
+
             if (empty($segments[1])) {
                 $segments = '';
             } else {
                 $segments = explode('/', $segments[1]);
                 unset($segments[0]);
             }
-            
+
 
             $referer->url = $url;
             $referer->segments = $segments;
             $referer->uri = @implode('/', $segments);
-            
-            
+
+
             $this->referer = $referer;
         }
 

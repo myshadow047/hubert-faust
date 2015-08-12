@@ -1,24 +1,5 @@
 <?php
 
-/**
- * ftp_lang.php
- *
- * @package     arch-php
- * @author      xinixman <xinixman@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   xinixman <xinixman@xinix.co.id>
- *
- *
- */
-
 $lang['ftp_no_connection']			= "Unable to locate a valid connection ID.  Please make sure you are connected before peforming any file routines.";
 $lang['ftp_unable_to_connect']		= "Unable to connect to your FTP server using the supplied hostname.";
 $lang['ftp_unable_to_login']		= "Unable to login to your FTP server.  Please check your username and password.";

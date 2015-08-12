@@ -1,24 +1,5 @@
 <?php
 
-/**
- * menu.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2011/11/21 00:00:00
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (dd/mm/yyyy hh:mm:ss) (author)
- * 2011/11/21 00:00:00   jafar <jafar@xinix.co.id>
- *
- *
- */
-
 class base_menu_controller extends app_crud_controller {
 
     function __construct() {
@@ -112,7 +93,7 @@ class base_menu_controller extends app_crud_controller {
 
     function down($id) {
         $user = $this->auth->get_user();
-        
+
         $menu = $this->_model()->query('SELECT * FROM menu WHERE id = ?', $id)->row_array();
         $siblings = $this->_model()->query('SELECT * FROM menu WHERE parent_id = ? ORDER BY position, id', $menu['parent_id'])->result_array();
 

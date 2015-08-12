@@ -1,24 +1,4 @@
-<?php 
-
-/**
- * xcurl.php
- *
- * @package     arch-php
- * @author      jafar <jafar@xinix.co.id>
- * @copyright   Copyright(c) 2012 PT Sagara Xinix Solusitama.  All Rights Reserved.
- *
- * Created on 2012/09/04 12:52:44
- *
- * This software is the proprietary information of PT Sagara Xinix Solusitama.
- *
- * History
- * =======
- * (yyyy/mm/dd hh:mm:ss) (author)
- * 2012/09/04 12:52:44   jafar <jafar@xinix.co.id>
- *
- *
- */
-
+<?php
 
 require_once ARCHPATH.'/libraries/Curl.php';
 class xcurl extends Curl {
@@ -64,5 +44,5 @@ class xcurl extends Curl {
 			}
 		}
 	}
-	
+
 }
