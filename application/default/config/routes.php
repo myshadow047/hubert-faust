@@ -42,6 +42,8 @@ $route['default_controller'] = 'web/index';
 $route['dashboard'] = 'site/index';
 $route['404_override'] = '';
 
+$route['web/product/([a-z]+)/(:num)'] = 'web/detail_product/$1/$2';
+
 $route['profile/(:any)'] = 'user/profile/$1';
 $route['profile'] = 'user/profile';
 $route['p/(:any)'] = 'post/view/$1';

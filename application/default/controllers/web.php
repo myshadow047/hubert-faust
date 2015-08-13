@@ -21,4 +21,30 @@ class web extends app_crud_controller {
 
         $this->_data['banners'] = $banners;
     }
+
+    function special_order() {
+
+    }
+
+    function product($category) {
+        $sql = 'SELECT * FROM product p LEFT JOIN product_image pi ON p.id = pi.product WHERE p.category = ?';
+        $products = $this->db->query($sql, array(1))->result_array();
+
+        $this->_data['products'] = $products;
+    }
+
+    function detail_product($category, $product_id) {
+        $sql = 'SELECT * FROM product p LEFT JOIN product_image pi ON p.id = pi.product WHERE p.id = ?';
+        $product = $this->db->query($sql, array($product_id))->row_array();
+
+        $this->_data['product'] = $product;
+    }
+
+    function about_us() {
+
+    }
+
+    function contact_us() {
+
+    }
 }

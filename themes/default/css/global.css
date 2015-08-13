@@ -8,7 +8,7 @@ Technology  : CSS, CSS2, CSS3, LESS.
 
 Based on    : Twitter's CSS Framework - Bootstrap
 			  visit http://twitter.github.com/bootstrap/
-		   
+
 Creator     : DwAN
 
 Last update : January, 12 2012
@@ -21,7 +21,7 @@ Last update : January, 12 2012
 /* Fonts Mixins and Classes */
 
 .sans-serif {
-  font-family: "Arimo", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 .serif {
   font-family: "Tinos", serif;
@@ -58,7 +58,7 @@ Last update : January, 12 2012
   select,
   button,
   legend {
-    font-family: "Arimo", sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0;
     padding: 0;
     outline-style: none;
@@ -131,7 +131,7 @@ Last update : January, 12 2012
   /* you don't need more dan 4 header, unless you are crazy */
   .h1,
   h1 {
-    font-family: "Arimo", sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0;
     font-size: 1.8em;
     padding: 15px 0 10px;
@@ -139,7 +139,7 @@ Last update : January, 12 2012
   }
   .h2,
   h2 {
-    font-family: "Arimo", sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0;
     font-size: 1.6em;
     padding: 11px 0 5px;
@@ -147,7 +147,7 @@ Last update : January, 12 2012
   }
   .h3,
   h3 {
-    font-family: "Arimo", sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0;
     font-size: 1.4em;
     padding: 9px 0 4px;
@@ -155,7 +155,7 @@ Last update : January, 12 2012
   }
   .h4,
   h4 {
-    font-family: "Arimo", sans-serif;
+    font-family: "Lato", sans-serif;
     margin: 0;
     font-size: 1.2em;
     padding: 7px 0 2px;
@@ -334,7 +334,7 @@ Last update : January, 12 2012
     -o-border-radius: 0 0 5px 5px;
     border-radius: 0 0 5px 5px;
     /* Sub menu positioning */
-  
+
   }
   .top-nav ul li {
     -webkit-transition: background-color 0.15s linear;
@@ -621,23 +621,23 @@ Last update : January, 12 2012
   .the-content {
     display: block;
     /* Common class and tags */
-  
+
     /* Form Elements */
-  
+
     /* Layouting, not for ie */
-  
+
     /* Breadcrumb */
-  
+
     /* Common table grid */
-  
+
     /* Grid system */
-  
+
     /* Paging and Setting */
-  
+
     /* Search style */
-  
+
     /* Search result */
-  
+
   }
   .the-content p {
     padding: 5px 0;
@@ -904,7 +904,7 @@ Last update : January, 12 2012
   }
   .the-content form {
     /* Tiny MCE layout */
-  
+
   }
   .the-content label {
     width: 180px;
@@ -1263,12 +1263,12 @@ Last update : January, 12 2012
     /*margin: 0 0 10px;*/
     margin: 0;
     /* Predefine cell width */
-  
+
   }
   .the-content table.grid tr {
     border-top: 1px solid #e6e6e6;
     /* Colorize cell */
-  
+
   }
   .the-content table.grid tr th .checker,
   .the-content table.grid tr td .checker {
@@ -1385,7 +1385,7 @@ Last update : January, 12 2012
   }
   .the-content table.grid.zebra tr {
     /* Colorize cell */
-  
+
   }
   .the-content table.grid.zebra tr th {
     background-color: #f0f0f0;
@@ -2009,7 +2009,7 @@ Last update : January, 12 2012
   }
   /*
   		Adding Icons to toolbar and contextmenu
-  	
+
   		You can add icons to the context menu by adding
   		classes to the respective LI element(s)
   	*/
@@ -2017,7 +2017,7 @@ Last update : January, 12 2012
   .contextMenu {
     text-align: center;
     /* No icon */
-  
+
   }
   .submenu span,
   .contextMenu span {

@@ -8,11 +8,15 @@ $config['xmenu_source'] = 'inline';
 $config['xmenu_items'][0]['title'] = 'Home';
 $config['xmenu_items'][0]['uri'] = '/dashboard';
 
-$config['xmenu_items'][1]['title'] = 'Banner';
-$config['xmenu_items'][1]['uri'] = '/banner';
+$config['xmenu_items'][1]['title'] = 'Product';
+$config['xmenu_items'][1]['uri'] = '/product';
 
 $config['xmenu_items'][2]['title'] = 'About Us';
 $config['xmenu_items'][2]['uri'] = '/about_us';
+
+$config['xmenu_items'][3]['title'] = 'Banner';
+$config['xmenu_items'][3]['uri'] = '/banner';
+
 
 
 // $config['xmenu_items'][1]['title'] = 'System';

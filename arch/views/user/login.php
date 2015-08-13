@@ -21,17 +21,15 @@
 
                 <?php /* Put your logo here inside div.logo */ ?>
                 <div class="logo">
-                    <div class="title">Xinix<br /><strong>Arch PHP</strong></div>
+                    <div class="title">Administrator<br/>Hubert & Faust</div>
                 </div>
 
-                <div class="system-time">
-                    <span class="xinix-date"></span> &#149; <span class="xinix-time"></span>
-                </div>
                 <?php if (!$CI->config->item('use_db')): ?>
-                <div style="text-align: center; color: red; font-weight: bold">
-                    Database not ready!
-                </div>
+                    <div style="text-align: center; color: red; font-weight: bold">
+                        Database not ready!
+                    </div>
                 <?php endif ?>
+
                 <div>
                     <input type="text" name="login" value=""  placeholder="<?php echo l('Username/Email') ?>" />
                 </div>

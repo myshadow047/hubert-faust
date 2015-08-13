@@ -26,4 +26,18 @@ $(function() {
 		],
 	});
 
+	$(".detail .imageDetail").owlCarousel({
+		itemsCustom : [
+			[0, 1],
+			[480, 1],
+			[768, 1],
+			[1024, 1],
+			[1400, 1],
+			[1600, 1],
+		],
+		autoPlay : false,
+		pagination: true,
+		navigation: false
+	});
+
 })
