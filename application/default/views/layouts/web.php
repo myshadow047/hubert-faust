@@ -38,15 +38,11 @@
                             <i class="xn xn-angle-down"></i>
                         </a>
                         <ul class="subMenu">
-                            <li>
-                                <a href="#">All Product</a>
-                            </li>
-                            <li>
-                                <a href="#">Category A</a>
-                            </li>
-                            <li>
-                                <a href="#">Category B</a>
-                            </li>
+                            <?php foreach($categories as $category): ?>
+                                <li>
+                                    <a href="<?php echo site_url() ?>"><?php echo $category['name'] ?></a>
+                                </li>
+                            <?php endforeach ?>
                         </ul>
                     </li>
                     <li><a href="#">About Us</a></li>
