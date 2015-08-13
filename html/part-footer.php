@@ -11,7 +11,7 @@
                 </nav>
                 <hr>
                 <nav class="findUs">
-                    <p>Find Us On</p>
+                    <p>Get in touch</p>
                     <ul class="social flat">
                         <li><a href="#" class="fb xn xn-facebook-square"></a></li>
                         <li><a href="#" class="pin xn xn-pinterest-square"></a></li>

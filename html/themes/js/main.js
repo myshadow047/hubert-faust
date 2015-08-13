@@ -40,4 +40,18 @@ $(function() {
 		navigation: false
 	});
 
+	$(".thumbView.promo .slideImage").owlCarousel({
+		itemsCustom : [
+			[0, 1],
+			[480, 1],
+			[768, 1],
+			[1024, 1],
+			[1400, 1],
+			[1600, 1],
+		],
+		autoPlay : true,
+		pagination: true,
+		navigation: false
+	});
+
 })

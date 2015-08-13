@@ -7,7 +7,7 @@
     
     <?php include('part-header.php') ?>
     
-    <section class="content container-fluid">
+    <section class="content">
         <div class="label">
             <hr>
             <h4>Detail</h4>
@@ -84,9 +84,9 @@
         
     </section>
     
-    <?php include('part-foot.php') ?>
-    
     <?php include('part-footer.php') ?>
+    
+    <?php include('part-foot.php') ?>
 
 </body>
 </html>

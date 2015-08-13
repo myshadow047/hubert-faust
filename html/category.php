@@ -148,9 +148,9 @@
         </article>
     </section>
     
-    <?php include('part-foot.php') ?>
-    
     <?php include('part-footer.php') ?>
+    
+    <?php include('part-foot.php') ?>
 
 </body>
 </html>
