@@ -8,10 +8,31 @@
             <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
                 <div class="wrapper">
                     <div class="imageDetail">
-                        <div class="image" style="background: url('themes/img/banner3.jpg') center no-repeat; background-size: cover;"></div>
-                        <div class="image" style="background: url('themes/img/banner4.jpg') center no-repeat; background-size: cover;"></div>
-                        <div class="image" style="background: url('themes/img/banner1.jpg') center no-repeat; background-size: cover;"></div>
-                        <div class="image" style="background: url('themes/img/banner2.jpg') center no-repeat; background-size: cover;"></div>
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="<?php echo base_url('themes/desktop/img/banner3.jpg') ?>">
+                                <div class="image" style="background: url(<?php echo base_url('themes/desktop/img/banner3.jpg') ?>) center no-repeat; background-size: cover;"></div>
+                            </a>
+                        </div>
+
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="<?php echo base_url('themes/desktop/img/banner4.jpg') ?>">
+                                <div class="image" style="background: url(<?php echo base_url('themes/desktop/img/banner4.jpg') ?>) center no-repeat; background-size: cover;"></div>
+                            </a>
+                        </div>
+
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="<?php echo base_url('themes/desktop/img/banner1.jpg') ?>">
+                                <div class="image" style="background: url(<?php echo base_url('themes/desktop/img/banner1.jpg') ?>) center no-repeat; background-size: cover;"></div>
+                            </a>
+                        </div>
+
+                        <div class="easyzoom easyzoom--overlay">
+                            <a href="<?php echo base_url('themes/desktop/img/banner2.jpg') ?>">
+                                <div class="image" style="background: url(<?php echo base_url('themes/desktop/img/banner2.jpg') ?>) center no-repeat; background-size: cover;"></div>
+                            </a>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
@@ -71,3 +92,10 @@
         </div>
     </div>
 </article>
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('themes/desktop/css/easyzoom.css') ?>">
+<script type="text/javascript" src="<?php echo base_url('themes/desktop/js/easyzoom.js') ?>"></script>
+<script>
+    var $easyzoom = $('.easyzoom').easyZoom();
+</script>
+

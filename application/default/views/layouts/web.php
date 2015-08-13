@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('vendor/owl-carousel/owl-carousel/owl.transitions.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('vendor/animate.css/animate.min.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('themes/desktop/css/main.css') ?>" />
+
+    <script type="text/javascript" src="<?php echo base_url('vendor/jquery/dist/jquery.min.js') ?>"></script>
 </head>
 
 <body>
@@ -114,7 +116,7 @@
         <?php echo $this->load->view($CI->_view, $CI->_data, true) ?>
     </section>
 
-    <script type="text/javascript" src="<?php echo base_url('vendor/jquery/dist/jquery.min.js') ?>"></script>
+
     <script type="text/javascript" src="<?php echo base_url('vendor/owl-carousel/owl-carousel/owl.carousel.min.js') ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('themes/desktop/js/main.js') ?>"></script>
 
