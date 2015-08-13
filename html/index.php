@@ -27,7 +27,7 @@
                             <a href="#">
                                 <span class="category">Category 1</span>
                                 <hr>
-                                <span class="name">Name Product 1</span>
+                                <span class="name">Name Product 1 Name Product 1 Name Product 1</span>
                             </a>
                         </div>
                         <div class="image">
@@ -108,7 +108,7 @@
                         </div>
                         <hr>
                         <div class="rowInner">
-                            <h3><i class="xn xn-map-marker"></i>Adress:</h3>
+                            <h3><i class="xn xn-map-marker"></i>Address:</h3>
                             <p class="">
                                 Jl. Mampang Prapatan Raya 108, Rukan Buncit Mas<br>
                                 Blok C3A, Duren Tiga, Jakarta 12760<br>

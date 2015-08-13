@@ -9,6 +9,13 @@
                             <a href="index.php" class="desktop">Hubert &amp; Faust</a>
                             <a href="index.php" class="mobile">Hubert &amp; Faust</a>
                         </h1>
+                        <div class="toggleDown">
+                            <div class="menu-toggle-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <a class="down">Products
@@ -26,51 +33,33 @@
                     <li><a href="special-order.php">Special Order</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="toggleMenu">
-            <ul>
-                <li>
-                    <a href="#" class="row">
-                        <span>Home</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="category.php" class="row">
-                        <span>Category A</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="category.php" class="row">
-                        <span>Category B</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="row">
-                        <span>About Us</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="row">
-                        <span>Promo</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="row">
-                        <span>Special Order</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="row">
-                        <span>Contact Us</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-            </ul>
+            <div class="toggleMenu">
+                <ul>
+                    <li>
+                        <a href="about.php" class="row">
+                            <span>About Us</span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="category.php" class="row">
+                            <span>Category A</span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="category.php" class="row">
+                            <span>Category B</span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="special-order.php" class="row">
+                            <span>Special Order</span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>

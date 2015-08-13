@@ -16,7 +16,7 @@
             <div class="container">
                 <form action="">
                     <div class="row inputArea">
-                        <div class="span-6">
+                        <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
 							<div class="row wrapper">
 								<div class="input">
 			                        <input type="text" placeholder="Enter your e-mail name">
@@ -38,7 +38,7 @@
 		                    	</div>
 		                    </div>
                         </div>
-                        <div class="span-6">
+                        <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
                         	<div class="row wrapper">
 								<div class="input">
 			                        <input type="text" placeholder="Enter dimensions">
