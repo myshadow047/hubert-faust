@@ -40,7 +40,7 @@
                             <div class="top-nav"><?php echo $this->admin_panel->show() ?></div>
                             <div class="top-nav top-nav-right right">
                                 <ul class="menu">
-                                    <li class="status"><span class="system-time"><span class="xinix-date"></span> &#149; <span class="xinix-time"></span></span></li>
+                                    <li class="status"><span class="system-time"><!-- <span class="xinix-date"></span> &#149; <span class="xinix-time"></span> --></span></li>
                                     <li class="user-sys">
                                         <a href="<?php echo site_url("profile"); ?>"><?php echo $USER['first_name'] . ' ' . $USER['last_name'] ?></a>
                                         <ul>
@@ -70,7 +70,7 @@
                     <div class="wrapper">
                         <div id="footer-copyright" class="footer-copyright">
                             <p>
-                                Copyright &copy; 2011 <a href="http://xinix.co.id" target="blank">Xinix Technology</a>. All rights reserved.
+                                Copyright &copy; 2015 <a href="<?php echo base_url() ?>" target="blank">Hubert & Faust</a>. All rights reserved.
                                 <?php if ($CI->config->item('enable_profiler')): ?>
                                     <a href="#" id="profiler_btn">( time: {elapsed_time}, mem: {memory_usage} )</a>
                                 <?php endif ?>

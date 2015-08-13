@@ -14,88 +14,88 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('vendor/animate.css/animate.min.css') ?>">
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('themes/desktop/css/main.css') ?>" />
 </head>
+
 <body>
-    <nav class="nav-menu">
+    <nav class="nav-menu animated slideInDown">
         <div class="container">
-            <div class="pull-left">
-                <h1 class="brand">
-                    <a href="<?php echo base_url() ?>" class="desktop">Hubert &amp; Faust</a>
-                    <a href="<?php echo base_url() ?>" class="mobile">Hubert &amp; Faust</a>
-                </h1>
-                <div class="toggleDown">
-                    <div class="menu-toggle-btn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+            <div class="row">
+                <div class="pull-left">
+                    <h1 class="brand">
+                        <a href="<?php echo base_url() ?>" class="desktop">Hubert &amp; Faust</a>
+                        <a href="<?php echo base_url() ?>" class="mobile">Hubert &amp; Faust</a>
+                    </h1>
+                    <div class="toggleDown">
+                        <div class="menu-toggle-btn">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="pull-right">
-                <ul class="flat topbar">
-                    <li><a href="<?php echo base_url() ?>">Home</a></li>
-                    <li>
-                        <a class="down">Products
-                            <i class="xn xn-angle-down"></i>
-                        </a>
-                        <ul class="subMenu">
-                            <li>
-                                <a href="#">All Product</a>
-                            </li>
-                            <li>
-                                <a href="#">Category A</a>
-                            </li>
-                            <li>
-                                <a href="#">Category B</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Promo</a></li>
-                    <li><a href="#">Special Order</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+                <div class="pull-right">
+                    <ul class="flat topbar">
+                        <li><a href="<?php echo base_url() ?>">Home</a></li>
+                        <li>
+                            <a class="down">Products
+                                <i class="xn xn-angle-down"></i>
+                            </a>
+                            <ul class="subMenu">
+                                <li>
+                                    <a href="<?php echo site_url('web/product/a') ?>">Category A</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo site_url('web/product/b') ?>">Category B</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="<?php echo site_url('web/about_us') ?>">About Us</a></li>
+                        <li><a href="<?php echo site_url('web/promo') ?>">Promo</a></li>
+                        <li><a href="<?php echo site_url('web/special_order') ?>">Special Order</a></li>
+                        <li><a href="<?php echo site_url('web/contact_us') ?>">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="toggleMenu">
             <ul>
                 <li>
-                    <a href="#" class="row">
+                    <a href="<?php echo base_url() ?>" class="row">
                         <span>Home</span>
                         <i class="xn xn-angle-right"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="<?php echo site_url('web/product/a') ?>" class="row">
                         <span>Category A</span>
                         <i class="xn xn-angle-right"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="<?php echo site_url('web/product/b') ?>" class="row">
                         <span>Category B</span>
                         <i class="xn xn-angle-right"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="<?php echo site_url('web/about_us') ?>" class="row">
                         <span>About Us</span>
                         <i class="xn xn-angle-right"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="<?php echo site_url('web/promo') ?>" class="row">
                         <span>Promo</span>
                         <i class="xn xn-angle-right"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="<?php echo site_url('web/special_order') ?>" class="row">
                         <span>Special Order</span>
                         <i class="xn xn-angle-right"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="row">
+                    <a href="<?php echo site_url('web/contact_us') ?>" class="row">
                         <span>Contact Us</span>
                         <i class="xn xn-angle-right"></i>
                     </a>
@@ -104,25 +104,42 @@
         </div>
     </nav>
 
-    <section class="content">
+    <?php if ($this->uri->original_uri == 'web/product/a'): ?>
+        <section class="content container-fluid">
+    <?php elseif ($this->uri->original_uri == '/'): ?>
+        <section class="content home">
+    <?php else: ?>
+        <section class="content">
+    <?php endif ?>
         <?php echo $this->load->view($CI->_view, $CI->_data, true) ?>
-    </section>
-
-    <section class="footer">
-        <div class="container">
-            <div class="row">
-                <p class="copyright">
-                    <i class="logo"></i>
-                    <span>
-                        © 2015 Hubert &amp; Faust. Some right reserved.
-                    </span>
-                </p>
-            </div>
-        </div>
     </section>
 
     <script type="text/javascript" src="<?php echo base_url('vendor/jquery/dist/jquery.min.js') ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('vendor/owl-carousel/owl-carousel/owl.carousel.min.js') ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('themes/desktop/js/main.js') ?>"></script>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <nav class="copyLogo">
+                    <p class="copyright">
+                        <i class="logo"></i>
+                        <span>
+                            © 2015 Hubert &amp; Faust. Some right reserved.
+                        </span>
+                    </p>
+                </nav>
+                <hr>
+                <nav class="findUs">
+                    <p>Find Us On</p>
+                    <ul class="social flat">
+                        <li><a href="#" class="fb xn xn-facebook-square"></a></li>
+                        <li><a href="#" class="pin xn xn-pinterest-square"></a></li>
+                        <li><a href="#" class="ins xn xn-instagram"></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

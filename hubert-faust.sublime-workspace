@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"catego",
+				"category"
+			],
+			[
+				"cate",
+				"$categories〔variable〕"
+			],
+			[
+				"app_",
+				"app_crud_controller〔class〕"
+			],
+			[
+				"site",
+				"site_url〔function〕"
+			],
+			[
+				"bas",
+				"base_url"
+			],
+			[
 				"app_bas",
 				"app_base_model〔class〕"
 			],
@@ -157,12 +177,20 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/config/development",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/logs"
+		"/Users/apriantopramana/Sites/putra/hubert-faust"
 	],
 	"file_history":
 	[
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/views/layouts/main.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/controllers/about_us.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/layouts/web.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/config/xmenu.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/models/about_us_model.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/manifest.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/controllers/web.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/controllers/base_user_controller.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/controllers/category.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/models/category_model.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/views/user/profile.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/views/site/example.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/views/libraries/xmenu_breadcrumb.php",
@@ -280,17 +308,7 @@
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/calendar_lang.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/hooks/System_hook.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/helpers/xform_helper.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/helpers/x_helper.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/helpers/recaptcha_helper.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/helpers/format_helper.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/helpers/facebook_helper.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/helpers/chart_helper.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/core/MY_URI.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/core/MY_Security.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/core/MY_Router.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/core/MY_Output.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/core/MY_Loader.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/core/MY_Lang.php"
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/helpers/x_helper.php"
 	],
 	"find":
 	{
@@ -301,6 +319,8 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"",
+			"/Users/apriantopramana/Sites/putra/hubert-faust/themes/default",
 			""
 		]
 	},
@@ -309,6 +329,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$this->_model()",
+			"_layout_view",
+			"$this->_layout_view",
+			"xmenu_source",
+			"xinix",
+			"color:",
 			"xinix",
 			"Xinix",
 			"ganesha",
@@ -485,6 +511,30 @@
 		"selected_items":
 		[
 			[
+				"web",
+				"application/default/views/layouts/web.php"
+			],
+			[
+				"web.",
+				"application/default/views/layouts/web.php"
+			],
+			[
+				"xmen",
+				"application/default/config/xmenu.php"
+			],
+			[
+				"main.php",
+				"arch/views/layouts/main.php"
+			],
+			[
+				"layou",
+				"application/default/views/layouts/web.php"
+			],
+			[
+				"menu.",
+				"application/default/config/xmenu.php"
+			],
+			[
 				"web.php",
 				"application/default/views/layouts/web.php"
 			],
@@ -495,10 +545,6 @@
 			[
 				"sty",
 				"www/theme/css/style.css"
-			],
-			[
-				"layou",
-				"vendor/xinix-technology/bono/templates/layout.php"
 			],
 			[
 				"def",
