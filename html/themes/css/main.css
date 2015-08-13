@@ -279,7 +279,7 @@ input[type="submit"]:hover { background: #666; }
 		transition: all .3s ease;
 	}
 	.thumbView .descript span.name { font-size: 1.3em; }
-	.thumbView .hover { height: 40px; }
+	.thumbView .hover { height: 40px; display: none; }
 	.thumbView:hover .hover { display: block; }
 	.thumbView:hover .descript hr { border-color: #000; }
 	.thumbView:hover .descript span { color: #000; }
