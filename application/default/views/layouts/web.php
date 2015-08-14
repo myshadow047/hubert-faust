@@ -23,12 +23,12 @@
         <div class="container">
             <div class="row">
                 <ul class="topbar">
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="about.php">About Us</a></li>
+                    <li><a href="<?php echo base_url() ?>">Home</a></li>
+                    <li><a href="<?php echo site_url('web/about_us') ?>">About Us</a></li>
                     <li class="logo">
                         <h1 class="brand">
-                            <a href="index.php" class="desktop">Hubert &amp; Faust</a>
-                            <a href="index.php" class="mobile">Hubert &amp; Faust</a>
+                            <a href="<?php echo base_url() ?>" class="desktop">Hubert &amp; Faust</a>
+                            <a href="<?php echo base_url() ?>" class="mobile">Hubert &amp; Faust</a>
                         </h1>
                         <div class="toggleDown">
                             <div class="menu-toggle-btn">
@@ -43,39 +43,40 @@
                             <i class="xn xn-angle-down"></i>
                         </a>
                         <ul class="subMenu">
-                            <li>
-                                <a href="category.php">Category A</a>
-                            </li>
-                            <li>
-                                <a href="category.php">Category B</a>
-                            </li>
+                            <?php foreach($categories as $category): ?>
+                                <li>
+                                    <a href="<?php echo site_url('web/product/'.$category['id']) ?>"><?php echo $category['name'] ?></a>
+                                </li>
+                            <?php endforeach ?>
                         </ul>
                     </li>
-                    <li><a href="special-order.php">Special Order</a></li>
+                    <li><a href="<?php echo site_url('web/special_order') ?>">Special Order</a></li>
                 </ul>
             </div>
             <div class="toggleMenu">
                 <ul>
                     <li>
-                        <a href="about.php" class="row">
+                        <a href="<?php echo base_url() ?>" class="row">
+                            <span>Home</span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo site_url('web/about_us') ?>" class="row">
                             <span>About Us</span>
                             <i class="xn xn-angle-right"></i>
                         </a>
                     </li>
+                    <?php foreach($categories as $category): ?>
+                        <li>
+                            <a href="<?php echo site_url('web/product/'.$category['id']) ?>" class="row">
+                                <span><?php echo $category['name'] ?></span>
+                                <i class="xn xn-angle-right"></i>
+                            </a>
+                        </li>
+                    <?php endforeach ?>
                     <li>
-                        <a href="category.php" class="row">
-                            <span>Category A</span>
-                            <i class="xn xn-angle-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="category.php" class="row">
-                            <span>Category B</span>
-                            <i class="xn xn-angle-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="special-order.php" class="row">
+                        <a href="<?php echo site_url('web/special_order') ?>" class="row">
                             <span>Special Order</span>
                             <i class="xn xn-angle-right"></i>
                         </a>

@@ -4,9 +4,9 @@
 <?php include('part-head.php') ?>
 
 <body>
-    
+
     <?php include('part-header.php') ?>
-    
+
     <section class="content home">
         <article class="heroBanner">
             <div class="bannerSlide">
@@ -120,9 +120,9 @@
             </div>
         </article>
     </section>
-    
+
     <?php include('part-footer.php') ?>
-    
+
     <?php include('part-foot.php') ?>
 
 </body>
