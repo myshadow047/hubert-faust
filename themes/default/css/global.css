@@ -1053,7 +1053,6 @@ Last update : January, 12 2012
     border-bottom: 1px solid #000;
     padding: 5px 10px;
     overflow: hidden;
-    white-space: nowrap;
   }
   .the-content table.grid tr td > table {
     display: table;
