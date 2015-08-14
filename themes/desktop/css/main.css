@@ -105,13 +105,11 @@ hr { border-color: #000; }
 .inputArea .input input,
 .inputArea .input textarea { border: 1px solid #000; border-radius: 0; color: #303030; padding: 10px; font-weight: 400; }
 
-
 .about { text-align: center; }
 .about .logo { background: url(../img/logo.png) center no-repeat; background-size: contain; width: 160px; height: 100px; display: inline-block; margin-bottom: 20px; }
 .about .aboutContent { padding: 0 15px }
 .about .aboutContent hr { width: 30px; margin: 20px auto; }
 .about p { font-size: 1em; }
-
 
 .error ::-webkit-input-placeholder { color: red; }
 .error :-moz-placeholder { color: red; }
@@ -231,11 +229,8 @@ input[type="submit"]:hover { background: #666; }
 
 	.nav-menu .brand a.mobile { display: none; }
 	.nav-menu .brand a.desktop { display: inline-block; }
-
 	.nav-menu ul.topbar>li { display: inline-block; }
-
 	.nav-menu ul.topbar>li.logo { margin: 0 60px; width: auto; }
-
 	.nav-menu .pull-left { float: left; }
 	.nav-menu .pull-left h1 { float: left; display: block; }
 	.toggleDown { display: none; }
@@ -276,7 +271,6 @@ input[type="submit"]:hover { background: #666; }
 	.productView .thumbView .desc  { position: absolute; top: 50%; left: 0; right: 0; margin-top: -32px; padding: 0; }
 	.productView .thumbView .desc .category { font-size: 0.8em; display: inline-block; max-width: 100%; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #fff; }
 	.productView .thumbView .desc .name { font-size: 1.6em; white-space: normal; line-height: 120%; }
-
 
 	.thumbnails { padding: 1px; }
 	.thumbnails .thumbArea { padding: 1px; }
