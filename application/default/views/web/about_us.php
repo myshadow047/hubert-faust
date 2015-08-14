@@ -5,6 +5,6 @@
 <article class="about">
     <div class="container">
         <h2>Who we are?</h2>
-        <?php echo isset($about_us['about_us'])? $about_us['about_us'] : '' ?>
+        <p><?php echo isset($about_us['about_us'])? $about_us['about_us'] : '' ?></p>
     </div>
 </article>
