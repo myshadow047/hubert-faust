@@ -6,5 +6,6 @@
 */cache/!.htaccess
 .DS_Store
 
-application/default/logs
-application/default/cache
+application/default/logs/*
+application/default/cache/*
+application/default/config/development/databases.php

@@ -104,6 +104,14 @@ hr { border-color: #000; }
 .inputArea .input input,
 .inputArea .input textarea { border: 1px solid #000; border-radius: 0; color: #303030; padding: 10px; font-weight: 400; }
 
+
+.error ::-webkit-input-placeholder { color: red }
+.error :-moz-placeholder { color: red }
+.error ::-moz-placeholder { color: red }
+.error :-ms-input-placeholder { color: red }
+.error input,
+.error textarea { border-color: red!important; }
+
 .uploadArea ul { margin: 0 auto; padding: 0 15px; }
 .uploadArea ul li { display: table; line-height: 0; margin: 3px; }
 .uploadArea ul li:last-child { margin: 3px; }

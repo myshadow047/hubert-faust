@@ -29,16 +29,33 @@ class web extends app_crud_controller {
 
     }
 
-    function product($category) {
-        $sql = 'SELECT * FROM product p LEFT JOIN product_image pi ON p.id = pi.product WHERE p.category = ?';
-        $products = $this->db->query($sql, array(1))->result_array();
+    function product($category_id) {
+        $where = array('status' => 1, 'id' => $category_id);
+        $category = $this->db->get_where('category', $where)->row_array();
+        $this->_data['category'] = $category;
 
+        $sql = 'SELECT
+                    pi.product,
+                    p.category,
+                    p.name,
+                    p.description,
+                    p.ingredient,
+                    p.dimention,
+                    pi.image_name
+                FROM product p LEFT JOIN product_image pi ON p.id = pi.product WHERE p.category = ? GROUP BY pi.product';
+
+        $products = $this->db->query($sql, array($category_id))->result_array();
         $this->_data['products'] = $products;
     }
 
     function detail_product($category, $product_id) {
-        $sql = 'SELECT * FROM product p LEFT JOIN product_image pi ON p.id = pi.product WHERE p.id = ?';
-        $product = $this->db->query($sql, array($product_id))->row_array();
+        $where = array('status' => 1, 'id' => $product_id);
+        $product = $this->db->get_where('product', $where)->row_array();
+
+        $where = array('status' => 1, 'product' => $product_id);
+        $product_image = $this->db->get_where('product_image', $where)->result_array();
+
+        $product['images'] = $product_image;
 
         $this->_data['product'] = $product;
     }

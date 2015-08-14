@@ -4,7 +4,7 @@
 </div>
 <article class="request">
     <div class="container">
-        <form method="post" action="<?php echo site_url('special_order/request') ?>" enctype="multipart/form-data">
+        <form id="form-special-order" method="post" action="<?php echo site_url('special_order/request') ?>" enctype="multipart/form-data">
             <div class="row inputArea">
                 <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
                     <div class="row wrapper">
@@ -94,13 +94,57 @@
     </div>
 </article>
 
-
-
 <script type="text/javascript">
     $(function(){
-        $('.imageArea a').off('click').on('click', function(){
-            $(this).parent().parent().find('input[type="file"]').trigger('click');
+        $('form#form-special-order').on('submit', function(e){
+            var data = $(this).serializeArray();
+            var error = 0;
+            var names = [];
 
+            $.each(data, function(k, v){
+                if (v.value.trim() == ''){
+                    error++;
+                    names.push(v.name);
+                }
+            });
+
+            if (error > 0) {
+                $("html, body").animate({ scrollTop: 0 });
+
+                setTimeout(function(){
+                    $.each(names, function(k, v){
+                        $('input[name="'+v+'"], textarea[name="'+v+'"]').parent().addClass('animated shake error');
+                    });
+                }, 500);
+
+                setTimeout(function(){
+                    $.each(names, function(k, v){
+                        $('input[name="'+v+'"], textarea[name="'+v+'"]').parent().removeClass('animated shake');
+                    });
+                }, 1000);
+
+                return false;
+            }
+        });
+
+        $('form#form-special-order input, form#form-special-order textarea').on('focus', function(e){
+            $(e.target).parent().removeClass('animated shake error');
+        });
+
+        $('.imageArea a').off('click').on('click', function(){
+            if ($(this).hasClass('not-trigger')) {
+                $(this).parent().parent().find('input[type="file"]').parent().find('div.image').addClass('empty');
+                $(this).parent().parent().find('input[type="file"]').parent().find('div.image').css({
+                    'background': 'url(<?php echo base_url("themes/desktop/img/banner3.jpg") ?>) center no-repeat',
+                    'background-size': 'cover'
+                });
+                $(this).html('+');
+                $(this).removeClass('not-trigger');
+            } else {
+                $(this).parent().parent().find('input[type="file"]').trigger('click');
+            }
+
+            var those = this;
             $(this).parent().parent().find('input[type="file"]').change(function () {
                 if (this.files && this.files[0]) {
                     var reader = new FileReader();
@@ -111,20 +155,12 @@
                             'background': 'url('+e.target.result+') center no-repeat',
                             'background-size': 'cover'
                         });
+                        $(those).html('-');
+                        $(those).addClass('not-trigger');
                     };
                     reader.readAsDataURL(this.files[0]);
                 }
             });
         });
-
-
-        function imageIsLoaded(e) {
-            console.log(e);
-            $('div#display-image1').removeClass('empty');
-            $('#display-image1').css('background', 'url('+e.target.result+') center no-repeat; background-size: cover;');
-        };
     });
 </script>
-
-
-

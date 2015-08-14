@@ -1,6 +1,6 @@
 <div class="label">
     <hr>
-    <h4>Detail</h4>
+    <h4>Detail <?php echo $product['name'] ?></h4>
 </div>
 <article class="detail">
     <div class="container">
@@ -8,63 +8,34 @@
             <div class="xlarge-6 large-6 medium-6 small-12 tiny-12 detailContent">
                 <div class="wrapper">
                     <div class="imageDetail">
-                        <div class="easyzoom easyzoom--overlay">
-                            <a href="<?php echo base_url('themes/desktop/img/banner3.jpg') ?>">
-                                <div class="image" style="background: url(<?php echo base_url('themes/desktop/img/banner3.jpg') ?>) center no-repeat; background-size: cover;"></div>
-                            </a>
-                        </div>
-
-                        <div class="easyzoom easyzoom--overlay">
-                            <a href="<?php echo base_url('themes/desktop/img/banner4.jpg') ?>">
-                                <div class="image" style="background: url(<?php echo base_url('themes/desktop/img/banner4.jpg') ?>) center no-repeat; background-size: cover;"></div>
-                            </a>
-                        </div>
-
-                        <div class="easyzoom easyzoom--overlay">
-                            <a href="<?php echo base_url('themes/desktop/img/banner1.jpg') ?>">
-                                <div class="image" style="background: url(<?php echo base_url('themes/desktop/img/banner1.jpg') ?>) center no-repeat; background-size: cover;"></div>
-                            </a>
-                        </div>
-
-                        <div class="easyzoom easyzoom--overlay">
-                            <a href="<?php echo base_url('themes/desktop/img/banner2.jpg') ?>">
-                                <div class="image" style="background: url(<?php echo base_url('themes/desktop/img/banner2.jpg') ?>) center no-repeat; background-size: cover;"></div>
-                            </a>
-                        </div>
+                        <?php foreach($product['images'] as $image): ?>
+                            <div class="easyzoom easyzoom--overlay">
+                                <a href="<?php echo base_url('data/product/image/'.$image['image_name']) ?>">
+                                    <div class="image" style="background: url(<?php echo base_url('data/product/image/'.$image['image_name']) ?>) center no-repeat; background-size: cover;"></div>
+                                </a>
+                            </div>
+                        <?php endforeach ?>
                     </div>
                 </div>
             </div>
             <div class="xlarge-6 large-6 medium-6 small-12 tiny-12 detailContent">
                 <div class="wrapper">
                     <div class="detailDesc">
-                        <h3>Product Name</h3>
+                        <h3><?php echo $product['name'] ?></h3>
                         <h6>Product Description</h6>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud.
+                            <?php echo $product['description'] ?>
                         </p>
                         <hr>
                         <h6>Product Ingredients</h6>
                         <p>
-                            Wood, Silver leaf with translucent black, high Gloss Varnish.
+                            <?php echo $product['ingredient'] ?>
                         </p>
                         <hr>
                         <h6>Dimentions</h6>
-                        <ul>
-                            <li>
-                                <p>W 70 cm</p>
-                            </li>
-                            <li>
-                                <p>27,60'' D 48 cm</p>
-                            </li>
-                            <li>
-                                <p>19'' H 86 cm</p>
-                            </li>
-                            <li>
-                                <p>33,90''</p>
-                            </li>
-                        </ul>
+                        <p>
+                            <?php echo $product['dimention'] ?>
+                        </p>
                         <hr>
                         <h6>Share</h6>
                         <ul class="share flat">

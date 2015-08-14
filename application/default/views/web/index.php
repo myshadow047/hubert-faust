@@ -86,18 +86,18 @@
                 <div class="contactUs">
                     <div class="rowInner">
                         <h3><i class="xn xn-envelope-o"></i>Email us:</h3>
-                        <a href="mailto:mail@hubertfaust.com"><?php echo $contact_us['email'] ?></a>
+                        <a href="mailto:mail@hubertfaust.com"><?php echo isset($contact_us['email'])? $contact_us['email'] : '' ?></a>
                     </div>
                     <hr>
                     <div class="rowInner">
                         <h3><i class="xn xn-mobile"></i>Call us:</h3>
-                        <a href="tel:+622188888888"><?php echo $contact_us['phone'] ?></a>
+                        <a href="tel:+622188888888"><?php echo isset($contact_us['phone'])? $contact_us['phone'] : '' ?></a>
                     </div>
                     <hr>
                     <div class="rowInner">
                         <h3><i class="xn xn-map-marker"></i>Address:</h3>
                         <p class="">
-                            <?php echo $contact_us['address'] ?>
+                            <?php echo isset($contact_us['address'])? $contact_us['address'] : '' ?>
                         </p>
                     </div>
                 </div>

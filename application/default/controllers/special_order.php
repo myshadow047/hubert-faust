@@ -17,7 +17,7 @@ class special_order extends app_crud_controller {
             try {
                 $id = $this->_model()->save($_POST, $id);
 
-                if ($_FILES['special_order_image']['name'][0] ) {
+                if (array_filter($_FILES['special_order_image']['name'])) {
                     foreach ($_FILES as $k => $file) {
                         $this->upload->do_upload('special_order_image');
                         $images = $this->upload->data();

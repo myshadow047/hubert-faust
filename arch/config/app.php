@@ -2,7 +2,7 @@
 
 $config = array(
 	'app_id'            => 'arch_php',
-	'page_title'        => 'Archetype PHP',
+	'page_title'        => 'Hubert & Faust',
 	'theme'             => 'bootstrap',
 	'lang_force'        => false,
 	'enable_profiler'   => true,
