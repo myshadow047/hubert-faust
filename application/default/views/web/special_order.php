@@ -6,7 +6,7 @@
     <div class="container">
         <form method="post" action="<?php echo site_url('special_order/request') ?>" enctype="multipart/form-data">
             <div class="row inputArea">
-                <div class="span-6">
+                <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
                     <div class="row wrapper">
                         <div class="input">
                             <input type="text" name="name" placeholder="Enter your name">
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="span-6">
+                <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
                     <div class="row wrapper">
                         <div class="input">
                             <input type="text" name="dimension" placeholder="Enter dimensions">

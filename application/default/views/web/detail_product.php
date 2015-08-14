@@ -5,7 +5,7 @@
 <article class="detail">
     <div class="container">
         <div class="row">
-            <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
+            <div class="xlarge-6 large-6 medium-6 small-12 tiny-12 detailContent">
                 <div class="wrapper">
                     <div class="imageDetail">
                         <div class="easyzoom easyzoom--overlay">
@@ -31,12 +31,10 @@
                                 <div class="image" style="background: url(<?php echo base_url('themes/desktop/img/banner2.jpg') ?>) center no-repeat; background-size: cover;"></div>
                             </a>
                         </div>
-
-
                     </div>
                 </div>
             </div>
-            <div class="xlarge-6 large-6 medium-6 small-12 tiny-12">
+            <div class="xlarge-6 large-6 medium-6 small-12 tiny-12 detailContent">
                 <div class="wrapper">
                     <div class="detailDesc">
                         <h3>Product Name</h3>
