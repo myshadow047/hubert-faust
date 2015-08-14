@@ -92,7 +92,8 @@ hr { border-color: #000; }
 .detail .share a { width: 80px; display: block; text-align: center; line-height: 100%; padding: 12px 0; font-size: 1.4em; }
 
 .request,
-.detail { margin-bottom: 30px; }
+.detail,
+.about { margin-bottom: 30px; }
 
 .inputArea { padding: 0 15px; }
 .inputArea ::-webkit-input-placeholder { color: rgba(48, 48, 48, 0.6); }
@@ -105,10 +106,17 @@ hr { border-color: #000; }
 .inputArea .input textarea { border: 1px solid #000; border-radius: 0; color: #303030; padding: 10px; font-weight: 400; }
 
 
-.error ::-webkit-input-placeholder { color: red }
-.error :-moz-placeholder { color: red }
-.error ::-moz-placeholder { color: red }
-.error :-ms-input-placeholder { color: red }
+.about { text-align: center; }
+.about .logo { background: url(../img/logo.png) center no-repeat; background-size: contain; width: 160px; height: 100px; display: inline-block; margin-bottom: 20px; }
+.about .aboutContent { padding: 0 15px }
+.about .aboutContent hr { width: 30px; margin: 20px auto; }
+.about p { font-size: 1em; }
+
+
+.error ::-webkit-input-placeholder { color: red; }
+.error :-moz-placeholder { color: red; }
+.error ::-moz-placeholder { color: red; }
+.error :-ms-input-placeholder { color: red; }
 .error input,
 .error textarea { border-color: red!important; }
 
@@ -119,7 +127,7 @@ hr { border-color: #000; }
 .uploadArea .imageArea .image { display: block; height: 100%; }
 .uploadArea .imageArea .image.empty { display: none!important; }
 .uploadArea .imageArea .bg { position: absolute; top: 0; right: 0; bottom: 0; left: 0; background: rgba(255, 255, 255, 0.6); }
-.uploadArea .imageArea .buttonUpload { font-size: 6em; line-height: 138px; font-weight: 100; text-align: center; display: block; color: #000; }
+.uploadArea .imageArea .buttonUpload { font-size: 6em; line-height: 138px; font-weight: 100; text-align: center; display: block; color: #000; cursor: pointer; }
 .uploadArea .more .imageArea .bg { background: #000; }
 .uploadArea .more .imageArea .buttonUpload { color: #fff; }
 
@@ -320,7 +328,12 @@ input[type="submit"]:hover { background: #666; }
 	.detail .share a { width: 100px; }
 
 	.request,
-	.detail { margin-bottom: 50px; }
+	.detail,
+	.about { margin-bottom: 50px; }
+	
+	.about .aboutContent { display: inline-block; width: 70%; padding: 0; }
+	.about .logo { width: 200px; height: 120px; margin-bottom: 40px; }
+	.about p { font-size: 1.2em; }
 
 	.inputArea { padding: 0; }
 	.inputArea .wrapper { padding: 0 20px; }
