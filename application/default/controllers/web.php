@@ -44,7 +44,9 @@ class web extends app_crud_controller {
     }
 
     function about_us() {
-
+        $where = array('status' => 1);
+        $about_us = $this->db->get_where('about_us', $where)->row_array();
+        $this->_data['about_us'] = $about_us;
     }
 
     function contact_us() {
