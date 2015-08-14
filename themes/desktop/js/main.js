@@ -5,7 +5,7 @@ $(function() {
 	});
 
 	$(".toggleDown").click(function(){
-		$(this).toggleClass("toggleDrawer").parent().parent().siblings(".toggleMenu").slideToggle(128);
+		$(this).toggleClass("toggleDrawer").parent().parent().parent().siblings(".toggleMenu").slideToggle(128);
 	});
 
 	$(".heroBanner").owlCarousel({
@@ -36,6 +36,20 @@ $(function() {
 			[1600, 1],
 		],
 		autoPlay : false,
+		pagination: true,
+		navigation: false
+	});
+
+	$(".thumbView.promo .slideImage").owlCarousel({
+		itemsCustom : [
+			[0, 1],
+			[480, 1],
+			[768, 1],
+			[1024, 1],
+			[1400, 1],
+			[1600, 1],
+		],
+		autoPlay : true,
 		pagination: true,
 		navigation: false
 	});

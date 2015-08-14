@@ -18,91 +18,70 @@
 </head>
 
 <body>
+
     <nav class="nav-menu animated slideInDown">
         <div class="container">
             <div class="row">
-                <div class="pull-left">
-                    <h1 class="brand">
-                        <a href="<?php echo base_url() ?>" class="desktop">Hubert &amp; Faust</a>
-                        <a href="<?php echo base_url() ?>" class="mobile">Hubert &amp; Faust</a>
-                    </h1>
-                    <div class="toggleDown">
-                        <div class="menu-toggle-btn">
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                <ul class="topbar">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="about.php">About Us</a></li>
+                    <li class="logo">
+                        <h1 class="brand">
+                            <a href="index.php" class="desktop">Hubert &amp; Faust</a>
+                            <a href="index.php" class="mobile">Hubert &amp; Faust</a>
+                        </h1>
+                        <div class="toggleDown">
+                            <div class="menu-toggle-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="pull-right">
-                    <ul class="flat topbar">
-                        <li><a href="<?php echo base_url() ?>">Home</a></li>
-                        <li>
-                            <a class="down">Products
-                                <i class="xn xn-angle-down"></i>
-                            </a>
-                            <ul class="subMenu">
-                                <li>
-                                    <a href="<?php echo site_url('web/product/a') ?>">Category A</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo site_url('web/product/b') ?>">Category B</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="<?php echo site_url('web/about_us') ?>">About Us</a></li>
-                        <li><a href="<?php echo site_url('web/promo') ?>">Promo</a></li>
-                        <li><a href="<?php echo site_url('web/special_order') ?>">Special Order</a></li>
-                        <li><a href="<?php echo site_url('web/contact_us') ?>">Contact Us</a></li>
-                    </ul>
-                </div>
+                    </li>
+                    <li>
+                        <a class="down">Products
+                            <i class="xn xn-angle-down"></i>
+                        </a>
+                        <ul class="subMenu">
+                            <li>
+                                <a href="category.php">Category A</a>
+                            </li>
+                            <li>
+                                <a href="category.php">Category B</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="special-order.php">Special Order</a></li>
+                </ul>
             </div>
-        </div>
-        <div class="toggleMenu">
-            <ul>
-                <li>
-                    <a href="<?php echo base_url() ?>" class="row">
-                        <span>Home</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/product/a') ?>" class="row">
-                        <span>Category A</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/product/b') ?>" class="row">
-                        <span>Category B</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/about_us') ?>" class="row">
-                        <span>About Us</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/promo') ?>" class="row">
-                        <span>Promo</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/special_order') ?>" class="row">
-                        <span>Special Order</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="<?php echo site_url('web/contact_us') ?>" class="row">
-                        <span>Contact Us</span>
-                        <i class="xn xn-angle-right"></i>
-                    </a>
-                </li>
-            </ul>
+            <div class="toggleMenu">
+                <ul>
+                    <li>
+                        <a href="about.php" class="row">
+                            <span>About Us</span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="category.php" class="row">
+                            <span>Category A</span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="category.php" class="row">
+                            <span>Category B</span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="special-order.php" class="row">
+                            <span>Special Order</span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -133,7 +112,7 @@
                 </nav>
                 <hr>
                 <nav class="findUs">
-                    <p>Find Us On</p>
+                    <p>Get in touch</p>
                     <ul class="social flat">
                         <li><a href="#" class="fb xn xn-facebook-square"></a></li>
                         <li><a href="#" class="pin xn xn-pinterest-square"></a></li>
