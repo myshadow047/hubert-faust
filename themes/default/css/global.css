@@ -878,6 +878,9 @@ Last update : January, 12 2012
   .the-content form fieldset textarea { width: 80%; float: left; }
 
   .the-content form fieldset div { display: table; width: 100%; margin-bottom: 10px; }
+  .the-content form fieldset .input-append { width: 80%; }
+  .the-content form fieldset .input-append input[type="password"] { width: 70%; }
+  .the-content form fieldset .input-append input[type="button"] { margin-left: 0; padding: 10px 40px; font-size: 1.2em; width: 30%; }
   
   .the-content form #body_parent,
   .the-content form #body_container {
@@ -1470,42 +1473,16 @@ Last update : January, 12 2012
     top: 40px;
     position: fixed;
     left:0;
-    -webkit-opacity: 0.9;
-    -khtml-opacity: 0.9;
-    -moz-opacity: 0.9;
-    -ms-opacity: 0.9;
-    -o-opacity: 0.9;
-    opacity: 0.9;
-	pointer-events:none;
+    pointer-events:none;
   }
   .pop-message .content {
+    border: 1px solid #1d9d74!important;
+    background: #f1f9f7!important;
     position: relative;
     margin: 0 auto;
     padding: 7px 10px 7px 20px;
     display: table;
-    border-color: #eedc94 #eedc94 #e4c652;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    background-repeat: repeat-x;
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #fceec1;
-    background-image: -webkit-linear-gradient(top, #fceec1, #eedc94);
-    background-image: -moz-linear-gradient(top, #fceec1, #eedc94);
-    background-image: -ms-linear-gradient(top, #fceec1, #eedc94);
-    background-image: -o-linear-gradient(top, #fceec1, #eedc94);
-    background-image: linear-gradient(top, #fceec1, #eedc94);
-    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    -khtml-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    -ms-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    -o-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-	pointer-events:auto;
+    pointer-events:auto;
   }
   .pop-message .text {
     float: left;
@@ -1516,8 +1493,7 @@ Last update : January, 12 2012
   .pop-message .text p {
     line-height: 20px;
     font-size: 12px;
-    color: #404040;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    color: #1d9d74;
   }
   .pop-message .text p {
     padding: 0 5px 0 0;
@@ -1530,15 +1506,9 @@ Last update : January, 12 2012
     text-align: right;
     margin-left: 25px;
     font-size: 18px;
-    line-height: 20px;
     font-weight: bold;
-    color: #404040;
-    -webkit-opacity: 0.4;
-    -khtml-opacity: 0.4;
-    -moz-opacity: 0.4;
-    -ms-opacity: 0.4;
-    -o-opacity: 0.4;
-    opacity: 0.4;
+    color: #666;
+    line-height: 15px;
     cursor: pointer;
   }
   .pop-message .close:hover {
@@ -1550,7 +1520,16 @@ Last update : January, 12 2012
     opacity: 0.75;
   }
   .error .content {
-    border-color: #c43c35 #c43c35 #882a25;
+    border: 1px solid #ff3b30!important;
+    background: #ffdce6!important;
+    position: relative;
+    margin: 0 auto;
+    padding: 7px 10px 7px 20px;
+    display: table;
+    pointer-events:auto;
+
+
+    /*border-color: #c43c35 #c43c35 #882a25;
     background-repeat: repeat-x;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     background: url("../img/grad-up.png") 0 0 repeat-x;
@@ -1559,12 +1538,11 @@ Last update : January, 12 2012
     background-image: -moz-linear-gradient(top, #ee5f5b, #c43c35);
     background-image: -ms-linear-gradient(top, #ee5f5b, #c43c35);
     background-image: -o-linear-gradient(top, #ee5f5b, #c43c35);
-    background-image: linear-gradient(top, #ee5f5b, #c43c35);
+    background-image: linear-gradient(top, #ee5f5b, #c43c35);*/
   }
   .error .text,
   .error .text p {
-    color: #ffffff;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    color: #ff3b30!important;
   }
   /* Loading */
   #loading {

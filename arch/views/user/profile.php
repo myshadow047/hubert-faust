@@ -13,6 +13,8 @@ echo $this->admin_panel->breadcrumb(array(
 ))
 ?>
 
+<div class="clearfix clear"></div>
+
 <style type="text/css">
     #profile-fieldset { position: relative; }
     #profile-fieldset img {
