@@ -21,7 +21,8 @@
 
                 <?php /* Put your logo here inside div.logo */ ?>
                 <div class="logo">
-                    <div class="title">Administrator<br/>Hubert & Faust</div>
+                    <div class="logoImage"></div>
+                    <hr>
                 </div>
 
                 <?php if (!$CI->config->item('use_db')): ?>
@@ -36,7 +37,8 @@
                 <div>
                     <input type="password" name="password" value="" placeholder="<?php echo l('Password') ?>" />
                 </div>
-                <div style="padding-top:10px">
+                <hr>
+                <div>
                     <input type="hidden" name="continue" value="" />
                     <input type="submit" value="Login" />
                 </div>

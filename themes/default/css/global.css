@@ -183,117 +183,13 @@ Last update : January, 12 2012
   /* Main layout, the one who hold them up */
   .layout {
     min-width: 950px;
-    background-color: #f9f9f9;
-  }
-  .login {
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #5dabd9;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5dabd9), color-stop(100%, #b0d6ec));
-    background-image: -webkit-linear-gradient(top, #5dabd9, #b0d6ec);
-    background-image: -moz-linear-gradient(top, #5dabd9, #b0d6ec);
-    background-image: -ms-linear-gradient(top, #5dabd9, #b0d6ec);
-    background-image: -o-linear-gradient(top, #5dabd9, #b0d6ec);
-    background-image: linear-gradient(top, #5dabd9, #b0d6ec);
   }
   .login .pop-message {
     top: 10px;
   }
-  /* Cloud Animation, don't change this, please */
-  .cloud1 {
-    width: 100%;
-    min-height: 100%;
-    background: url("../img/cloud3.png") 50% -200px repeat;
-  }
-  .cloud2 {
-    width: 100%;
-    min-height: 100%;
-    background: url("../img/cloud3.png") 50% 0 repeat;
-  }
-  .cloud3 {
-    width: 100%;
-    min-height: 100%;
-    background: url("../img/cloud1.png") 50% 200px repeat;
-  }
-  .cloud4 {
-    width: 100%;
-    min-height: 100%;
-    background: url("../img/cloud1.png") 50% 400px repeat;
-  }
-  .cloud5 {
-    width: 100%;
-    min-height: 100%;
-    background: url("../img/cloud2.png") 50% 600px repeat;
-  }
-  .cloud6 {
-    width: 100%;
-    min-height: 100%;
-    background: url("../img/cloud2.png") 50% 800px repeat;
-  }
-  .safari .cloud1,
-  .chrome .cloud1 {
-    -webkit-animation: bgslide1 180s infinite linear;
-    -khtml-animation: bgslide1 180s infinite linear;
-    -moz-animation: bgslide1 180s infinite linear;
-    -ms-animation: bgslide1 180s infinite linear;
-    -o-animation: bgslide1 180s infinite linear;
-    animation: bgslide1 180s infinite linear;
-  }
-  .safari .cloud2,
-  .chrome .cloud2 {
-    -webkit-animation: bgslide2 140s infinite linear;
-    -khtml-animation: bgslide2 140s infinite linear;
-    -moz-animation: bgslide2 140s infinite linear;
-    -ms-animation: bgslide2 140s infinite linear;
-    -o-animation: bgslide2 140s infinite linear;
-    animation: bgslide2 140s infinite linear;
-  }
-  .safari .cloud3,
-  .chrome .cloud3 {
-    -webkit-animation: bgslide3 140s infinite linear;
-    -khtml-animation: bgslide3 140s infinite linear;
-    -moz-animation: bgslide3 140s infinite linear;
-    -ms-animation: bgslide3 140s infinite linear;
-    -o-animation: bgslide3 140s infinite linear;
-    animation: bgslide3 140s infinite linear;
-  }
-  .safari .cloud4,
-  .chrome .cloud4 {
-    -webkit-animation: bgslide1 60s infinite linear;
-    -khtml-animation: bgslide1 60s infinite linear;
-    -moz-animation: bgslide1 60s infinite linear;
-    -ms-animation: bgslide1 60s infinite linear;
-    -o-animation: bgslide1 60s infinite linear;
-    animation: bgslide1 60s infinite linear;
-  }
-  .safari .cloud5,
-  .chrome .cloud5 {
-    -webkit-animation: bgslide2 20s infinite linear;
-    -khtml-animation: bgslide2 20s infinite linear;
-    -moz-animation: bgslide2 20s infinite linear;
-    -ms-animation: bgslide2 20s infinite linear;
-    -o-animation: bgslide2 20s infinite linear;
-    animation: bgslide2 20s infinite linear;
-  }
-  .safari .cloud6,
-  .chrome .cloud6 {
-    -webkit-animation: bgslide3 140s infinite linear;
-    -khtml-animation: bgslide3 140s infinite linear;
-    -moz-animation: bgslide3 140s infinite linear;
-    -ms-animation: bgslide3 140s infinite linear;
-    -o-animation: bgslide3 140s infinite linear;
-    animation: bgslide3 140s infinite linear;
-  }
   /* Common layout */
   .layout-header {
     padding: 0;
-    -webkit-opacity: 0.95;
-    -khtml-opacity: 0.95;
-    -moz-opacity: 0.95;
-    -ms-opacity: 0.95;
-    -o-opacity: 0.95;
-    opacity: 0.95;
-    background: url("../img/drop-shadow.png") 0 bottom repeat-x;
-    height: 50px;
     position: absolute;
     top: 0;
     left: 0;
@@ -303,13 +199,7 @@ Last update : January, 12 2012
   .layout-header .wrapper {
     display: table;
     width: 100%;
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #3496cf;
-    background-image: -webkit-linear-gradient(top, #3496cf, #236a94);
-    background-image: -moz-linear-gradient(top, #3496cf, #236a94);
-    background-image: -ms-linear-gradient(top, #3496cf, #236a94);
-    background-image: -o-linear-gradient(top, #3496cf, #236a94);
-    background-image: linear-gradient(top, #3496cf, #236a94);
+    background: #000;
   }
   /* Top navigation */
   .text-colours {
@@ -407,16 +297,10 @@ Last update : January, 12 2012
   .top-nav ul li.hover ul {
     display: block;
     position: absolute;
-    background-color: #404040;
+    background-color: #000;
     margin: 0;
     width: 210px;
     padding: 0;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
-    -khtml-box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
-    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
-    -ms-box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
-    -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.65);
   }
   .top-nav ul li.hover ul ul {
     display: none;
@@ -475,7 +359,7 @@ Last update : January, 12 2012
     float: right;
     position: absolute;
     right: 0;
-    background: -webkit-linear-gradient(top, #3496CF, #236A94) 0 0 repeat-x #3496CF;
+    background: #000;
     display: block;
   }
   .top-nav-right ul li.first a {
@@ -483,7 +367,7 @@ Last update : January, 12 2012
     display: block;
     text-indent: 0;
     width: auto;
-    padding: 0 15px;
+    padding: 5px 15px;
   }
   .top-nav-right ul li.hover ul {
     right: 0;
@@ -574,25 +458,7 @@ Last update : January, 12 2012
     font-weight: bold;
   }
   .layout-footer .footer-copyright {
-    -webkit-opacity: 0.85;
-    -khtml-opacity: 0.85;
-    -moz-opacity: 0.85;
-    -ms-opacity: 0.85;
-    -o-opacity: 0.85;
-    opacity: 0.85;
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #194c6b;
-    background-image: -webkit-linear-gradient(top, #194c6b, #2879a8);
-    background-image: -moz-linear-gradient(top, #194c6b, #2879a8);
-    background-image: -ms-linear-gradient(top, #194c6b, #2879a8);
-    background-image: -o-linear-gradient(top, #194c6b, #2879a8);
-    background-image: linear-gradient(top, #194c6b, #2879a8);
-    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -khtml-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -ms-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #000;
     padding: 0;
     bottom: 0;
     position: absolute;
@@ -669,58 +535,17 @@ Last update : January, 12 2012
   }
   .the-content .button {
     float: left;
-    padding: 3px 10px;
+    border: 0;
+    border-radius: 0;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
     margin: 0;
-    cursor: pointer;
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #f2f2f2;
-    background-image: -webkit-linear-gradient(top, #f2f2f2, #cccccc);
-    background-image: -moz-linear-gradient(top, #f2f2f2, #cccccc);
-    background-image: -ms-linear-gradient(top, #f2f2f2, #cccccc);
-    background-image: -o-linear-gradient(top, #f2f2f2, #cccccc);
-    background-image: linear-gradient(top, #f2f2f2, #cccccc);
-    color: #404040;
-    text-shadow: 0 1px 1px #ffffff;
-    border: 1px solid;
-    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-    border-color: rgba(0, 0, 0, 0.025) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.35);
+    padding: 8px 20px;
+    line-height: 100%;
   }
-  .the-content .button.first {
-    -webkit-border-radius: 5px 0 0 5px;
-    -khtml-border-radius: 5px 0 0 5px;
-    -moz-border-radius: 5px 0 0 5px;
-    -ms-border-radius: 5px 0 0 5px;
-    -o-border-radius: 5px 0 0 5px;
-    border-radius: 5px 0 0 5px;
-  }
-  .the-content .button.last {
-    -webkit-border-radius: 0 5px 5px 0;
-    -khtml-border-radius: 0 5px 5px 0;
-    -moz-border-radius: 0 5px 5px 0;
-    -ms-border-radius: 0 5px 5px 0;
-    -o-border-radius: 0 5px 5px 0;
-    border-radius: 0 5px 5px 0;
-  }
-  .the-content .button.first.last {
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-  }
-  .the-content .button.hover,
-  .the-content .button:hover {
-    text-decoration: none;
-    background-color: #b3b3b3;
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #e6e6e6;
-    background-image: -webkit-linear-gradient(top, #e6e6e6, #b3b3b3);
-    background-image: -moz-linear-gradient(top, #e6e6e6, #b3b3b3);
-    background-image: -ms-linear-gradient(top, #e6e6e6, #b3b3b3);
-    background-image: -o-linear-gradient(top, #e6e6e6, #b3b3b3);
-    background-image: linear-gradient(top, #e6e6e6, #b3b3b3);
-  }
+  .the-content .button.btn-danger { background: #ff0000; }
+
   .the-content .button.pressed {
     -webkit-box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
     -khtml-box-shadow: 0 2px 5px rgba(0,0,0,0.5) inset;
@@ -807,7 +632,7 @@ Last update : January, 12 2012
     font-weight: bold;
   }
   .the-content fieldset {
-    border: 1px solid #e6e6e6;
+    border: 1px solid #000;
     padding: 30px 20px 10px;
     margin: 30px 0 10px;
     background-color: #f5f5f5;
@@ -827,45 +652,16 @@ Last update : January, 12 2012
   }
   .the-content fieldset legend {
     position: absolute;
-    background-color: #ff9933;
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #ffd9b3;
-    background-image: -webkit-linear-gradient(top, #ffd9b3, #ff9933);
-    background-image: -moz-linear-gradient(top, #ffd9b3, #ff9933);
-    background-image: -ms-linear-gradient(top, #ffd9b3, #ff9933);
-    background-image: -o-linear-gradient(top, #ffd9b3, #ff9933);
-    background-image: linear-gradient(top, #ffd9b3, #ff9933);
+    background: #000;
     color: #ffffff;
     padding: 5px 40px;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.35);
     font-size: 1.1em;
     margin: -45px 0 0 0;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 1px 3px #b3b3b3;
-    -khtml-box-shadow: 0 1px 3px #b3b3b3;
-    -moz-box-shadow: 0 1px 3px #b3b3b3;
-    -ms-box-shadow: 0 1px 3px #b3b3b3;
-    -o-box-shadow: 0 1px 3px #b3b3b3;
-    box-shadow: 0 1px 3px #b3b3b3;
     cursor: default;
   }
   .the-content fieldset li {
     display: table;
     width: 100%
-  }
-  .the-content fieldset label {
-    width: 180px;
-    line-height: 25px;
-    display: inline-block;
-    margin-right: 5px;
-    text-align: right;
-    text-shadow: 0 1px 1px #ffffff;
-    font-weight: bold;
   }
   .the-content fieldset span {
     line-height: 25px;
@@ -873,7 +669,7 @@ Last update : January, 12 2012
   .the-content .action-buttons {
     padding: 20px 20px 20px 220px;
     background-color: #ededed;
-    border: 1px solid #dedede;
+    border: 1px solid #000;
     -webkit-border-radius: 0 0 15px 15px;
     -khtml-border-radius: 0 0 15px 15px;
     -moz-border-radius: 0 0 15px 15px;
@@ -884,12 +680,6 @@ Last update : January, 12 2012
   .the-content .action-buttons .button {
     float: none;
     margin: 0 5px 0 0;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
   }
   .the-content .action-buttons .button span {
     background: transparent 0 50% no-repeat;
@@ -915,6 +705,7 @@ Last update : January, 12 2012
     padding-right: 15px;
     text-align: right;
     text-shadow: 0 1px 1px #ffffff;
+    font-weight: bold;
   }
   .the-content label.mandatory {
     background: url("../img/asterisk.gif") right 0 no-repeat;
@@ -922,49 +713,19 @@ Last update : January, 12 2012
   .the-content form .submit,
   .the-content form .reset,
   .the-content form .button,
+  .the-content form .cancel,
   .the-content form button {
-    display: inline-block;
-    background-color: #3496cf;
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-image: -webkit-linear-gradient(top, #3496cf, #236a94);
-    background-image: -moz-linear-gradient(top, #3496cf, #236a94);
-    background-image: -ms-linear-gradient(top, #3496cf, #236a94);
-    background-image: -o-linear-gradient(top, #3496cf, #236a94);
-    background-image: linear-gradient(top, #3496cf, #236a94);
-    color: #ffffff;
-    text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.65);
-    padding: 5px 20px;
-    margin: 0 5px 0 0;
-    cursor: pointer;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    border: 1px solid;
-    border-color: #236a94 #236a94 #236a94;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    -webkit-transition: background 0.25s ease-in-out;
-    -khtml-transition: background 0.25s ease-in-out;
-    -moz-transition: background 0.25s ease-in-out;
-    -ms-transition: background 0.25s ease-in-out;
-    -o-transition: background 0.25s ease-in-out;
-    transition: background 0.25s ease-in-out;
-    font-size:1em;
+    border: 0;
+    border-radius: 0;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 100%;
+    font-size: 1.5em;
+    padding: 15px 40px;
   }
-  .the-content form .submit.hover,
-  .the-content form .reset.hover,
-  .the-content form .button.hover,
-  .the-content form button.hover {
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #2879a8;
-    background-image: -webkit-linear-gradient(top, #2879a8, #194c6b);
-    background-image: -moz-linear-gradient(top, #2879a8, #194c6b);
-    background-image: -ms-linear-gradient(top, #2879a8, #194c6b);
-    background-image: -o-linear-gradient(top, #2879a8, #194c6b);
-    background-image: linear-gradient(top, #2879a8, #194c6b);
-  }
+  .the-content form .cancel { padding: 13px 40px; }
   .the-content form .submit.pressed,
   .the-content form .reset.pressed,
   .the-content form .button.pressed,
@@ -979,61 +740,39 @@ Last update : January, 12 2012
   .the-content form .submit {
     padding-left: 40px;
     padding-right: 40px;
-  }
-  .the-content form .button,
-  .the-content form button,
-  .the-content form .reset {
-    float: none;
-    background-color: #cccccc;
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #ffffff;
-    background-image: -webkit-linear-gradient(top, #ffffff, #cccccc);
-    background-image: -moz-linear-gradient(top, #ffffff, #cccccc);
-    background-image: -ms-linear-gradient(top, #ffffff, #cccccc);
-    background-image: -o-linear-gradient(top, #ffffff, #cccccc);
-    background-image: linear-gradient(top, #ffffff, #cccccc);
-    color: #404040;
-    text-shadow: 0 1px 1px #ffffff;
-    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  }
-  .the-content form .button.hover,
-  .the-content form button.hover,
-  .the-content form .reset.hover {
-    background-color: #b3b3b3;
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #e6e6e6;
-    background-image: -webkit-linear-gradient(top, #e6e6e6, #b3b3b3);
-    background-image: -moz-linear-gradient(top, #e6e6e6, #b3b3b3);
-    background-image: -ms-linear-gradient(top, #e6e6e6, #b3b3b3);
-    background-image: -o-linear-gradient(top, #e6e6e6, #b3b3b3);
-    background-image: linear-gradient(top, #e6e6e6, #b3b3b3);
+    cursor: pointer;
   }
   .the-content form input.text,
   .the-content form input.email,
   .the-content form input.password,
   .the-content form select,
   .the-content form textarea {
-    font-family: "Droid Sans Mono", monospace;
-    font-size: 11px;
-    width: 300px;
-    height: 25px;
-    padding: 3px;
-    margin: 0 5px 5px 0;
-    color: #404040;
-    background: #ffffff url("../img/bg-input.png") repeat-x 0px 0px;
-    border-top: solid 1px #aaa;
-    border-left: solid 1px #aaa;
-    border-bottom: solid 1px #b3b3b3;
-    border-right: solid 1px #b3b3b3;
+    display: block;
+    background: #fff;
+    margin: 0;
+    height: auto;
+    width: 100%;
     outline: 0;
-    -webkit-border-radius: 3px;
-    -khtml-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
-    width: 400px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid #000;
+    border-radius: 0;
+    color: #303030;
+    padding: 10px;
+    font-weight: 400;
   }
   .the-content form input.text.x-small,
   .the-content form input.email.x-small,
@@ -1111,50 +850,13 @@ Last update : January, 12 2012
   .the-content form input.placeholder {
     color: #b3b3b3;
   }
-  .the-content form fieldset,
-  .the-content form fieldset.hover {
-    border: 1px solid #e6e6e6;
-    padding: 30px 20px 10px;
-    margin: 30px 0 10px;
-    background-color: #f5f5f5;
-    position: relative;
-  }
   .the-content form fieldset div .button,
   .the-content form fieldset.hover div .button,
   .the-content form fieldset div.hover .button,
   .the-content form fieldset.hover div.hover .button {
     margin-left: 200px;
   }
-  .the-content form fieldset legend,
-  .the-content form fieldset.hover legend {
-    position: absolute;
-    background-color: #ff9933;
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #ffd9b3;
-    background-image: -webkit-linear-gradient(top, #ffd9b3, #ff9933);
-    background-image: -moz-linear-gradient(top, #ffd9b3, #ff9933);
-    background-image: -ms-linear-gradient(top, #ffd9b3, #ff9933);
-    background-image: -o-linear-gradient(top, #ffd9b3, #ff9933);
-    background-image: linear-gradient(top, #ffd9b3, #ff9933);
-    color: #ffffff;
-    padding: 5px 40px;
-    text-shadow: 0 -1px rgba(0, 0, 0, 0.35);
-    font-size: 1.1em;
-    margin: -45px 0 0 0;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 1px 3px #b3b3b3;
-    -khtml-box-shadow: 0 1px 3px #b3b3b3;
-    -moz-box-shadow: 0 1px 3px #b3b3b3;
-    -ms-box-shadow: 0 1px 3px #b3b3b3;
-    -o-box-shadow: 0 1px 3px #b3b3b3;
-    box-shadow: 0 1px 3px #b3b3b3;
-    cursor: default;
-  }
+  
   .the-content form fieldset label,
   .the-content form fieldset.hover label {
     line-height: 25px;
@@ -1164,9 +866,19 @@ Last update : January, 12 2012
     text-shadow: 0 1px 1px #ffffff;
     font-weight: bold;
   }
-  .the-content form fieldset label
+  .the-content form fieldset label {
     width: 180px;
+    padding: 5px 15px 4px 0;
   }
+
+  .the-content form fieldset input.text, 
+  .the-content form fieldset input.email, 
+  .the-content form fieldset input.password, 
+  .the-content form fieldset select, 
+  .the-content form fieldset textarea { width: 80%; float: left; }
+
+  .the-content form fieldset div { display: table; width: 100%; margin-bottom: 10px; }
+  
   .the-content form #body_parent,
   .the-content form #body_container {
     float: left;
@@ -1259,15 +971,12 @@ Last update : January, 12 2012
   .the-content table.grid {
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid #e6e6e6;
-    /*margin: 0 0 10px;*/
+    border: 1px solid #000;
     margin: 0;
-    /* Predefine cell width */
 
   }
   .the-content table.grid tr {
-    border-top: 1px solid #e6e6e6;
-    /* Colorize cell */
+    border-top: 1px solid #000;
 
   }
   .the-content table.grid tr th .checker,
@@ -1275,13 +984,7 @@ Last update : January, 12 2012
     margin: 0;
   }
   .the-content table.grid tr th {
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #f9f9f9;
-    background-image: -webkit-linear-gradient(top, #f9f9f9, #dfdfdf);
-    background-image: -moz-linear-gradient(top, #f9f9f9, #dfdfdf);
-    background-image: -ms-linear-gradient(top, #f9f9f9, #dfdfdf);
-    background-image: -o-linear-gradient(top, #f9f9f9, #dfdfdf);
-    background-image: linear-gradient(top, #f9f9f9, #dfdfdf);
+    background-color: #000;
   }
   .the-content table.grid tr.odd td {
     background-color: #f5f5f5;
@@ -1310,14 +1013,9 @@ Last update : January, 12 2012
     font-size: 1.1em;
     font-weight: bold;
     text-align: left;
-    border-right: 1px solid #e6e6e6;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
+    border-right: 1px solid #fff;
   }
+  .the-content table.grid tr th:last-child { border-color: #000; }
   .the-content table.grid tr th span,
   .the-content table.grid tr th a {
     text-decoration: none;
@@ -1325,20 +1023,19 @@ Last update : January, 12 2012
     font-weight: bold;
     display: inline-block;
     white-space: nowrap;
-    text-shadow: 0 1px 1px #ffffff;
   }
   .the-content table.grid tr th a {
-    color: #236a94;
+    color: #fff;
   }
   .the-content table.grid tr th a:hover {
-    color: #3496cf;
+    color: #08c;
   }
   .the-content table.grid tr th span {
     font-size: 1em;
   }
   .the-content table.grid tr th .asc,
   .the-content table.grid tr th .desc {
-    color: #236a94;
+    color: #fff;
     padding-right: 18px;
     background: url("../img/icons/color/up.png") 100% 50% no-repeat;
   }
@@ -1347,18 +1044,12 @@ Last update : January, 12 2012
   }
   .the-content table.grid tr td {
     background-color: #FEFEFE;
-    border-right: 1px solid #e6e6e6;
+    border-right: 1px solid #000;
     vertical-align: middle;
     font-size: 1em;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #000;
     padding: 5px 10px;
     overflow: hidden;
-    -webkit-transition: background-color 0.25s ease-in-out;
-    -khtml-transition: background-color 0.25s ease-in-out;
-    -moz-transition: background-color 0.25s ease-in-out;
-    -ms-transition: background-color 0.25s ease-in-out;
-    -o-transition: background-color 0.25s ease-in-out;
-    transition: background-color 0.25s ease-in-out;
     white-space: nowrap;
   }
   .the-content table.grid tr td > table {
@@ -1498,7 +1189,7 @@ Last update : January, 12 2012
   }
   .the-content .grid-bottom .pagination span,
   .the-content .grid-bottom .page-changer span {
-    padding: 3px 5px 3px 0;
+    padding: 3px 5px 3px 0;  margin-right: 10px;
   }
   .the-content .grid-bottom .pagination ul,
   .the-content .grid-bottom .page-changer ul {
@@ -1514,73 +1205,31 @@ Last update : January, 12 2012
     padding: 3px 5px;
     margin: 0;
     cursor: pointer;
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #b3b3b3;
-    background-image: -webkit-linear-gradient(top, #b3b3b3, #e6e6e6);
-    background-image: -moz-linear-gradient(top, #b3b3b3, #e6e6e6);
-    background-image: -ms-linear-gradient(top, #b3b3b3, #e6e6e6);
-    background-image: -o-linear-gradient(top, #b3b3b3, #e6e6e6);
-    background-image: linear-gradient(top, #b3b3b3, #e6e6e6);
-    color: #404040;
-    text-shadow: 0 1px 1px #ffffff;
-    border: 1px solid;
-    border-color: #bfbfbf #e6e6e6 #e6e6e6;
-    border-color: rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.025);
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    margin-left: -1px;
   }
   .the-content .grid-bottom .pagination ul li a,
   .the-content .grid-bottom .page-changer ul li a {
-    color: #808080;
+    color: #000;
     font-size: 0.85em;
     padding: 3px 10px;
     text-decoration: none;
-  }
-  .the-content .grid-bottom .pagination ul li.first,
-  .the-content .grid-bottom .page-changer ul li.first {
-    -webkit-border-radius: 5px 0 0 5px;
-    -khtml-border-radius: 5px 0 0 5px;
-    -moz-border-radius: 5px 0 0 5px;
-    -ms-border-radius: 5px 0 0 5px;
-    -o-border-radius: 5px 0 0 5px;
-    border-radius: 5px 0 0 5px;
-  }
-  .the-content .grid-bottom .pagination ul li.last,
-  .the-content .grid-bottom .page-changer ul li.last {
-    -webkit-border-radius: 0 5px 5px 0;
-    -khtml-border-radius: 0 5px 5px 0;
-    -moz-border-radius: 0 5px 5px 0;
-    -ms-border-radius: 0 5px 5px 0;
-    -o-border-radius: 0 5px 5px 0;
-    border-radius: 0 5px 5px 0;
-  }
-  .the-content .grid-bottom .pagination ul li.first.last,
-  .the-content .grid-bottom .page-changer ul li.first.last {
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
   }
   .the-content .grid-bottom .pagination ul li.selected,
   .the-content .grid-bottom .page-changer ul li.selected,
   .the-content .grid-bottom .pagination ul li.hover,
   .the-content .grid-bottom .page-changer ul li.hover {
-    background: url("../img/grad-up.png") 0 0 repeat-x;
-    background-color: #e6e6e6;
-    background-image: -webkit-linear-gradient(top, #e6e6e6, #b3b3b3);
-    background-image: -moz-linear-gradient(top, #e6e6e6, #b3b3b3);
-    background-image: -ms-linear-gradient(top, #e6e6e6, #b3b3b3);
-    background-image: -o-linear-gradient(top, #e6e6e6, #b3b3b3);
-    background-image: linear-gradient(top, #e6e6e6, #b3b3b3);
-    border-color: #e6e6e6 #e6e6e6 #bfbfbf;
-    border-color: rgba(0, 0, 0, 0.025) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.35);
+    background: #000;
+    border-color: #000;
     text-decoration: none;
   }
   .the-content .grid-bottom .pagination ul li.selected a,
   .the-content .grid-bottom .page-changer ul li.selected a,
   .the-content .grid-bottom .pagination ul li.hover a,
   .the-content .grid-bottom .page-changer ul li.hover a {
-    color: #404040;
+    color: #fff;
   }
   .the-content .grid-bottom .pagination ul li.pressed,
   .the-content .grid-bottom .page-changer ul li.pressed {
@@ -1606,19 +1255,10 @@ Last update : January, 12 2012
   .the-content .filter-container .search {
     padding: 4px 12px 4px;
     margin: 0;
-    background: #ffffff url("../img/bg-input.png") repeat-x 0 0;
-    border: solid 1px #b3b3b3;
-    border-left: solid 1px #b3b3b3;
-    border-bottom: solid 1px #e6e6e6;
-    border-right: solid 1px #e6e6e6;
+    background: #ffffff;
+    border: solid 1px #000;
     display: table;
     float: right;
-    -webkit-border-radius: 100px;
-    -khtml-border-radius: 100px;
-    -moz-border-radius: 100px;
-    -ms-border-radius: 100px;
-    -o-border-radius: 100px;
-    border-radius: 100px;
   }
   .the-content .filter-container .search.hover,
   .the-content .filter-container .search.selected {
@@ -1693,6 +1333,7 @@ Last update : January, 12 2012
     margin: 0 auto;
     position: absolute;
     z-index: 9999;
+    display: table;
   }
   .login-pane p {
     text-align: center;
@@ -1700,11 +1341,13 @@ Last update : January, 12 2012
     color: #808080;
     border-top: 1px dotted #b3b3b3;
   }
+  .login-pane form .login-form .logoImage { display: inline-block; width: 220px; height: 120px; background: url("../img/logo-image.png") center no-repeat; background-size: contain; }
+  .login-pane form .login-form hr { border-color: #000; border-width: 1px 0 0; width: 30px; margin: 30px auto; }
   .login-pane .title {
     margin: 10px 0;
     text-align: center;
     font-size: 2.6em;
-    color: #ff9933;
+    color: #000;
     text-shadow: 0 1px 2px #fff;
     padding: 10px 0;
   }
@@ -1724,21 +1367,7 @@ Last update : January, 12 2012
   }
   .login-pane form {
     padding: 30px 40px;
-    background: url("../img/login-box.png") center -150px repeat-x;
-    border: 1px solid #b3b3b3;
-    -webkit-border-radius: 15px;
-    -khtml-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
-    border-radius: 15px;
-    -webkit-box-shadow: 0 15px 125px rgba(1, 1, 1, 0.5);
-    -khtml-box-shadow: 0 15px 125px rgba(1, 1, 1, 0.5);
-    -moz-box-shadow: 0 15px 125px rgba(1, 1, 1, 0.5);
-    -ms-box-shadow: 0 15px 125px rgba(1, 1, 1, 0.5);
-    -o-box-shadow: 0 15px 125px rgba(1, 1, 1, 0.5);
-    box-shadow: 0 15px 125px rgba(1, 1, 1, 0.5);
-    filter: progid:DXImageTransform.Microsoft.Shadow(color='#666666', Direction=180, Strength=5);
+    border: 1px solid #000;
   }
   .login-pane form label {
     display: none;
@@ -1753,8 +1382,6 @@ Last update : January, 12 2012
   .login-pane form input.text,
   .login-pane form input.password {
     width: 235px;
-    height: 30px;
-    padding: 5px;
     font-size: 1.2em;
     float: none;
   }
@@ -1762,6 +1389,7 @@ Last update : January, 12 2012
     width: 146px;
     font-size: 1.4em;
     float: none;
+    /*margin-top: 30px;*/
   }
   .login-pane form div,
   .login-pane form div.hover {
@@ -1777,6 +1405,7 @@ Last update : January, 12 2012
   .login-pane form .login-form .logo {
     padding: 0;
     text-align: center;
+    margin: 0 auto;
   }
   .login-pane form .last {
     padding: 10px 0;
