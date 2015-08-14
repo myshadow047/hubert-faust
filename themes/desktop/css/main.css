@@ -22,7 +22,7 @@ hr { border-color: #000; }
 .nav-menu ul.topbar li a { color: #000; font-size: 1.1em; cursor: pointer; }
 .nav-menu ul.topbar li a:hover { color: #08c; }
 .nav-menu ul.topbar .subMenu { width: auto; margin: 0; top: 100%; display: none; position: absolute; padding: 0; list-style: none; background: rgba(255, 255, 255, 0.9); border: 1px solid #000; border-top: none; }
-.nav-menu ul.topbar ul li a { position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; border-bottom: 1px solid #e5e5e5; line-height: 130%; padding: 8px 30px; color: #000; display: block; }
+.nav-menu ul.topbar ul li a { position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; border-bottom: 1px solid #e5e5e5; line-height: 130%; padding: 8px 30px; color: #000; display: block; text-align: left; }
 .nav-menu ul.topbar ul li:last-child a { border-bottom: 0; }
 
 .content { padding-top: 51px; }
