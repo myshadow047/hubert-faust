@@ -17,6 +17,9 @@ $config['xmenu_items'][2]['uri'] = '/about_us';
 $config['xmenu_items'][3]['title'] = 'Banner';
 $config['xmenu_items'][3]['uri'] = '/banner';
 
+$config['xmenu_items'][4]['title'] = 'Category';
+$config['xmenu_items'][4]['uri'] = '/category';
+
 
 
 // $config['xmenu_items'][1]['title'] = 'System';

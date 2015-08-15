@@ -22,6 +22,6 @@ $config = array(
         // 'display_pages' => true,
         'per_pages' => array( 10, 25, 50, 100),
         'per_page_changer_prefix' => 'Show ',
-        'next_link' => 'Next',
-        'prev_link' => 'Previous'
+        'next_link' => '>',
+        'prev_link' => '<'
 );
