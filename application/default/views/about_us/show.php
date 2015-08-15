@@ -14,7 +14,7 @@ echo $this->admin_panel->breadcrumb(array(
 
             <div>
                 <label><?php echo l('About Us') ?></label>
-                <textarea name="about_us" placeholder="About Us"><?php echo set_value('about_us') ?></textarea>
+                <textarea id="about_us" name="about_us" placeholder="About Us"><?php echo set_value('about_us') ?></textarea>
             </div>
 
     </fieldset>
@@ -23,3 +23,14 @@ echo $this->admin_panel->breadcrumb(array(
         <a href="<?php echo site_url($CI->_get_uri('listing')) ?>" class="btn cancel"><?php echo l('Cancel') ?></a>
     </div>
 </form>
+
+<script type="text/javascript">
+    CKEDITOR.config.width = '80%';
+    CKEDITOR.config.toolbar = [
+        { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+        { name: 'inserts', items: ['HorizontalRule', 'SpecialChar'] },
+        { name: 'basicstyles', items: ['Bold', 'Italic', 'Strike', '-', 'removeFormat'] },
+        { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote'] },
+    ];
+    CKEDITOR.replace('about_us');
+</script>

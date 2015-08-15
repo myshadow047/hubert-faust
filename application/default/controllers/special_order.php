@@ -2,6 +2,24 @@
 
 class special_order extends app_crud_controller {
 
+    function _config_grid() {
+        $fields = array_keys($this->_model($this->_name)->list_fields(true));
+        $config = array(
+            'fields' => array('name', 'email', 'phone', 'ingredients', 'dimension', 'detail'),
+            'formats' => array('row_detail'),
+            'sorts' => $fields,
+            'actions' => array(
+                'delete' => $this->_get_uri('trash')
+            ),
+        );
+
+        if ($this->CAN_DELETE) {
+            $config['actions']['delete'] = $this->_get_uri('delete');
+        }
+
+        return $config;
+    }
+
     function _save($id = null) {
         if ($_POST) {
             $config['allowed_types'] = 'gif|jpg|png|jpeg';
@@ -64,4 +82,14 @@ class special_order extends app_crud_controller {
         $this->_save();
     }
 
+    function detail($id) {
+        $this->load->helper('format');
+        $this->_data['fields'] = $this->_model()->list_fields(true);
+        $data = $this->_model()->get($id);
+
+        $images = $this->db->query('SELECT * FROM special_order_image WHERE special_order = ?', array($id))->result_array();
+        $data['images'] = $images;
+
+        $this->_data['data'] = $data;
+    }
 }

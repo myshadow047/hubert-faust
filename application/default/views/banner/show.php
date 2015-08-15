@@ -11,6 +11,11 @@ echo $this->admin_panel->breadcrumb(array(
 <form action="<?php echo current_url() ?>" method="post" class="ajaxform" enctype="multipart/form-data">
     <fieldset>
         <legend><?php echo $title ?></legend>
+            <div>
+                <label><?php echo l('Name') ?></label>
+                <input type="text" name="name" value="<?php echo set_value('name') ?>">
+            </div>
+            <div class="clearfix"></div>
             <?php if (!empty($_POST['image'])): ?>
                 <div>
                     <label><?php echo l('Image') ?></label>
@@ -23,12 +28,6 @@ echo $this->admin_panel->breadcrumb(array(
                     <input type="file" name="image">
                 </div>
             <?php endif ?>
-            <div class="clearfix"></div>
-            <div>
-                <label><?php echo l('Description') ?></label>
-                <input type="text" name="description" value="<?php echo set_value('description') ?>">
-            </div>
-
     </fieldset>
     <div class="action-buttons btn-group">
         <input type="submit" />
