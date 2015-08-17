@@ -139,29 +139,24 @@
     </article>
     <article class="contact">
         <div class="container">
-            <div class="label">
-                <hr>
-                <h4>Contact Us</h4>
-            </div>
             <div class="contactArea row">
                 <div class="xlarge-7 large-7 medium-7 small-12 tiny-12">
                     <div class="wrapper">
                         <div class="wording">
-                            <h6>
+                            <h4>
                                 Hubert and faust will become the leader in making innovation and creativity, so we are ready to be at
                                 the forefront to fulfill our customers needs and dreams. We are also very open to consumers who are willing
                                 to provide input on us. Another advantage that we present to you is we invite you to join with us for making
                                 the imagination together and we will make your dream furniture come true. Because Hubert and Faust provide
                                 this service theme “just customize your furniture as you are" where we would be very pleased to be able to
                                 realize the dream of furniture as you wish.
-                            </h6>
-                            <a href="#" class="button">Special Order</a>
+                            </h4>
+                            <a href="<?php echo site_url('web/special_order') ?>" class="button">Special Order</a>
                         </div>
                     </div>
                 </div>
-                <div class="xlarge-3 large-3 medium-3 small-12 tiny-12">
+                <div class="xlarge-5 large-5 medium-5 small-12 tiny-12">
                     <div class="wrapper">
-                        <!-- <div class="logoContact"></div> -->
                         <div class="contactUs">
                             <div class="rowInner">
                                 <h3><i class="xn xn-envelope-o"></i>Email us:</h3>

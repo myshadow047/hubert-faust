@@ -7,7 +7,7 @@
         <div class="row">
             <div class="xlarge-6 large-6 medium-6 small-12 tiny-12 detailContent">
                 <div class="wrapper">
-                    <div class="imageDetail">
+                    <div id="sync1" class="imageDetail">
                         <?php foreach($product['images'] as $image): ?>
                             <div class="easyzoom easyzoom--overlay">
                                 <a href="<?php echo base_url('data/product/image/'.$image['image_name']) ?>">
@@ -16,12 +16,29 @@
                             </div>
                         <?php endforeach ?>
                     </div>
+                    <div id="sync2" class="imagePagination">
+                        <?php foreach($product['images'] as $image): ?>
+                            <a href="<?php echo base_url('data/product/image/'.$image['image_name']) ?>">
+                                <div class="image" style="background: url(<?php echo base_url('data/product/image/'.$image['image_name']) ?>) center no-repeat; background-size: cover;"></div>
+                            </a>
+                        <?php endforeach ?>
+                    </div>
                 </div>
             </div>
             <div class="xlarge-6 large-6 medium-6 small-12 tiny-12 detailContent">
                 <div class="wrapper">
                     <div class="detailDesc">
-                        <h3><?php echo $product['name'] ?></h3>
+                        <div class="titleArea">
+                            <h3><?php echo $product['name'] ?></h3>
+                            <div class="nextPrev">
+                                <a href="#" class="button">
+                                    <i class="xn xn-angle-left"></i>
+                                </a>
+                                <a href="#" class="button">
+                                    <i class="xn xn-angle-right"></i>
+                                </a>
+                            </div>
+                        </div>
                         <h6>Product Description</h6>
                         <p>
                             <?php echo $product['description'] ?>
@@ -36,6 +53,14 @@
                         <p>
                             <?php echo $product['dimention'] ?>
                         </p>
+                        <hr>
+                        <h6>More Detail</h6>
+                        <h4>
+                            <a href="#" class="">
+                                <i class="xn xn-envelope-o"></i>
+                                Ask Price
+                            </a>
+                        </h4>
                         <hr>
                         <h6>Share</h6>
                         <ul class="share flat">

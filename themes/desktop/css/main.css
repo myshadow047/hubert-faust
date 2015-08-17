@@ -62,10 +62,14 @@ hr { border-color: #000; }
 .promoArea .promo .thumbView .descript hr { border-color: #ff9500; }
 .promoArea .promo .thumbView .descript span { color: #ff9500; }
 
-.contact .contactArea { text-align: center; padding-bottom: 30px; }
+.contact .contactArea { text-align: center; padding: 30px 0; }
 .contact .contactArea .wrapper { padding: 0 10px; }
+.contact .contactArea>:first-child .wrapper { padding-left: 10px!important; }
+.contact .contactArea>:last-child .wrapper { padding: 0; }
+.contact .contactArea .wording h4 { font-size: 1em; margin-bottom: 20px; color: #707070; }
+.contact .contactArea .wording .button { font-size: 1em; padding: 13px 26px; }
 .contact .logoContact { background: url(../img/logo.png) center no-repeat; background-size: contain; width: 150px; height: 90px; display: inline-block; vertical-align: middle; margin-bottom: 30px; }
-.contact .contactUs { display: inline-block; vertical-align: middle; text-align: center; }
+.contact .contactUs { display: block; vertical-align: middle; text-align: center; margin-top: 30px; border-top: 1px solid #000; padding: 30px 10px 0; }
 .contact .contactUs hr { width: 30px; display: inline-block; margin: 10px 0; }
 .contact .contactUs h3 { line-height: 120%; margin: 0 0 5px; text-transform: uppercase; font-size: 1em; }
 .contact .contactUs h3 i { margin: 0 10px 0 0; width: 20px; }
@@ -82,14 +86,21 @@ hr { border-color: #000; }
 .detail .wrapper { padding: 0; }
 .detail .detailContent { margin-bottom: 30px; }
 .detail .detailContent:last-child { margin-bottom: 0; }
-.detail .imageDetail .image { display: inline-block; height: 350px; width: 100%; }
+.detail .imageDetail a { display: block; }
+.detail .imageDetail .image { display: block; height: 300px; width: 100%; }
+.detail .imagePagination .image { display: table; height: 100px; width: 100%; }
 .detail hr { width: 30px; display: inline-block; margin: 15px 0 }
 .detail .detailDesc { padding: 0 15px; }
-.detail .detailDesc h3 { line-height: 140%; font-size: 1.2em; border-bottom: 1px solid #000; padding-bottom: 10px; text-transform: uppercase; font-size: 1.3em; margin-bottom: 20px; }
+.detail .detailDesc .titleArea { position: relative; }
+.detail .detailDesc h3 { line-height: 140%; font-size: 1.2em; border-bottom: 1px solid #000; padding: 0 78px 18px 0; text-transform: uppercase; font-size: 1.3em; margin-bottom: 20px; }
 .detail .detailDesc h6 { margin: 0 0 6px; text-transform: uppercase; font-size: 0.9em; font-weight: 600; }
+.detail .detailDesc h4 { margin: 0 0 6px; font-size: 1em; }
+.detail .detailDesc h4 i { margin: 0 10px 0 0; }
 .detail .detailDesc p { font-size: 1em; line-height: 150%; }
 .detail .detailDesc ul { margin: 0 auto; }
 .detail .detailDesc ul p { margin: 0; }
+.detail .detailDesc .nextPrev { position: absolute; top: 0; right: 0; }
+.detail .detailDesc .nextPrev a { padding: 8px 12px; }
 .detail .share li { margin-right: 2px; }
 .detail .share li:last-child { margin-right: 0; }
 .detail .share a { width: 80px; display: block; text-align: center; line-height: 100%; padding: 12px 0; font-size: 1.4em; }
@@ -110,7 +121,7 @@ hr { border-color: #000; }
 
 .about { text-align: center; }
 .about .logo { background: url(../img/logo.png) center no-repeat; background-size: contain; width: 160px; height: 100px; display: inline-block; margin-bottom: 20px; }
-.about .aboutContent { padding: 0 15px }
+/*.about .aboutContent { padding: 0 15px }*/
 .about .aboutContent hr { width: 30px; margin: 20px auto; }
 .about p { font-size: 1em; }
 
@@ -141,7 +152,7 @@ input[type="submit"]:hover { background: #666; }
 .footer { border-top: 1px solid #000; padding: 20px 0; }
 .footer .copyLogo { margin-bottom: 20px; }
 .footer .copyright { margin: 0; color: #444; text-align: center; line-height: 120%; font-size: 0.8em; display: block; vertical-align: middle; }
-.footer .logo { background: url(../img/logo2.png) center no-repeat; background-size: contain; display: inline-block; width: 63px; height: 25px; margin-bottom: 10px; }
+.footer .logo { background: url(../img/logo2.png) center no-repeat; background-size: contain; display: inline-block; width: 78px; height: 45px; margin-bottom: 10px; }
 .footer .copyright span { display: block; }
 .footer hr { border-color: #000; width: 20px; margin: 0 auto; }
 .footer .findUs { margin-top: 20px; }
@@ -189,6 +200,19 @@ input[type="submit"]:hover { background: #666; }
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 }
+
+#sync2 { 
+	margin-top: 2px; 
+}
+#sync2 a {
+    display: block;
+    border: 2px solid #fff;
+}
+#sync2 .synced .image {
+  border: 5px solid #000;
+}
+
+
 .arrow { width: 40px; height: 106px; display: inline-block; }
 .arrow.left { background: url(../img/arrow-left.png) center no-repeat; background-size: contain; }
 .arrow.right { background: url(../img/arrow-right.png) center no-repeat; background-size: contain; }
@@ -227,8 +251,38 @@ input[type="submit"]:hover { background: #666; }
   -webkit-transform: translate(0px, -7px) rotate(45deg) scalex(1);
 }
 
+#portfolio { display:table!important; width:100%; padding:0 }
+#portfolio li { font-size:1.2em; padding:0; line-height:48px; font-weight:400 }
+#portfolio .button { background:#f4f4f4; color:#0096C9; font-weight:400; border:none; display:block; margin:8px 0 0 }
+#portfolio .button.hover { background:#FAC521; color:#fff }
+#portfolio .button,
+.resp-vtabs ul.resp-tabs-list li { overflow:hidden; text-overflow:ellipsis; white-space:nowrap }
+.resp-vtabs ul.resp-tabs-list li { padding: 0 0 0 20px!important; text-align: left; }
+.resp-vtabs ul.resp-tabs-list li i { margin-right: 10px; }
+.resp-vtabs ul.resp-tabs-list { display:none }
+.resp-vtabs .resp-tabs-container { display:table; width:100%; border-color:#000; }
+.resp-vtabs .resp-tabs-container h2 { border-color:#000!important; font-size:1.3em; margin:0; border-left: 0; border-right: 0; }
+.resp-vtabs .resp-tab-content { display: none; padding: 30px; text-align: center; border-left: 0; border-right: 0; }
+.resp-vtabs .resp-tab-content:last-child { border-color: #000!important; }
+.resp-vtabs .resp-tab-content-active { display:block; border-color:#000 }
+.resp-vtabs h2,
+.resp-vtabs h2.resp-tab-active { background:#fff!important }
+.resp-vtabs .resp-arrow { margin-top:12px; border-left:6px solid transparent; border-right:6px solid transparent; border-top:6px solid #000 }
+.resp-vtabs .resp-tab-active span.resp-arrow { border-left:6px solid transparent; border-right:6px solid transparent; border-bottom:6px solid #000 }
+#portfolio .resp-accordion i { margin-right: 10px; }
+
+
 
 @media (min-width:768px) {
+	.resp-vtabs ul.resp-tabs-list { display:table-cell; width:23% }
+	.resp-vtabs .resp-tabs-container { display:table-cell; width:77%; min-height:540px; border-radius: 0; }
+	h2.resp-tab-active,
+	.resp-vtabs .resp-tabs-container,
+	.resp-vtabs li.resp-tab-active { border-color:#000; background:#fff!important }
+	.resp-vtabs .resp-tab-content { text-align: left; }
+	.about .aboutContent { padding: 0; }
+	.about .aboutContent hr { width: 30px; margin: 20px 0; }
+
 	.nav-menu { position: fixed;}
 	.nav-menu .brand a.mobile { display: none; }
 	.nav-menu .brand a.desktop { display: inline-block; }
@@ -298,10 +352,14 @@ input[type="submit"]:hover { background: #666; }
 
 	.thumbnails .thumbArea .desc a { padding: 20px; font-size: 1.3em; }
 
-	.contact .contactArea { padding-bottom: 50px; }
-	.contact .contactArea .wrapper { padding: 0 20px; }
+	.contact .contactArea { padding: 50px 0; }
+	.contact .contactArea .wrapper { padding: 0 30px; }
+	.contact .contactArea>:first-child .wrapper { padding-left: 0!important; }
+	.contact .contactArea>:last-child .wrapper { padding: 0 30px; }
 	.contact .logoContact { width: 200px; height: 120px; margin-bottom: 0; }
-	.contact .contactUs { padding: 0; text-align: left; }
+	.contact .contactArea .wording h4 { margin-bottom: 30px; font-size: 1.3em; }
+	.contact .contactArea .wording .button { font-size: 1.2em; padding: 16px 30px; }
+	.contact .contactUs { padding: 0; text-align: left; margin-top: 0; border: 0; }
 	.contact .contactUs hr { margin: 20px 0; }
 	.contact .contactUs h3 { font-size: 1.2em; }
 	.contact .contactUs a,
@@ -314,7 +372,9 @@ input[type="submit"]:hover { background: #666; }
 	.detail .imageDetail .image { height: 500px; }
 	.detail hr { margin: 20px 0 }
 	.detail .detailDesc { padding: 0; }
-	.detail .detailDesc h3 { font-size: 1.5em; margin-bottom: 30px; }
+	.detail .detailDesc .nextPrev a { padding: 10px 15px; }
+	.detail .detailDesc h3 { font-size: 1.5em; margin-bottom: 30px; padding: 0 90px 21px 0; }
+	.detail .detailDesc h4 { font-size: 1.3em; }
 	.detail .detailDesc p { font-size: 1.1em; line-height: 1.64em; }
 	.detail .detailDesc ul { margin: 0; }
 	.detail .share a { width: 100px; }
@@ -323,7 +383,6 @@ input[type="submit"]:hover { background: #666; }
 	.detail,
 	.about { margin-bottom: 50px; }
 
-	.about .aboutContent { display: inline-block; width: 70%; padding: 0; }
 	.about .logo { width: 200px; height: 120px; margin-bottom: 40px; }
 	.about p { font-size: 1.2em; }
 
@@ -332,9 +391,8 @@ input[type="submit"]:hover { background: #666; }
 	.inputArea .input { margin: 10px 0; }
 
 	.uploadArea ul { margin: 0 auto; padding: 0; }
-	.uploadArea ul li { display: table; line-height: 0; margin: 0 16px 0 0; }
-	.uploadArea ul li:last-child { margin: 0; }
-	.uploadArea .imageArea { width: 230px; height: 230px; }
+	.uploadArea ul li { display: table; line-height: 0; padding: 0 10px 20px 10px; margin: 0; }
+	.uploadArea .imageArea { width: 220px; height: 220px; }
 	.uploadArea .imageArea .buttonUpload { font-size: 10em; line-height: 228px; }
 
 	a.button,
@@ -355,7 +413,7 @@ input[type="submit"]:hover { background: #666; }
 	.footer nav { padding: 20px 0; display: inline-block; vertical-align: middle; padding: 0; width: 80.5%; }
 	.footer nav:last-child { width: 19%; }
 	.footer .copyLogo { margin-bottom: 0; }
-	.footer .logo { margin-right: 20px; vertical-align: middle; margin-bottom: 0; width: 65px; height: 26px; }
+	.footer .logo { margin-right: 20px; vertical-align: middle; margin-bottom: 0; width: 85px; height: 45px; }
 	.footer .copyright { text-align: left; font-size: 1em; }
 	.footer .copyright span { display: inline-block; vertical-align: middle; }
 	.footer .social { float: right; }
