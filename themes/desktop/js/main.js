@@ -37,10 +37,11 @@ $(function() {
 		],
 		autoPlay : false,
 		pagination: true,
-		navigation: false
+		navigation: false,
+		touchDrag: false
 	});
 
-	$(".thumbView.promo .slideImage").owlCarousel({
+	$(".promo").owlCarousel({
 		itemsCustom : [
 			[0, 1],
 			[480, 1],
@@ -49,7 +50,7 @@ $(function() {
 			[1400, 1],
 			[1600, 1],
 		],
-		autoPlay : true,
+		autoPlay : false,
 		pagination: true,
 		navigation: false
 	});
