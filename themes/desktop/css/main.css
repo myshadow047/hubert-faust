@@ -8,9 +8,9 @@ a {
 p { color: #707070; font-size: 1.1em; }
 hr { border-color: #000; }
 
-.nav-menu { background: rgba(255, 255, 255, 0.9); height: auto; border-bottom: 0; border-bottom: 1px solid #000; }
+.nav-menu { background: rgba(255, 255, 255, 0.9); height: auto; border-bottom: 0; border-bottom: 1px solid #000; position: relative; }
 .nav-menu .brand { margin: 0 }
-.nav-menu .brand a.mobile { background: url(../img/logo2.png) center no-repeat; background-size: contain; display: inline-block; text-indent: -6666em; width: 75px; height: 30px; margin: 10px 0; }
+.nav-menu .brand a.mobile { background: url(../img/logo2.png) center no-repeat; background-size: contain; display: inline-block; text-indent: -6666em; width: 100px; height: 50px; margin: 5px 0; }
 .nav-menu .brand a.desktop { background: url(../img/logo.png) center no-repeat; background-size: contain; text-indent: -6666em; width: 99px; height: 60px; display: none; margin: 10px 0; }
 
 .nav-menu ul.topbar .down i { margin-left: 5px; }
@@ -25,11 +25,10 @@ hr { border-color: #000; }
 .nav-menu ul.topbar ul li a { position: relative; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; border-bottom: 1px solid #e5e5e5; line-height: 130%; padding: 8px 30px; color: #000; display: block; text-align: left; }
 .nav-menu ul.topbar ul li:last-child a { border-bottom: 0; }
 
-.content { padding-top: 51px; }
 .content.home { padding-top: 0; }
 
-.heroBanner .bannerSlide { width: 100%; height: 400px; display: table; }
-.heroBanner .bannerSlide a { height: 400px; display: block; }
+.heroBanner .bannerSlide { width: 100%; height: 350px; display: table; }
+.heroBanner .bannerSlide a { height: 350px; display: block; }
 
 .productView { position: relative; }
 .productView .thumbView { position: relative; }
@@ -54,15 +53,19 @@ hr { border-color: #000; }
 .thumbView .descript span.category { margin-bottom: 10px; font-style: italic; }
 .thumbView .descript span.name { font-size: 1.2em; }
 .thumbView .image { position: relative; }
-.thumbView .hover { background: url(../img/hover-bg.png) center top no-repeat; background-size: contain; position: absolute; top: 0; right: 0; left: 0; height: 25px; z-index: 2; pointer-events: none; display: block; }
+.thumbView .hover { display: none; }
+.thumbView .hover h6 { margin: 0; position: absolute; bottom: 25px; color: #fff; padding: 10px 20px; line-height: 150%; }
+.thumbView .image .hover h6 a { height: auto; color: #FF9500; text-align: right; font-size: 0.9em; font-style: italic; margin-top: 10px; line-height: 130%; }
+.thumbView .image .hover h6 a i { margin-left: 5px; }
 
-.thumbView.promo .promoImage { background: url(../img/promo.png) center top no-repeat; background-size: contain; position: absolute; top: 0; left: 0; z-index: 2; pointer-events: none; width: 90px; height: 90px; }
-.thumbView.promo .descript hr { border-color: #ff9500; }
-.thumbView.promo .descript span { color: #ff9500; }
+.promoArea .promoImage { background: url(../img/promo.png) center top no-repeat; background-size: contain; position: absolute; top: 0; left: 0; z-index: 3; pointer-events: none; width: 90px; height: 90px; }
+.promoArea .promo .thumbView .descript hr { border-color: #ff9500; }
+.promoArea .promo .thumbView .descript span { color: #ff9500; }
 
 .contact .contactArea { text-align: center; padding-bottom: 30px; }
+.contact .contactArea .wrapper { padding: 0 10px; }
 .contact .logoContact { background: url(../img/logo.png) center no-repeat; background-size: contain; width: 150px; height: 90px; display: inline-block; vertical-align: middle; margin-bottom: 30px; }
-.contact .contactUs { display: inline-block; vertical-align: middle; text-align: center; padding: 0 20px; }
+.contact .contactUs { display: inline-block; vertical-align: middle; text-align: center; }
 .contact .contactUs hr { width: 30px; display: inline-block; margin: 10px 0; }
 .contact .contactUs h3 { line-height: 120%; margin: 0 0 5px; text-transform: uppercase; font-size: 1em; }
 .contact .contactUs h3 i { margin: 0 10px 0 0; width: 20px; }
@@ -226,7 +229,7 @@ input[type="submit"]:hover { background: #666; }
 
 
 @media (min-width:768px) {
-
+	.nav-menu { position: fixed;}
 	.nav-menu .brand a.mobile { display: none; }
 	.nav-menu .brand a.desktop { display: inline-block; }
 	.nav-menu ul.topbar>li { display: inline-block; }
@@ -243,14 +246,7 @@ input[type="submit"]:hover { background: #666; }
 
 	.productView .thumbView { background: transparent; }
 	.productView .thumbView .image a,
-	.thumbnails .thumbArea .image {
-		height: 300px;
-		-webkit-filter: grayscale(100%);
-		-moz-filter: grayscale(100%);
-		-ms-filter: grayscale(100%);
-		-o-filter: grayscale(100%);
-		filter: grayscale(100%);
-	}
+	.thumbnails .thumbArea .image { height: 300px; }
 	.productView .thumbView:hover .overlay { display: none; }
 	.productView .thumbView:hover .image a,
 	.thumbnails .thumbArea .thumb:hover .image {
@@ -289,21 +285,23 @@ input[type="submit"]:hover { background: #666; }
 		transition: all .3s ease;
 	}
 	.thumbView .descript span.name { font-size: 1.3em; }
-	.thumbView .hover { height: 40px; display: none; }
+	.thumbView .hover { background: rgba(0, 0, 0, 0.6); position: absolute; top: 0; right: 0; left: 0; height: 100%; z-index: 2; pointer-events: none; }
 	.thumbView:hover .hover { display: block; }
 	.thumbView:hover .descript hr { border-color: #000; }
 	.thumbView:hover .descript span { color: #000; }
-	.thumbView.promo .promoImage { width: 120px; height: 120px; }
-	.thumbView.promo .descript hr { border-color: #000; }
-	.thumbView.promo .descript span { color: #000; }
-	.thumbView.promo:hover .descript hr { border-color: #ff9500; }
-	.thumbView.promo:hover .descript span { color: #ff9500; }
+
+	.promoArea .promoImage { width: 120px; height: 120px; }
+	.promoArea .promo .thumbView .descript hr { border-color: #000; }
+	.promoArea .promo .thumbView .descript span { color: #000; }
+	.promoArea .promo .thumbView:hover .descript hr { border-color: #ff9500; }
+	.promoArea .promo .thumbView:hover .descript span { color: #ff9500; }
 
 	.thumbnails .thumbArea .desc a { padding: 20px; font-size: 1.3em; }
 
 	.contact .contactArea { padding-bottom: 50px; }
+	.contact .contactArea .wrapper { padding: 0 20px; }
 	.contact .logoContact { width: 200px; height: 120px; margin-bottom: 0; }
-	.contact .contactUs { padding: 0 0 0 60px; text-align: left; }
+	.contact .contactUs { padding: 0; text-align: left; }
 	.contact .contactUs hr { margin: 20px 0; }
 	.contact .contactUs h3 { font-size: 1.2em; }
 	.contact .contactUs a,
@@ -324,7 +322,7 @@ input[type="submit"]:hover { background: #666; }
 	.request,
 	.detail,
 	.about { margin-bottom: 50px; }
-	
+
 	.about .aboutContent { display: inline-block; width: 70%; padding: 0; }
 	.about .logo { width: 200px; height: 120px; margin-bottom: 40px; }
 	.about p { font-size: 1.2em; }

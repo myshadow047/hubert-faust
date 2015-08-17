@@ -226,7 +226,7 @@ class crud_controller extends app_base_controller {
             'sorts' => $fields,
             'actions' => array(
                 'edit' => $this->_get_uri('edit'),
-                'trash' => $this->_get_uri('trash'),
+                'delete' => $this->_get_uri('trash'),
             ),
         );
 

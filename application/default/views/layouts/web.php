@@ -23,21 +23,6 @@
         <div class="container">
             <div class="row">
                 <ul class="topbar">
-                    <li><a href="<?php echo base_url() ?>">Home</a></li>
-                    <li><a href="<?php echo site_url('web/about_us') ?>">About Us</a></li>
-                    <li class="logo">
-                        <h1 class="brand">
-                            <a href="<?php echo base_url() ?>" class="desktop">Hubert &amp; Faust</a>
-                            <a href="<?php echo base_url() ?>" class="mobile">Hubert &amp; Faust</a>
-                        </h1>
-                        <div class="toggleDown">
-                            <div class="menu-toggle-btn">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </li>
                     <li>
                         <a class="down">Products
                             <i class="xn xn-angle-down"></i>
@@ -51,22 +36,25 @@
                         </ul>
                     </li>
                     <li><a href="<?php echo site_url('web/special_order') ?>">Special Order</a></li>
+                    <li class="logo">
+                        <h1 class="brand">
+                            <a href="<?php echo base_url() ?>" class="desktop">Hubert &amp; Faust</a>
+                            <a href="<?php echo base_url() ?>" class="mobile">Hubert &amp; Faust</a>
+                        </h1>
+                        <div class="toggleDown">
+                            <div class="menu-toggle-btn">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="<?php echo base_url() ?>">News</a></li>
+                    <li><a href="<?php echo site_url('web/about_us') ?>">About Us</a></li>
                 </ul>
             </div>
             <div class="toggleMenu">
                 <ul>
-                    <li>
-                        <a href="<?php echo base_url() ?>" class="row">
-                            <span>Home</span>
-                            <i class="xn xn-angle-right"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?php echo site_url('web/about_us') ?>" class="row">
-                            <span>About Us</span>
-                            <i class="xn xn-angle-right"></i>
-                        </a>
-                    </li>
                     <?php foreach($categories as $category): ?>
                         <li>
                             <a href="<?php echo site_url('web/product/'.$category['id']) ?>" class="row">
@@ -78,6 +66,18 @@
                     <li>
                         <a href="<?php echo site_url('web/special_order') ?>" class="row">
                             <span>Special Order</span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo base_url() ?>" class="row">
+                            <span>News</span>
+                            <i class="xn xn-angle-right"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo site_url('web/about_us') ?>" class="row">
+                            <span>About Us</span>
                             <i class="xn xn-angle-right"></i>
                         </a>
                     </li>

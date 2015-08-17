@@ -65,17 +65,14 @@ class MY_Pagination extends CI_Pagination {
         return $links;
     }
 
-    function new_create_links() {
+    function create_links_product() {
         $links = parent::create_links();
 
         if ($links) {
-            $links = "
-                <div class=\"pagination-menu\">
-                    <span>Halaman:</span>
-                    " . $links . "
-                </div>";
+            $links ='<article class="pagingArea">
+                        '.$links.'
+                    </article>';
         }
         return $links;
     }
-
 }

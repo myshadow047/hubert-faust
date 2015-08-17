@@ -4,12 +4,80 @@
 		"selected_items":
 		[
 			[
-				"catego",
-				"category"
+				"mar",
+				"margin-left"
+			],
+			[
+				"pla",
+				"placeholder"
 			],
 			[
 				"cate",
-				"$categories〔variable〕"
+				"callback__category"
+			],
+			[
+				"prod",
+				"$product_id〔variable〕"
+			],
+			[
+				"pa",
+				"$params〔variable〕"
+			],
+			[
+				"res",
+				"$result〔variable〕"
+			],
+			[
+				"co",
+				"$count〔variable〕"
+			],
+			[
+				"text",
+				"textarea"
+			],
+			[
+				"remo",
+				"removeClass〔function〕"
+			],
+			[
+				"has",
+				"hasClass〔function〕"
+			],
+			[
+				"add",
+				"addClass〔function〕"
+			],
+			[
+				"array_fil",
+				"array_filter〔function〕"
+			],
+			[
+				"array",
+				"array_filter($a"
+			],
+			[
+				"ima",
+				"$images〔variable〕"
+			],
+			[
+				"array_",
+				"array_filter"
+			],
+			[
+				"pro",
+				"$product〔variable〕"
+			],
+			[
+				"ab",
+				"about_us"
+			],
+			[
+				"contact",
+				"contact_us"
+			],
+			[
+				"catego",
+				"category"
 			],
 			[
 				"app_",
@@ -26,10 +94,6 @@
 			[
 				"app_bas",
 				"app_base_model〔class〕"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"dev",
@@ -124,10 +188,50 @@
 	"buffers":
 	[
 		{
+			"file": "TODO.MD",
+			"settings":
+			{
+				"buffer_size": 580,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "application/default/views/layouts/web.php",
 			"settings":
 			{
-				"buffer_size": 5418,
+				"buffer_size": 5828,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/desktop/css/main.css",
+			"settings":
+			{
+				"buffer_size": 18268,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/default/views/web/index.php",
+			"settings":
+			{
+				"buffer_size": 10255,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "application/default/views/web/special_order.php",
+			"settings":
+			{
+				"buffer_size": 7650,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "themes/desktop/js/main.js",
+			"settings":
+			{
+				"buffer_size": 997,
 				"line_ending": "Unix"
 			}
 		}
@@ -139,10 +243,14 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 127.0,
-		"last_filter": "remove",
+		"height": 392.0,
+		"last_filter": "lore",
 		"selected_items":
 		[
+			[
+				"lore",
+				"Snippet: Lorem ipsum"
+			],
 			[
 				"remove",
 				"Package Control: Remove Package"
@@ -185,21 +293,67 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/apriantopramana/Sites/putra/hubert-faust"
+		"/Users/apriantopramana/Sites/putra/hubert-faust",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/layouts",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/web",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/install",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/install/init"
 	],
 	"file_history":
 	[
-		"/Users/apriantopramana/Sites/putra/hubert-faust/themes/desktop/js/main.js",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/themes/desktop/css/main.css",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/views/layouts/main.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/controllers/about_us.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/layouts/web.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/themes/desktop/js/main.js",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/web/detail_product.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/TODO.MD",
+		"/Applications/XAMPP/etc/php.ini",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/site/index.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/about_us/show.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/contact_us/show.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/product/show.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/controllers/product.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/controllers/category.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/banner/show.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/banner/detail.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/special_order/listing.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/views/listing.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/controllers/special_order.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/controllers/crud_controller.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/special_order/detail.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/views/organization/detail.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/modules/message/views/read.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/themes/default/css/global.css",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/web/special_order.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/system/helpers/html_helper.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/hubert-faust.sublime-project",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/helpers/format_helper.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/controllers/app_crud_controller.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/controllers/base_controller.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/web/product.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/config/xmenu.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/config/development/database.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/web/about_us.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/controllers/web.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/config/routes.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/MY_Pagination.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/system/libraries/Pagination.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/config/pagination.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/config/development/arch.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/models/web_model.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/system/database/DB_driver.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/models/base_model.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/web/index.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/config/development/app.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/views/layouts/web.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/config/app.php",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/themes/desktop/css/main.css",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/.gitignore",
+		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/controllers/about_us.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/models/about_us_model.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/manifest.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/controllers/web.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/controllers/base_user_controller.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/controllers/category.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/application/default/models/category_model.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/views/user/profile.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/views/site/example.php",
@@ -239,7 +393,6 @@
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/models/base_user_model.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/models/base_role_model.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/models/base_organization_model.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/models/base_model.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/models/app_historical_model.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/models/app_base_model.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/Xauth/drivers/Xauth_twitter.php",
@@ -278,45 +431,7 @@
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/twitter.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/views/install/invoke.php",
 		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/tweet.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/MY_Form_validation.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/MY_Log.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/MY_Pagination.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/MY_Profiler.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/MY_Session.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/MY_Upload.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/pdf.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/recaptcha.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/svc_system.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/google.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/facebook.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/dom_pdf.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/validation_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/upload_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/unit_test_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/recaptcha_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/profiler_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/number_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/imglib_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/ftp_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/form_validation_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/email_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/db_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/date_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/id_id/calendar_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/validation_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/upload_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/unit_test_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/recaptcha_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/profiler_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/number_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/imglib_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/ftp_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/form_validation_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/email_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/db_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/date_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/language/en_us/calendar_lang.php",
-		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/hooks/System_hook.php"
+		"/Users/apriantopramana/Sites/putra/hubert-faust/arch/libraries/MY_Form_validation.php"
 	],
 	"find":
 	{
@@ -337,6 +452,39 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"-7",
+			"-6",
+			"h4",
+			".promo ",
+			"promo",
+			"promo ",
+			"thumbView.promo",
+			"thumbView",
+			".promo",
+			"400px",
+			"max",
+			"coloum1",
+			"category",
+			"banner",
+			"user",
+			"h4",
+			"html_",
+			"Description",
+			"description",
+			"function config_grid",
+			"config_grid",
+			"config->pagi",
+			"config['pagination']",
+			"pagination",
+			"create_links",
+			"->pagination",
+			"create_links",
+			"function _protect_identifiers",
+			"rgba(48, 48, 48, 0.6);",
+			"inputArea",
+			"i.product",
+			"<div class=\"span-6\">",
+			".php",
 			"$this->_model()",
 			"_layout_view",
 			"$this->_layout_view",
@@ -431,18 +579,6 @@
 			"filtercount++; ",
 			"report",
 			"filter.",
-			"drawGraph",
-			"Putra",
-			"apply",
-			"filtersToolbar",
-			"apply",
-			".important",
-			"important",
-			"apply",
-			"drawGraph",
-			"TODO: Graphs Filter",
-			"graphFilter",
-			"filter",
 			"drawGraph"
 		],
 		"highlight": true,
@@ -461,30 +597,215 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "application/default/views/layouts/web.php",
+					"file": "TODO.MD",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5418,
+						"buffer_size": 580,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5402,
-								5402
+								102,
+								102
 							]
 						],
 						"settings":
 						{
 							"BracketHighlighterBusy": false,
 							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/MarkdownEditing/Markdown.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "application/default/views/layouts/web.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5828,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3851,
+								3851
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 739.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "themes/desktop/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18268,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4994,
+								4994
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
 								"bh_square",
@@ -512,36 +833,128 @@
 								"bh_round_open",
 								"bh_round_close",
 								"bh_round_content",
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
-								"bh_unmatched_content",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
 								"bh_tag_content",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_regex_content",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close",
-								"bh_double_quote_content",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
 								"bh_default_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
 								"bh_curly",
 								"bh_curly_center",
 								"bh_curly_open",
 								"bh_curly_close",
-								"bh_curly_content"
+								"bh_curly_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 910.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "application/default/views/web/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8869,
+								10195
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
 							],
 							"incomplete_sync": null,
 							"remote_loading": false,
@@ -551,10 +964,194 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1260.0,
+						"translation.y": 2190.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "application/default/views/web/special_order.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 7650,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								325,
+								367
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "themes/desktop/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 997,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								947,
+								947
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_complete": false,
+							"bh_regions":
+							[
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content"
+							],
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 239.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -613,20 +1210,144 @@
 		"selected_items":
 		[
 			[
-				"web",
-				"application/default/views/layouts/web.php"
+				"main",
+				"themes/desktop/js/main.js"
 			],
 			[
-				"web.",
-				"application/default/views/layouts/web.php"
+				"layout",
+				"arch/views/layouts/main.php"
+			],
+			[
+				"product",
+				"application/default/views/web/detail_product.php"
+			],
+			[
+				"main.js",
+				"themes/desktop/js/main.js"
+			],
+			[
+				"prod",
+				"application/default/controllers/product.php"
+			],
+			[
+				"catego",
+				"application/default/controllers/category.php"
+			],
+			[
+				"listing",
+				"arch/views/listing.php"
+			],
+			[
+				"detail.php",
+				"arch/views/organization/detail.php"
+			],
+			[
+				"read.php",
+				"arch/modules/message/views/read.php"
+			],
+			[
+				"crud",
+				"arch/controllers/crud_controller.php"
+			],
+			[
+				"global.css",
+				"themes/default/css/global.css"
+			],
+			[
+				"special_order",
+				"application/default/controllers/special_order.php"
+			],
+			[
+				"helper",
+				"system/helpers/html_helper.php"
+			],
+			[
+				"app_crd",
+				"arch/controllers/app_crud_controller.php"
+			],
+			[
+				"base",
+				"arch/controllers/base_controller.php"
 			],
 			[
 				"xmen",
 				"application/default/config/xmenu.php"
 			],
 			[
+				"about",
+				"application/default/views/web/about_us.php"
+			],
+			[
+				"web/product",
+				"application/default/views/web/product.php"
+			],
+			[
+				"routes",
+				"application/default/config/routes.php"
+			],
+			[
+				"pagination",
+				"arch/libraries/MY_Pagination.php"
+			],
+			[
+				"pagina",
+				"arch/libraries/MY_Pagination.php"
+			],
+			[
+				"base_model",
+				"arch/models/base_model.php"
+			],
+			[
+				"web",
+				"application/default/models/web_model.php"
+			],
+			[
+				"web.php",
+				"application/default/controllers/web.php"
+			],
+			[
+				"xmenu",
+				"application/default/config/xmenu.php"
+			],
+			[
+				"web/inde",
+				"application/default/views/web/index.php"
+			],
+			[
+				"app.",
+				"arch/config/app.php"
+			],
+			[
 				"main.php",
 				"arch/views/layouts/main.php"
+			],
+			[
+				"special_ord",
+				"application/default/views/web/special_order.php"
+			],
+			[
+				"crudcon",
+				"arch/controllers/crud_controller.php"
+			],
+			[
+				"special",
+				"application/default/controllers/special_order.php"
+			],
+			[
+				"/viewproduc",
+				"application/default/views/web/product.php"
+			],
+			[
+				"data",
+				"application/default/config/development/database.php"
+			],
+			[
+				"rou",
+				"application/default/config/routes.php"
+			],
+			[
+				"web.",
+				"application/default/views/layouts/web.php"
 			],
 			[
 				"layou",
@@ -635,10 +1356,6 @@
 			[
 				"menu.",
 				"application/default/config/xmenu.php"
-			],
-			[
-				"web.php",
-				"application/default/views/layouts/web.php"
 			],
 			[
 				"layout.",
@@ -651,10 +1368,6 @@
 			[
 				"def",
 				"www/theme/css/default.css"
-			],
-			[
-				"layout",
-				"vendor/xinix-technology/bono/templates/layout.php"
 			],
 			[
 				"login",
@@ -749,10 +1462,6 @@
 				"www/js/view/brand.js"
 			],
 			[
-				"rou",
-				"www/js/app/routes.js"
-			],
-			[
 				"config.js",
 				"www/js/app/config.js"
 			],
@@ -803,7 +1512,7 @@
 		[
 			[
 				"",
-				"~/Sites/xinix/arch-php/arch-php.sublime-workspace"
+				"~/Sites/kuliah/tugas_akhir/tugas_akhir.sublime-project"
 			],
 			[
 				"xso",

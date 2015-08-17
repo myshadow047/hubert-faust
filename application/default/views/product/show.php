@@ -23,17 +23,17 @@ echo $this->admin_panel->breadcrumb(array(
 
             <div>
                 <label><?php echo l('Description Product') ?></label>
-                <textarea name="description" placeholder="Description Product"><?php echo set_value('description') ?></textarea>
+                <textarea id="description" name="description" placeholder="Description Product"><?php echo set_value('description') ?></textarea>
             </div>
 
             <div>
                 <label><?php echo l('Ingredient') ?></label>
-                <input type="text" name="ingredient" value="<?php echo set_value('ingredient') ?>" placeholder="Ingredient" />
+                <textarea id="ingredient" name="ingredient" placeholder="Ingredient Product"><?php echo set_value('ingredient') ?></textarea>
             </div>
 
             <div>
                 <label><?php echo l('Dimention') ?></label>
-                <textarea name="dimention" placeholder="Dimention"><?php echo set_value('dimention') ?></textarea>
+                <textarea id="dimention" name="dimention" placeholder="Dimention"><?php echo set_value('dimention') ?></textarea>
             </div>
 
             <?php if(!empty($images)): ?>
@@ -41,7 +41,7 @@ echo $this->admin_panel->breadcrumb(array(
                     <label><?php echo l('Image') ?></label>
 
                     <?php foreach($images as $image): ?>
-                        <img width="200" src="<?php echo base_url('data/product/image/'.$image['image_name']) ?>">
+                        <img width="200" height="200" src="<?php echo base_url('data/product/image/'.$image['image_name']) ?>">
                         <a href="<?php echo site_url('product/delete_one_image/'.$image['id'].'/'.$id) ?>">x</a>
                     <?php endforeach ?>
                 </div>
@@ -58,3 +58,18 @@ echo $this->admin_panel->breadcrumb(array(
         <a href="<?php echo site_url($CI->_get_uri('listing')) ?>" class="btn cancel"><?php echo l('Cancel') ?></a>
     </div>
 </form>
+
+<script type="text/javascript">
+    CKEDITOR.config.width = '80%';
+    CKEDITOR.config.toolbar = [
+        { name: 'links', items: ['Link', 'Unlink', 'Anchor'] },
+        { name: 'inserts', items: ['HorizontalRule', 'SpecialChar'] },
+        { name: 'basicstyles', items: ['Bold', 'Italic', 'Strike', '-', 'removeFormat'] },
+        { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote'] },
+    ];
+    CKEDITOR.replace('description');
+    CKEDITOR.replace('ingredient');
+    CKEDITOR.replace('dimention');
+</script>
+
+

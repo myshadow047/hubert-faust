@@ -29,26 +29,37 @@ class web extends app_crud_controller {
 
     }
 
-    function product($category_id) {
+    function product($category_id, $offset = 0) {
+        $this->load->library('pagination');
+
         $where = array('status' => 1, 'id' => $category_id);
         $category = $this->db->get_where('category', $where)->row_array();
         $this->_data['category'] = $category;
 
-        $sql = 'SELECT
-                    pi.product,
-                    p.category,
-                    p.name,
-                    p.description,
-                    p.ingredient,
-                    p.dimention,
-                    pi.image_name
-                FROM product p LEFT JOIN product_image pi ON p.id = pi.product WHERE p.category = ? GROUP BY pi.product';
+        $count = 0;
+        $per_page = 8;
+        $this->_data['products'] = $this->_model()->find($per_page, $offset, $count, $category_id);
 
-        $products = $this->db->query($sql, array($category_id))->result_array();
-        $this->_data['products'] = $products;
+        $this->load->library('pagination');
+        $param = array(
+            'total_rows' => $count,
+            'per_page' => $this->pagination->per_page,
+        );
+
+        $param = array(
+            'total_rows' => $count,
+            'per_page' => $per_page,
+            'base_url' => site_url('web/product'.'/'.$category_id),
+            'uri_segment' => 4
+        );
+
+        if (!empty($_GET)) {
+            $param['suffix'] = '?'.http_build_query($_GET, '', '&');
+        }
+        $this->pagination->initialize($param);
     }
 
-    function detail_product($category, $product_id) {
+    function detail_product($category, $page, $product_id) {
         $where = array('status' => 1, 'id' => $product_id);
         $product = $this->db->get_where('product', $where)->row_array();
 
