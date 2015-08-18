@@ -50,7 +50,7 @@
                             </div>
                         </div>
                     </li>
-                    <li><a href="<?php echo base_url() ?>">News</a></li>
+                    <li><a href="<?php echo site_url('web/news') ?>">News</a></li>
                     <li><a href="<?php echo site_url('web/about_us') ?>">About Us</a></li>
                 </ul>
             </div>
@@ -71,7 +71,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="<?php echo base_url() ?>" class="row">
+                        <a href="<?php echo site_url('web/news') ?>" class="row">
                             <span>News</span>
                             <i class="xn xn-angle-right"></i>
                         </a>

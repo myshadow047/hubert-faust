@@ -80,4 +80,12 @@ class web extends app_crud_controller {
     function contact_us() {
 
     }
+
+    function news() {
+
+    }
+
+    function detail_news() {
+
+    }
 }

@@ -9,6 +9,7 @@ $(function() {
 	});
 
 	$("#portfolio").easyResponsiveTabs();
+	$("#news").easyResponsiveTabs();
 
 	$(".heroBanner").owlCarousel({
 		itemsCustom : [

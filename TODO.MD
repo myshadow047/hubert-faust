@@ -15,9 +15,9 @@
     - Default limit upload : 7
     - Max size 1 Mb per picture
     - Print
-+ News
-    + Promo
-        - Detail Promo 
++ News                                                              (FRONTEND DONE)
+    + Promo                                                         (FRONTEND DONE)
+        - Detail Promo                                              (FRONTEND DONE)
 + About Us
     + Tab Menu
         - Brand Information                                         (FRONTEND DONE)
