@@ -43,11 +43,6 @@ class web extends app_crud_controller {
         $this->load->library('pagination');
         $param = array(
             'total_rows' => $count,
-            'per_page' => $this->pagination->per_page,
-        );
-
-        $param = array(
-            'total_rows' => $count,
             'per_page' => $per_page,
             'base_url' => site_url('web/product'.'/'.$category_id),
             'uri_segment' => 4
