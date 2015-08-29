@@ -26,17 +26,6 @@
                                 <img src="<?php echo base_url('themes/desktop/img/promo-banner3.jpg') ?>" alt="">
                             </a>
                         </div>
-                        <article class="pagingArea">
-                            <ul class="pagination">
-                                <li><a href="#"><i class="xn xn-angle-double-left"></i></a></li>
-                                <li><a href="#"><i class="xn xn-angle-left"></i></a></li>
-                                <li class="active"><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li><a href="#"><i class="xn xn-angle-right"></i></a></li>
-                                <li><a href="#"><i class="xn xn-angle-double-right"></i></a></li>
-                            </ul>
-                        </article>
                     </div>
                 </section>
             </div>

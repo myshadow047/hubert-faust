@@ -9,3 +9,6 @@
 application/default/logs/*
 application/default/cache/*
 application/default/config/development/databases.php
+application/default/cache/default:ROLE_PRIVILEGE
+application/default/cache/default:USER_PRIVILEGE
+hubert-faust.sublime-workspace

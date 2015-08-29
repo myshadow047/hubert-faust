@@ -43,11 +43,6 @@ class web extends app_crud_controller {
         $this->load->library('pagination');
         $param = array(
             'total_rows' => $count,
-            'per_page' => $this->pagination->per_page,
-        );
-
-        $param = array(
-            'total_rows' => $count,
             'per_page' => $per_page,
             'base_url' => site_url('web/product'.'/'.$category_id),
             'uri_segment' => 4
@@ -73,7 +68,7 @@ class web extends app_crud_controller {
 
     function about_us() {
         $where = array('status' => 1);
-        $about_us = $this->db->get_where('about_us', $where)->row_array();
+        $about_us = $this->db->get_where('about_us', $where)->result_array();
         $this->_data['about_us'] = $about_us;
     }
 
