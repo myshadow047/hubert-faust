@@ -13,8 +13,23 @@ echo $this->admin_panel->breadcrumb(array(
         <legend><?php echo $title ?></legend>
 
             <div>
-                <label><?php echo l('About Us') ?></label>
-                <textarea id="about_us" name="about_us" placeholder="About Us"><?php echo set_value('about_us') ?></textarea>
+                <label><?php echo l('Brand Information') ?></label>
+                <textarea id="brand_information" name="brand_information" placeholder="Brand Information"><?php echo set_value('brand_information') ?></textarea>
+            </div>
+
+            <div>
+                <label><?php echo l('Term & Condition') ?></label>
+                <textarea id="term" name="term" placeholder="Term & Condition"><?php echo set_value('term') ?></textarea>
+            </div>
+
+            <div>
+                <label><?php echo l('Freight & Rules') ?></label>
+                <textarea id="freight" name="freight" placeholder="Freight & Rules"><?php echo set_value('freight') ?></textarea>
+            </div>
+
+            <div>
+                <label><?php echo l('Claim Rules') ?></label>
+                <textarea id="claim" name="claim" placeholder="Claim Rules"><?php echo set_value('claim') ?></textarea>
             </div>
 
     </fieldset>
@@ -32,5 +47,8 @@ echo $this->admin_panel->breadcrumb(array(
         { name: 'basicstyles', items: ['Bold', 'Italic', 'Strike', '-', 'removeFormat'] },
         { name: 'paragraph', items: ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote'] },
     ];
-    CKEDITOR.replace('about_us');
+    CKEDITOR.replace('brand_information');
+    CKEDITOR.replace('term');
+    CKEDITOR.replace('freight');
+    CKEDITOR.replace('claim');
 </script>

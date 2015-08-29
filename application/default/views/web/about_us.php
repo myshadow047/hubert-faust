@@ -14,20 +14,16 @@
                 </ul>
                 <section class="resp-tabs-container">
                     <div class="row">
-                        <p>Tab 1</p>
-                        <?php echo isset($about_us['about_us'])? $about_us['about_us'] : '' ?>
+                        <?php echo isset($about_us[0]['brand_information'])? $about_us[0]['brand_information'] : '' ?>
                     </div>
                     <div class="row">
-                        <p>Tab 2</p>
-                        <?php echo isset($about_us['about_us'])? $about_us['about_us'] : '' ?>
+                        <?php echo isset($about_us[0]['term'])? $about_us[0]['term'] : '' ?>
                     </div>
                     <div class="row">
-                        <p>Tab 3</p>
-                        <?php echo isset($about_us['about_us'])? $about_us['about_us'] : '' ?>
+                        <?php echo isset($about_us[0]['freight'])? $about_us[0]['freight'] : '' ?>
                     </div>
                     <div class="row">
-                        <p>Tab 4</p>
-                        <?php echo isset($about_us['about_us'])? $about_us['about_us'] : '' ?>
+                        <?php echo isset($about_us[0]['claim'])? $about_us[0]['claim'] : '' ?>
                     </div>
                 </section>
             </div>
