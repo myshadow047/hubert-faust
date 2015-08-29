@@ -48,6 +48,7 @@
                                 <span></span>
                                 <span></span>
                             </div>
+                            <p>Menu</p>
                         </div>
                     </li>
                     <li><a href="<?php echo site_url('web/news') ?>">News</a></li>
@@ -97,23 +98,10 @@
         <?php echo $this->load->view($CI->_view, $CI->_data, true) ?>
     </section>
 
-
-    <script type="text/javascript" src="<?php echo base_url('vendor/owl-carousel/owl-carousel/owl.carousel.min.js') ?>"></script>
-    <script type="text/javascript" src="<?php echo base_url('vendor/Easy-Responsive-Tabs-to-Accordion/js/easyResponsiveTabs.js') ?>"></script>
-    <script type="text/javascript" src="<?php echo base_url('themes/desktop/js/main.js') ?>"></script>
-
     <section class="footer">
         <div class="container">
+            <hr>
             <div class="row">
-                <nav class="copyLogo">
-                    <p class="copyright">
-                        <i class="logo"></i>
-                        <span>
-                            © 2015 Hubert &amp; Faust. Some right reserved.
-                        </span>
-                    </p>
-                </nav>
-                <hr>
                 <nav class="findUs">
                     <p>Get in touch</p>
                     <ul class="social flat">
@@ -122,8 +110,21 @@
                         <li><a href="#" class="ins xn xn-instagram"></a></li>
                     </ul>
                 </nav>
+                <hr>
+                <nav class="copyLogo">
+                    <p class="copyright">
+                        <span>
+                            © 2015 Hubert &amp; Faust. Some right reserved.
+                        </span>
+                    </p>
+                </nav>
             </div>
         </div>
     </section>
+
+    <script type="text/javascript" src="<?php echo base_url('vendor/owl-carousel/owl-carousel/owl.carousel.min.js') ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('vendor/Easy-Responsive-Tabs-to-Accordion/js/easyResponsiveTabs.js') ?>"></script>
+    <script type="text/javascript" src="<?php echo base_url('themes/desktop/js/main.js') ?>"></script>
+    
 </body>
 </html>
