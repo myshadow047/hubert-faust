@@ -32,6 +32,11 @@ echo $this->admin_panel->breadcrumb(array(
                 <textarea id="claim" name="claim" placeholder="Claim Rules"><?php echo set_value('claim') ?></textarea>
             </div>
 
+            <div>
+                <label><?php echo l('Tagline') ?></label>
+                <textarea id="tagline" name="tagline" placeholder="Tagline"><?php echo set_value('tagline') ?></textarea>
+            </div>
+
     </fieldset>
     <div class="action-buttons btn-group">
         <input type="submit" />
@@ -51,4 +56,5 @@ echo $this->admin_panel->breadcrumb(array(
     CKEDITOR.replace('term');
     CKEDITOR.replace('freight');
     CKEDITOR.replace('claim');
+    CKEDITOR.replace('tagline');
 </script>

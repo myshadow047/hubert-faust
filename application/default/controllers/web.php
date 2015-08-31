@@ -23,6 +23,29 @@ class web extends app_crud_controller {
         $where = array('status' => 1);
         $contact_us = $this->db->get_where('contact_us', $where)->row_array();
         $this->_data['contact_us'] = $contact_us;
+
+        $where = array('status' => 1);
+        $about_us = $this->db->get_where('about_us', $where)->row_array();
+        $this->_data['about_us'] = $about_us;
+
+        $promos = $this->db->query('SELECT p.*, c.name as category_name FROM product p LEFT JOIN category c ON p.category = c.id WHERE p.status = 1 AND p.is_promo = 1 ORDER BY p.created_time DESC')->result_array();
+        foreach ($promos as $key => $value) {
+            $promos[$key]['image'] = $this->db->query('SELECT * FROM product_image WHERE product = ?', array($value['id']))->row_array();
+        }
+        $this->_data['promos'] = $promos;
+
+        if (count($promos) !== 0) {
+            $limit = 3;
+        } else {
+            $limit = 4;
+        }
+
+        $products = $this->db->query('SELECT p.*, c.name as category_name FROM product p LEFT JOIN category c ON p.category = c.id WHERE p.status = 1 ORDER BY p.created_time DESC LIMIT ?', array($limit))->result_array();
+        foreach ($products as $key => $value) {
+            $products[$key]['image'] = $this->db->query('SELECT * FROM product_image WHERE product = ?', array($value['id']))->row_array();
+        }
+        $this->_data['products'] = $products;
+
     }
 
     function special_order() {
@@ -60,10 +83,25 @@ class web extends app_crud_controller {
 
         $where = array('status' => 1, 'product' => $product_id);
         $product_image = $this->db->get_where('product_image', $where)->result_array();
-
         $product['images'] = $product_image;
-
         $this->_data['product'] = $product;
+
+        $where = array('status' => 1);
+        $contact_us = $this->db->get_where('contact_us', $where)->row_array();
+        $this->_data['contact_us'] = $contact_us;
+
+        $next = $this->db->query('SELECT *
+                                      FROM product
+                                      WHERE id = (SELECT MIN(id) FROM product where id > ?)
+                                      AND category = ?', array($product_id, $category))->row_array();
+
+        $prev = $this->db->query('SELECT *
+                                      FROM product
+                                      WHERE id = (SELECT MAX(id) FROM product where id < ?)
+                                      AND category = ?', array($product_id, $category))->row_array();
+
+        $this->_data['prev'] = $prev;
+        $this->_data['next'] = $next;
     }
 
     function about_us() {
@@ -77,7 +115,11 @@ class web extends app_crud_controller {
     }
 
     function news() {
-
+        $promos = $this->db->query('SELECT p.*, c.name as category_name FROM product p LEFT JOIN category c ON p.category = c.id WHERE p.status = 1 AND p.is_promo = 1 ORDER BY p.created_time DESC')->result_array();
+        foreach ($promos as $key => $value) {
+            $promos[$key]['image'] = $this->db->query('SELECT * FROM product_image WHERE product = ?', array($value['id']))->row_array();
+        }
+        $this->_data['promos'] = $promos;
     }
 
     function detail_news() {

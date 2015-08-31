@@ -31,12 +31,17 @@
                         <div class="titleArea">
                             <h3><?php echo $product['name'] ?></h3>
                             <div class="nextPrev">
-                                <a href="#" class="button">
-                                    <i class="xn xn-angle-left"></i>
-                                </a>
-                                <a href="#" class="button">
-                                    <i class="xn xn-angle-right"></i>
-                                </a>
+                                <?php if($prev): ?>
+                                    <a href="<?php echo site_url('web/product/'.$prev['category'].'/detail/'.$prev['id']) ?>" class="button">
+                                        <i class="xn xn-angle-left"></i>
+                                    </a>
+                                <?php endif ?>
+
+                                <?php if($next): ?>
+                                    <a href="<?php echo site_url('web/product/'.$next['category'].'/detail/'.$next['id']) ?>" class="button">
+                                        <i class="xn xn-angle-right"></i>
+                                    </a>
+                                <?php endif ?>
                             </div>
                         </div>
                         <h6>Product Description</h6>
@@ -56,7 +61,7 @@
                         <hr>
                         <h6>More Detail</h6>
                         <h4>
-                            <a href="#" class="">
+                            <a href="<?php echo 'mailto:'.$contact_us['email'].'?Subject=Ask%20Price' ?>" target="_top">
                                 <i class="xn xn-envelope-o"></i>
                                 Ask Price
                             </a>

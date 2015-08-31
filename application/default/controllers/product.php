@@ -5,12 +5,13 @@ class product extends app_crud_controller {
     function _config_grid() {
         $fields = array_keys($this->_model($this->_name)->list_fields(true));
         $config = array(
-            'fields' => array('category', 'name', 'description', 'ingredient', 'dimention'),
-            'formats' => array('callback__category', 'row_detail'),
+            'fields' => array('category', 'name', 'description', 'ingredient', 'dimention', 'is_promo'),
+            'formats' => array('callback__category', 'row_detail', 'callback__limiter', 'callback__limiter', 'callback__limiter', 'callback__set_promo'),
+            'names' => array('', '', '', '', '', 'Promo'),
             'sorts' => $fields,
             'actions' => array(
                 'edit' => $this->_get_uri('edit'),
-                'trash' => $this->_get_uri('trash'),
+                'delete' => $this->_get_uri('trash')
             ),
         );
 
@@ -19,6 +20,30 @@ class product extends app_crud_controller {
         }
 
         return $config;
+    }
+
+    function _limiter($v) {
+        return word_limiter(strip_tags($v), 20);
+    }
+
+    function _set_promo($v, $k, $d) {
+        if ($v == 1) {
+            return '<a href="'.site_url('product/update_promo/'.$v.'/'.$d['id']).'">Unset Promo</a>';
+        } else {
+            return '<a href="'.site_url('product/update_promo/'.$v.'/'.$d['id']).'">Set Promo</a>';
+        }
+    }
+
+    function update_promo($is_promo, $id) {
+        if ($is_promo == 1) {
+            $this->db->where('id', $id);
+            $this->db->update('product', array('is_promo' => 0));
+        } else {
+            $this->db->where('id', $id);
+            $this->db->update('product', array('is_promo' => 1));
+        }
+
+        redirect($_SERVER['HTTP_REFERER']);
     }
 
     function _category($val) {

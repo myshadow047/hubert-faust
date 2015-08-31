@@ -1,3 +1,7 @@
+<style type="text/css">
+    .uploadArea ul li.hide { display: none; }
+</style>
+
 <div class="label">
     <hr>
     <h4>Special Order</h4>
@@ -47,7 +51,7 @@
                     <h4>Upload Image</h4>
                 </div>
                 <ul class="flat">
-                    <li>
+                    <li class="li1">
                         <div class="imageArea">
                             <input id="image1" type="file" name="special_order_image[]" style="display: none;">
                             <div id="display-image1" class="image empty" style="background: url(<?php echo base_url('themes/desktop/img/banner3.jpg') ?>) center no-repeat; background-size: cover;"></div>
@@ -56,7 +60,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="li2">
                         <div class="imageArea">
                             <input id="image2" type="file" name="special_order_image[]" style="display: none;">
                             <div id="display-image2" class="image empty" style="background: url(<?php echo base_url('themes/desktop/img/banner3.jpg') ?>) center no-repeat; background-size: cover;"></div>
@@ -65,7 +69,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="li3">
                         <div class="imageArea">
                             <input id="image3" type="file" name="special_order_image[]" style="display: none;">
                             <div id="display-image3" class="image empty" style="background: url(<?php echo base_url('themes/desktop/img/banner3.jpg') ?>) center no-repeat; background-size: cover;"></div>
@@ -74,10 +78,46 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="li4 hide">
                         <div class="imageArea">
                             <input id="image4" type="file" name="special_order_image[]" style="display: none;">
                             <div id="display-image4" class="image empty" style="background: url(<?php echo base_url('themes/desktop/img/banner3.jpg') ?>) center no-repeat; background-size: cover;"></div>
+                            <div class="bg">
+                                <a class="buttonUpload">+</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li5 hide">
+                        <div class="imageArea">
+                            <input id="image5" type="file" name="special_order_image[]" style="display: none;">
+                            <div id="display-image5" class="image empty" style="background: url(<?php echo base_url('themes/desktop/img/banner3.jpg') ?>) center no-repeat; background-size: cover;"></div>
+                            <div class="bg">
+                                <a class="buttonUpload">+</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li6 hide">
+                        <div class="imageArea">
+                            <input id="image6" type="file" name="special_order_image[]" style="display: none;">
+                            <div id="display-image6" class="image empty" style="background: url(<?php echo base_url('themes/desktop/img/banner3.jpg') ?>) center no-repeat; background-size: cover;"></div>
+                            <div class="bg">
+                                <a class="buttonUpload">+</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li7 hide">
+                        <div class="imageArea">
+                            <input id="image7" type="file" name="special_order_image[]" style="display: none;">
+                            <div id="display-image7" class="image empty" style="background: url(<?php echo base_url('themes/desktop/img/banner3.jpg') ?>) center no-repeat; background-size: cover;"></div>
+                            <div class="bg">
+                                <a class="buttonUpload">+</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li8 more">
+                        <div class="imageArea">
+                            <input id="image8" type="file" name="special_order_image[]" style="display: none;">
+                            <div id="display-image8" class="image empty" style="background: url(<?php echo base_url('themes/desktop/img/banner3.jpg') ?>) center no-repeat; background-size: cover;"></div>
                             <div class="bg">
                                 <a class="buttonUpload">+</a>
                             </div>
@@ -132,35 +172,46 @@
         });
 
         $('.imageArea a').off('click').on('click', function(){
-            if ($(this).hasClass('not-trigger')) {
-                $(this).parent().parent().find('input[type="file"]').parent().find('div.image').addClass('empty');
-                $(this).parent().parent().find('input[type="file"]').parent().find('div.image').css({
-                    'background': 'url(<?php echo base_url("themes/desktop/img/banner3.jpg") ?>) center no-repeat',
-                    'background-size': 'cover'
-                });
-                $(this).html('+');
-                $(this).removeClass('not-trigger');
-            } else {
-                $(this).parent().parent().find('input[type="file"]').trigger('click');
-            }
+            var more = $(this).parent().parent().parent();
 
-            var those = this;
-            $(this).parent().parent().find('input[type="file"]').change(function () {
-                if (this.files && this.files[0]) {
-                    var reader = new FileReader();
-                    var that = this;
-                    reader.onload = function(e){
-                        $(that).parent().find('div.image').removeClass('empty');
-                        $(that).parent().find('div.image').css({
-                            'background': 'url('+e.target.result+') center no-repeat',
-                            'background-size': 'cover'
-                        });
-                        $(those).html('-');
-                        $(those).addClass('not-trigger');
-                    };
-                    reader.readAsDataURL(this.files[0]);
+            if (more.hasClass('more')) {
+                if ($('li.hide').length > 1) {
+                    $($('li.hide')[0]).removeClass('hide');
+                } else {
+                    $($('li.hide')[0]).removeClass('hide');
+                    more.removeClass('more');
                 }
-            });
+            } else {
+                if ($(this).hasClass('not-trigger')) {
+                    $(this).parent().parent().find('input[type="file"]').parent().find('div.image').addClass('empty');
+                    $(this).parent().parent().find('input[type="file"]').parent().find('div.image').css({
+                        'background': 'url(<?php echo base_url("themes/desktop/img/banner3.jpg") ?>) center no-repeat',
+                        'background-size': 'cover'
+                    });
+                    $(this).html('+');
+                    $(this).removeClass('not-trigger');
+                } else {
+                    $(this).parent().parent().find('input[type="file"]').trigger('click');
+                }
+
+                var those = this;
+                $(this).parent().parent().find('input[type="file"]').change(function () {
+                    if (this.files && this.files[0]) {
+                        var reader = new FileReader();
+                        var that = this;
+                        reader.onload = function(e){
+                            $(that).parent().find('div.image').removeClass('empty');
+                            $(that).parent().find('div.image').css({
+                                'background': 'url('+e.target.result+') center no-repeat',
+                                'background-size': 'cover'
+                            });
+                            $(those).html('-');
+                            $(those).addClass('not-trigger');
+                        };
+                        reader.readAsDataURL(this.files[0]);
+                    }
+                });
+            }
         });
     });
 </script>

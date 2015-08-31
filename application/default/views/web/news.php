@@ -11,21 +11,13 @@
                 </ul>
                 <section class="resp-tabs-container">
                     <div class="row">
-                        <div class="promoBanner">
-                            <a href="<?php echo site_url('web/detail_news') ?>">
-                                <img src="<?php echo base_url('themes/desktop/img/promo-banner.jpg') ?>" alt="">
-                            </a>
-                        </div>
-                        <div class="promoBanner">
-                            <a href="<?php echo site_url('web/detail_news') ?>">
-                                <img src="<?php echo base_url('themes/desktop/img/promo-banner2.jpg') ?>" alt="">
-                            </a>
-                        </div>
-                        <div class="promoBanner">
-                            <a href="<?php echo site_url('web/detail_news') ?>">
-                                <img src="<?php echo base_url('themes/desktop/img/promo-banner3.jpg') ?>" alt="">
-                            </a>
-                        </div>
+                        <?php foreach($promos as $promo): ?>
+                            <div class="promoBanner">
+                                <a href="<?php echo site_url('web/detail_news') ?>">
+                                    <img src="<?php echo base_url('data/product/image/'.$promo['image']['image_name']) ?>" alt="">
+                                </a>
+                            </div>
+                        <?php endforeach ?>
                     </div>
                 </section>
             </div>

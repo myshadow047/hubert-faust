@@ -6,137 +6,62 @@
             </div>
         <?php endforeach; ?>
     </article>
+
     <article class="container-fluid">
         <div class="productView row">
-            <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
-                <div class="thumbView">
-                    <div class="descript">
-                        <a href="#">
-                            <span class="category">Category 1</span>
-                            <hr>
-                            <span class="name">Name Product 1 Name Product 1 Name Product 1</span>
-                        </a>
-                    </div>
-                    <div class="image">
-                        <span class="hover animated fadeIn">
-                            <h6>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...
-                                <a href="#">Read More <i class="xn xn-angle-right"></i></a>
-                            </h6>
-                        </span>
-                        <a href="#" style="background: url(<?php echo base_url('themes/desktop/img/banner2.jpg') ?>) center no-repeat; background-size: cover;"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
-                <div class="thumbView">
-                    <div class="descript">
-                        <a href="#">
-                            <span class="category">Category 2</span>
-                            <hr>
-                            <span class="name">Name Product 2</span>
-                        </a>
-                    </div>
-                    <div class="image">
-                        <span class="hover animated fadeIn">
-                            <h6>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...
-                                <a href="#">Read More <i class="xn xn-angle-right"></i></a>
-                            </h6>
-                        </span>
-                        <a href="#" style="background: url(<?php echo base_url('themes/desktop/img/banner1.jpg') ?>) center no-repeat; background-size: cover;"></a>
+            <?php foreach($products as $k => $product): ?>
+                <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
+                    <div class="thumbView">
+                        <div class="descript">
+                            <a href="#">
+                                <span class="category"><?php echo $product['category_name'] ?></span>
+                                <hr>
+                                <span class="name"><?php echo $product['name'] ?></span>
+                            </a>
+                        </div>
+                        <div class="image">
+                            <span class="hover animated fadeIn">
+                                <h6>
+                                    <?php echo word_limiter($product['description'], 10) ?>
+                                    <a href="<?php echo site_url('web/product/'.$product['category'].'/detail/'.$product['id']) ?>">Read More <i class="xn xn-angle-right"></i></a>
+                                </h6>
+                            </span>
+                            <a href="<?php echo site_url('web/product/'.$product['category'].'/detail/'.$product['id']) ?>" style="background: url(<?php echo base_url('data/product/image/'.$product['image']['image_name']) ?>) center no-repeat; background-size: cover;"></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea">
-                <div class="thumbView">
-                    <div class="descript">
-                        <a href="#">
-                            <span class="category">Category 3</span>
-                            <hr>
-                            <span class="name">Name Product 3</span>
-                        </a>
-                    </div>
-                    <div class="image">
-                        <span class="hover animated fadeIn">
-                            <h6>
-                                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia...
-                                <a href="#">Read More <i class="xn xn-angle-right"></i></a>
-                            </h6>
-                        </span>
-                        <a href="#" style="background: url(<?php echo base_url('themes/desktop/img/banner4.jpg') ?>) center no-repeat; background-size: cover;"></a>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach ?>
+
             <div class="xlarge-3 large-3 medium-6 small-12 tiny-12 thumbArea promoArea">
                 <div class="promo">
-                    <div class="thumbView">
-                        <div class="descript">
-                            <a href="detail.php">
-                                <span class="category">Promo</span>
-                                <hr>
-                                <span class="name">Promo Product Product 1</span>
-                            </a>
-                        </div>
-                        <div class="image">
-                            <span class="promoImage"></span>
-                            <span class="hover animated fadeIn">
-                                <h6>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod...
-                                    <a href="#">Read More <i class="xn xn-angle-right"></i></a>
-                                </h6>
-                            </span>
-                            <div class="slideImage">
-                                <a href="detail.php" style="background: url(<?php echo base_url('themes/desktop/img/banner3.jpg') ?>) center no-repeat; background-size: cover;"></a>
+                    <?php foreach($promos as $promo): ?>
+                        <div class="thumbView">
+                            <div class="descript">
+                                <a href="detail.php">
+                                    <span class="category">Promo</span>
+                                    <hr>
+                                    <span class="name"><?php echo $promo['name'] ?></span>
+                                </a>
+                            </div>
+                            <div class="image">
+                                <span class="promoImage"></span>
+                                <span class="hover animated fadeIn">
+                                    <h6>
+                                        <?php echo word_limiter($promo['description'], 10) ?>
+                                        <a href="<?php echo site_url('web/product/'.$promo['category'].'/detail/'.$promo['id']) ?>">Read More <i class="xn xn-angle-right"></i></a>
+                                    </h6>
+                                </span>
+                                <div class="slideImage">
+                                    <a href="<?php echo site_url('web/product/'.$promo['category'].'/detail/'.$promo['id']) ?>" style="background: url(<?php echo base_url('data/product/image/'.$promo['image']['image_name']) ?>) center no-repeat; background-size: cover;"></a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="thumbView">
-                        <div class="descript">
-                            <a href="detail.php">
-                                <span class="category">Promo</span>
-                                <hr>
-                                <span class="name">Promo Product Product 2</span>
-                            </a>
-                        </div>
-                        <div class="image">
-                            <span class="promoImage"></span>
-                            <span class="hover animated fadeIn">
-                                <h6>
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut...
-                                    <a href="#">Read More <i class="xn xn-angle-right"></i></a>
-                                </h6>
-                            </span>
-                            <div class="slideImage">
-                                <a href="detail.php" style="background: url(<?php echo base_url('themes/desktop/img/banner1.jpg') ?>) center no-repeat; background-size: cover;"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="thumbView">
-                        <div class="descript">
-                            <a href="detail.php">
-                                <span class="category">Promo</span>
-                                <hr>
-                                <span class="name">Promo Product Product 3</span>
-                            </a>
-                        </div>
-                        <div class="image">
-                            <span class="promoImage"></span>
-                            <span class="hover animated fadeIn">
-                                <h6>
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia...
-                                    <a href="#">Read More <i class="xn xn-angle-right"></i></a>
-                                </h6>
-                            </span>
-                            <div class="slideImage">
-                                <a href="detail.php" style="background: url(<?php echo base_url('themes/desktop/img/banner2.jpg') ?>) center no-repeat; background-size: cover;"></a>
-                            </div>
-                        </div>
-                    </div>
+                    <?php endforeach ?>
                 </div>
             </div>
         </div>
     </article>
+
     <article class="contact">
         <div class="container">
             <div class="contactArea row">
@@ -144,12 +69,7 @@
                     <div class="wrapper">
                         <div class="wording">
                             <h4>
-                                Hubert and faust will become the leader in making innovation and creativity, so we are ready to be at
-                                the forefront to fulfill our customers needs and dreams. We are also very open to consumers who are willing
-                                to provide input on us. Another advantage that we present to you is we invite you to join with us for making
-                                the imagination together and we will make your dream furniture come true. Because Hubert and Faust provide
-                                this service theme “just customize your furniture as you are" where we would be very pleased to be able to
-                                realize the dream of furniture as you wish.
+                                <?php echo $about_us['tagline'] ?>
                             </h4>
                             <a href="<?php echo site_url('web/special_order') ?>" class="button">Special Order</a>
                         </div>
