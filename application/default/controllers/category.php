@@ -10,7 +10,7 @@ class category extends app_crud_controller {
             'sorts' => $fields,
             'actions' => array(
                 'edit' => $this->_get_uri('edit'),
-                'trash' => $this->_get_uri('trash'),
+                'delete' => $this->_get_uri('trash'),
             ),
         );
 

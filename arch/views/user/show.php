@@ -67,31 +67,12 @@ echo $this->admin_panel->breadcrumb(array(
             <input type="text" value="<?php echo set_value('username') ?>" name="username"  placeholder="<?php echo l('Username (Character and number only)') ?>" />
         </div>
         <div>
-            <label class="mandatory span2"><?php echo l('Password') ?></label>
-            <div class="input-append span10">
-                <input type="password" value="" name="password"  placeholder="<?php echo l('Password') ?>" />
-                <input type="button" value="<?php echo l('Generate Password') ?>" id="btn-generate-password" style="margin-left:0" />
-            </div>
+            <label class="mandatory"><?php echo l('Password') ?></label>
+            <input type="password" value="" name="password"  placeholder="<?php echo l('Password') ?>" />
         </div>
         <div>
             <label class="mandatory"><?php echo l('Retype Password') ?></label>
             <input type="password" value="" name="password2"  placeholder="<?php echo l('Password') ?>" />
-        </div>
-        <div>
-            <label><?php echo l('Gender') ?></label>
-            <?php echo xform_lookup('gender') ?>
-        </div>
-        <div>
-            <label><?php echo l('Phone') ?></label>
-            <input type="text" value="<?php echo set_value('phone') ?>" name="phone" placeholder="Phone Number">
-        </div>
-        <div>
-            <label><?php echo l('Yahoo ID') ?></label>
-            <input type="text" value="<?php echo set_value('yahoo_id') ?>" name="yahoo_id" placeholder="Yahoo ID">
-        </div>
-        <div>
-            <label><?php echo l('Google ID') ?></label>
-            <input type="text" value="<?php echo set_value('google_id') ?>" name="google_id" placeholder="Google ID">
         </div>
         <div>
             <label><?php echo l('Roles') ?></label>

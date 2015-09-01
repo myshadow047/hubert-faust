@@ -70,17 +70,60 @@
                         <h6>Share</h6>
                         <ul class="share flat">
                             <li>
-                                <a href="#" class="button">
+                                <script type="text/javascript">
+                                    function facebook(width, height) {
+                                        var leftPosition, topPosition;
+
+                                        leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+                                        topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+
+                                        var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+                                        u = location.href;
+                                        t = document.title;
+                                        window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'sharer', windowFeatures);
+
+                                        return false;
+                                    }
+                                </script>
+                                <a onClick="return facebook(400, 300)" target="_BLANK" href="http://www.facebook.com/share.php?u=<?php echo rawurlencode(current_url()) ?>&title=<?php echo rawurlencode($product['name']) ?>" class="button">
                                     <i class="xn xn-facebook"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="button">
+                                <script type="text/javascript">
+                                    function twitter(width, height) {
+                                        var leftPosition, topPosition;
+
+                                        leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+                                        topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+
+                                        var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+                                        var twtLink = "http://twitter.com/home?status=<?php echo rawurlencode($product['name']) ?>+<?php echo rawurlencode(current_url()) ?>";
+                                        window.open(twtLink, '', windowFeatures);
+
+                                        return false;
+                                    }
+                                </script>
+                                <a onclick="twitter(400, 300)" target="_BLANK" href="http://twitter.com/home?status=<?php echo rawurlencode($product['name']) ?>+<?php echo rawurlencode(current_url()) ?>" class="button">
                                     <i class="xn xn-twitter"></i>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="button">
+                                <script type="text/javascript">
+                                    function pinterest(width, height) {
+                                        var leftPosition, topPosition;
+
+                                        leftPosition = (window.screen.width / 2) - ((width / 2) + 10);
+                                        topPosition = (window.screen.height / 2) - ((height / 2) + 50);
+
+                                        var windowFeatures = "status=no,height=" + height + ",width=" + width + ",resizable=yes,left=" + leftPosition + ",top=" + topPosition + ",screenX=" + leftPosition + ",screenY=" + topPosition + ",toolbar=no,menubar=no,scrollbars=no,location=no,directories=no";
+                                        var pin = "http://pinterest.com/pin/create/button/?url=<?php echo rawurlencode(current_url()) ?>&media=<?php echo base_url('data/product/image/'.$product['images'][0]['image_name']) ?>&description=<?php echo $product['name'] ?>";
+                                        window.open(pin, '', windowFeatures);
+
+                                        return false;
+                                    }
+                                </script>
+                                <a onclick="pinterest(400, 300)" target="_BLANK" class="button" href="http://pinterest.com/pin/create/button/?url=<?php echo rawurlencode(current_url()) ?>&media=<?php echo base_url('data/product/image/'.$product['images'][0]['image_name']) ?>&description=<?php echo $product['name'] ?>" class="pin-it-button" count-layout="horizontal">
                                     <i class="xn xn-pinterest-p"></i>
                                 </a>
                             </li>
@@ -97,4 +140,3 @@
 <script>
     var $easyzoom = $('.easyzoom').easyZoom();
 </script>
-

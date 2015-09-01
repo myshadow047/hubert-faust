@@ -1826,3 +1826,55 @@ Last update : January, 12 2012
 th {
   color: #fff;
 }
+
+
+/* PUTRA */
+@media print {
+  * {
+    overflow-y: visible !important;
+  }
+  #layout-header, #layout-footer, ul.breadcrumb li {
+    display: none;
+  }
+
+  .the-content fieldset legend {
+    border-bottom: 1px solid;
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .the-content fieldset div, .the-content fieldset div {
+    display: table;
+  }
+
+  .the-content label {
+    width: 180px;
+    line-height: 25px;
+    display: block;
+    font-weight: bold;
+    float: left;
+  }
+  .the-content fieldset {
+    border: none;
+    padding: 30px 20px 10px;
+    margin: 30px 0 10px;
+    position: relative;
+    float: left;
+  }
+
+  .the-content fieldset span {
+      line-height: 25px;
+  }
+
+  .img-special-order img{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+
+}
+
+
+
+

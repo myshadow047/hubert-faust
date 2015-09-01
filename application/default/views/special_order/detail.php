@@ -8,7 +8,7 @@ echo $this->admin_panel->breadcrumb(array(
 
 <div class="clearfix"></div>
 <fieldset>
-    <legend><?php echo $title ?></legend>
+    <legend><?php echo 'Special Order' ?></legend>
     <div>
         <label><?php echo l('Name') ?></label>
         <span><?php echo $data['name'] ?></span>
@@ -35,10 +35,12 @@ echo $this->admin_panel->breadcrumb(array(
     </div>
     <div>
         <label><?php echo l('Images') ?></label>
-        <?php foreach($data['images'] as $image): ?>
-            <a href="<?php echo base_url('data/special_order/image/'.$image['image_name']) ?>">
-                <img width="200" height="200" src="<?php echo base_url('data/special_order/image/'.$image['image_name']) ?>">
-            </a>
-        <?php endforeach ?>
+        <div class="img-special-order">
+            <?php foreach($data['images'] as $image): ?>
+                <a href="<?php echo base_url('data/special_order/image/'.$image['image_name']) ?>">
+                    <img width="200" height="200" src="<?php echo base_url('data/special_order/image/'.$image['image_name']) ?>">
+                </a>
+            <?php endforeach ?>
+        </div>
     </div>
 </fieldset>

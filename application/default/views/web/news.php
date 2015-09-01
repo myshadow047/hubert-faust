@@ -13,7 +13,7 @@
                     <div class="row">
                         <?php foreach($promos as $promo): ?>
                             <div class="promoBanner">
-                                <a href="<?php echo site_url('web/detail_news') ?>">
+                                <a href="<?php echo site_url('web/product/'.$promo['category'].'/detail/'.$promo['id']) ?>">
                                     <img src="<?php echo base_url('data/product/image/'.$promo['image']['image_name']) ?>" alt="">
                                 </a>
                             </div>

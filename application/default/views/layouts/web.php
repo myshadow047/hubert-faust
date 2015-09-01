@@ -105,9 +105,15 @@
                 <nav class="findUs">
                     <p>Get in touch</p>
                     <ul class="social flat">
-                        <li><a href="#" class="fb xn xn-facebook-square"></a></li>
-                        <li><a href="#" class="pin xn xn-pinterest-square"></a></li>
-                        <li><a href="#" class="ins xn xn-instagram"></a></li>
+                        <?php foreach($sosmed as $sos): ?>
+                            <?php if($sos['name'] == 'Facebook'): ?>
+                                <li><a target="_BLANK" href="<?php echo $sos['url'] ?>" class="fb xn xn-facebook-square"></a></li>
+                            <?php elseif($sos['name'] == 'Pinterest'): ?>
+                                <li><a target="_BLANK" href="<?php echo $sos['url'] ?>" class="pin xn xn-pinterest-square"></a></li>
+                            <?php elseif($sos['name'] == 'Twitter'): ?>
+                                <li><a target="_BLANK" href="<?php echo $sos['url'] ?>" class="ins xn xn-instagram"></a></li>
+                            <?php endif ?>
+                        <?php endforeach ?>
                     </ul>
                 </nav>
                 <hr>
@@ -125,6 +131,6 @@
     <script type="text/javascript" src="<?php echo base_url('vendor/owl-carousel/owl-carousel/owl.carousel.min.js') ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('vendor/Easy-Responsive-Tabs-to-Accordion/js/easyResponsiveTabs.js') ?>"></script>
     <script type="text/javascript" src="<?php echo base_url('themes/desktop/js/main.js') ?>"></script>
-    
+
 </body>
 </html>

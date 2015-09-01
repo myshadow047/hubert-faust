@@ -9,6 +9,13 @@ class web extends app_crud_controller {
         $where = array('status' => 1);
         $categories = $this->_model()->_db()->get_where('category', $where)->result_array();
         $this->_data['categories'] = $categories;
+
+        $where = array('status' => 1);
+        $sosmed = $this->_model()->_db()->get_where('social_media', $where)->result_array();
+        $this->_data['sosmed'] = $sosmed;
+
+        // xlog($sosmed);
+        // exit;
     }
 
     function _check_access() {

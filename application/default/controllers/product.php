@@ -6,7 +6,7 @@ class product extends app_crud_controller {
         $fields = array_keys($this->_model($this->_name)->list_fields(true));
         $config = array(
             'fields' => array('category', 'name', 'description', 'ingredient', 'dimention', 'is_promo'),
-            'formats' => array('callback__category', 'row_detail', 'callback__limiter', 'callback__limiter', 'callback__limiter', 'callback__set_promo'),
+            'formats' => array('callback__category', '', 'callback__limiter', 'callback__limiter', 'callback__limiter', 'callback__set_promo'),
             'names' => array('', '', '', '', '', 'Promo'),
             'sorts' => $fields,
             'actions' => array(
