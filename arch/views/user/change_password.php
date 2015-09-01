@@ -25,6 +25,6 @@ echo $this->admin_panel->breadcrumb(array(
     </fieldset>
     <div class="action-buttons btn-group">
         <input type="submit" />
-        <a href="<?php echo $CI->_get_redirect() ?>" class="btn cancel"><?php echo l('Cancel') ?></a>
+        <a href="<?php echo site_url('dashboard') ?>" class="btn cancel"><?php echo l('Cancel') ?></a>
     </div>
 </form>
